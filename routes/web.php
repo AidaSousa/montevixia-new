@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ChildrenController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\EventUserController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
@@ -70,4 +71,13 @@ Route::get('/event-edit/{id}', [EventController::class, 'editEvent'])->name('eve
 Route::put('/event-update/{id}', [EventController::class, 'updateEvent'])->name('events.update');
 Route::get('/event-show', [EventController::class, 'showEvent'])->name('events.show');
 Route::get('/event-destroy/{id}', [EventController::class, 'destroyEvent'])->name('events.destroy');
+
+//Event user
+Route::get('/eventUser-index', [EventUserController::class, 'indexEventUser'])->name('eventUser.index');
+Route::get('/eventUser-create', [EventUserController::class, 'createEventUser'])->name('eventUser.create');
+Route::post('/eventUser-store', [EventUserController::class, 'storeEventUser'])->name('eventUser.store');
+Route::get('/eventUser-edit/{id}', [EventUserController::class, 'editEventUser'])->name('eventUser.edit');
+Route::put('/eventUser-update/{id}', [EventUserController::class, 'updateEventUser'])->name('eventUser.update');
+Route::get('/eventUser-show', [EventUserController::class, 'showEventUser'])->name('eventUser.show');
+Route::get('/eventUser-destroy/{id}', [EventUserController::class, 'destroyEventUser'])->name('eventUser.destroy');
 

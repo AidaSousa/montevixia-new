@@ -34,7 +34,9 @@ class ChildrenController extends Controller
         return redirect()->route('children.index')->with('success', 'Children created successfully!!');
     }
 
-    public function showChildren(Child $child) {
+    public function showChildren($id) {
+
+        $children = Child::findOrFail($id);
         
         return view('children.show', compact('child'));
     }
