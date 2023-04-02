@@ -9,7 +9,11 @@
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}" />
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/material-design-iconic-font.min.css') }}" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/material-design-iconic-font.min.css') }}" /> -->
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/icon-font.min.css') }}" />
 
@@ -19,7 +23,9 @@
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/animsition.min.css') }}" />
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/select2.min.css') }}" /> 
+    <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/select2.min.css') }}" />  -->
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     
     <link rel="stylesheet" type="text/css" href="{{ asset('css/daterangepicker.css') }}" />
 
@@ -62,33 +68,33 @@
 							<a href="product.html">Blog</a>
 						</li>
 
-						<li class="label1" data-label1="hot">
+						<li>
 							<a href="shoping-cart.html">Formularios</a>
 						</li>
 
 						<li>
-							<a href="#">Login</a>
+							<a href="{{ route('login') }}">Login</a>
                         </li>
 
 						<li>
-							<a href="blog.html">Registro</a>
+							<a href="{{ route('register') }}">Registro</a>
                         </li>
 					</ul>
 				</div>	
 
 				<!-- Icon header -->
 				<div class="wrap-icon-header flex-w flex-r-m h-full">
-					<div class="flex-c-m h-full p-r-24">
+					<!-- <div class="flex-c-m h-full p-r-24">
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-modal-search">
 							<i class="zmdi zmdi-search"></i>
-						</div>
+						</div> -->
 					</div>
 							
-					<div class="flex-c-m h-full p-l-18 p-r-25 bor5">
+					<!-- <div class="flex-c-m h-full p-l-18 p-r-25 bor5">
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
 							<i class="zmdi zmdi-shopping-cart"></i>
 						</div>
-					</div>
+					</div> -->
 							
 					<div class="flex-c-m h-full p-lr-19">
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-sidebar">
@@ -109,18 +115,18 @@
 
 		<!-- Icon header -->
 		<div class="wrap-icon-header flex-w flex-r-m h-full m-r-15">
-			<div class="flex-c-m h-full p-r-10">
+			<!-- <div class="flex-c-m h-full p-r-10">
 				<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-modal-search">
 					<i class="zmdi zmdi-search"></i>
-				</div>
+				</div> -->
 			</div>
 
-			<div class="flex-c-m h-full p-lr-10 bor5">
+			<!-- <div class="flex-c-m h-full p-lr-10 bor5">
 				<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
 					<i class="zmdi zmdi-shopping-cart"></i>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- Button show menu -->
 		<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
@@ -154,16 +160,20 @@
 				</li>
 
 				<li>
-					<a href="blog.html">Login / Registro</a>
+					<a href="{{ route('login') }}">Login</a>
+				</li>
+
+				<li>
+					<a href="{{ route('register') }}">Registro</a>
 				</li>
 			</ul>
 		</div>
 
 		<!-- Modal Search -->
-		<div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+		<!-- <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
 			<div class="container-search-header">
 				<button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
-					<img src="images/icons/icon-close2.png" alt="CLOSE">
+					<img src="icon/icon-close2.png" alt="CLOSE">
 				</button>
 
 				<form class="wrap-search-header flex-w p-l-15">
@@ -173,9 +183,10 @@
 					<input class="plh3" type="text" name="search" placeholder="Search...">
 				</form>
 			</div>
-		</div>
+		</div> -->
 	</header>
 
+	
 	<aside class="wrap-sidebar js-sidebar">
 		<div class="s-full js-hide-sidebar"></div>
 
@@ -300,7 +311,7 @@
 		</div>
 	</aside>
 
-    <div class="wrap-header-cart js-panel-cart">
+    <!-- <div class="wrap-header-cart js-panel-cart">
 		<div class="s-full js-hide-cart"></div>
 
 		<div class="header-cart flex-col-l p-l-65 p-r-25">
@@ -312,9 +323,9 @@
 				<div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
 					<i class="zmdi zmdi-close"></i>
 				</div>
-			</div>
+			</div> -->
 			
-			<div class="header-cart-content flex-w js-pscroll">
+			<!-- <div class="header-cart-content flex-w js-pscroll">
 				<ul class="header-cart-wrapitem w-full">
 					<li class="header-cart-item flex-w flex-t m-b-12">
 						<div class="header-cart-item-img">
@@ -363,9 +374,9 @@
 							</span>
 						</div>
 					</li>
-				</ul>
+				</ul> -->
 				
-				<div class="w-full">
+				<!-- <div class="w-full">
 					<div class="header-cart-total w-full p-tb-40">
 						Total: $75.00
 					</div>
@@ -378,7 +389,7 @@
 						<a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
 							Check Out
 						</a>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -411,22 +422,23 @@
 		</span>
 	</div>
 
-    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <!-- <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script> -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
     <script src="{{ asset('js/animsition.min.js') }}"></script>
 
     <script src="{{ asset('js/popper.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 
-    <script src="{{ asset('js/select2.min.js') }}"></script>
-    <script>
+    <!-- <script src="{{ asset('js/select2.min.js') }}"></script> -->
+    <!-- <script>
 		$(".js-select2").each(function(){
 			$(this).select2({
 				minimumResultsForSearch: 20,
 				dropdownParent: $(this).next('.dropDownSelect2')
 			});
 		})
-	</script>
+	</script> -->
 
     <script src="{{ asset('js/moment.min.js') }}"></script>
     <script src="{{ asset('js/daterangepicker.js') }}"></script>
@@ -508,6 +520,7 @@
 			})
 		});
 	</script>
+	
 
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
