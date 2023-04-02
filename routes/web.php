@@ -32,8 +32,12 @@ Route::get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/associated', function () {
-    return view('associated.index');
-})->name('associated.index');
+    return view('associated.show');
+})->name('associated.show');
+
+Route::get('/user', function () {
+    return view('user.index');
+})->name('user.index');
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
