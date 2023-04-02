@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,16 +43,16 @@
 			<nav class="limiter-menu-desktop p-l-45">					
 				<!-- Logo desktop -->		
 				<a href="#" class="logo">
-					<img src="images/icons/logo-01.png" alt="IMG-LOGO">
+					<img src="img/anpa.png" alt="IMG-LOGO">
 				</a>
 
-				<!-- Menu desktop -->
+				Menu desktop
 				<div class="menu-desktop">
 					<ul class="main-menu">
 						<li class="active-menu">
 							<a href="index.html">Actividades</a>
 							<ul class="sub-menu">
-								<li><a href="index.html">Actividades culturales</a></li>
+								<li><a hrefphp artisan key:generate="index.html">Actividades culturales</a></li>
 								<li><a href="home-02.html">Actividades extraescolares</a></li>
 								<li><a href="home-03.html">Excursiones</a></li>
 							</ul>
@@ -98,13 +98,13 @@
 				</div>
 			</nav>
 		</div>	
-	</div>
+	</div> 
 
 	<!-- Header Mobile -->
 	<div class="wrap-header-mobile">
 		<!-- Logo moblie -->		
 		<div class="logo-mobile">
-			<a href="index.html"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
+			<a href="index.html"><img src="img/anpa.png" alt="IMG-LOGO"></a>
 		</div>
 
 		<!-- Icon header -->
