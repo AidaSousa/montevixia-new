@@ -96,7 +96,6 @@
         <li><a class="app-menu__item active" href="dashboard.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-users"></i><span class="app-menu__label">Usuarios</span><i class="treeview-indicator fa fa-angle-right"></i></a>
           <ul class="treeview-menu">
-            <li><a class="treeview-item" href="bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Asociados</a></li>
             <li><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Usuarios</a></li>
             <li><a class="treeview-item" href="ui-cards.html"><i class="icon fa fa-circle-o"></i> Roles</a></li>
           </ul>
@@ -129,10 +128,10 @@
       </div>
       <div class="row">
         <div class="col-md-6 col-lg-3">
-          <div class="widget-small primary coloured-icon"><i class="icon fa fa-user fa-2x"></i>
+          <div class="widget-small primary coloured-icon"><i class="icon fa fa-users fa-2x"></i>
             <div class="info">
               <h4>Asociados</h4>
-              <p><b>5</b></p>
+              <p><b>300</b></p>
             </div>
           </div>
         </div>
@@ -140,7 +139,7 @@
           <div class="widget-small info coloured-icon"><i class="icon fa fa-archive fa-3x"></i>
             <div class="info">
               <h4>Categorias</h4>
-              <p><b>25</b></p>
+              <p><b>5</b></p>
             </div>
           </div>
         </div>
@@ -148,7 +147,7 @@
           <div class="widget-small warning coloured-icon"><i class="icon fa fa-star fa-3x"></i>
             <div class="info">
               <h4>Actividades</h4>
-              <p><b>10</b></p>
+              <p><b>28</b></p>
             </div>
           </div>
         </div>
@@ -156,7 +155,7 @@
           <div class="widget-small danger coloured-icon"><i class="icon fa fa-eur fa-3x"></i>
             <div class="info">
               <h4>Pagos</h4>
-              <p><b>200</b></p>
+              <p><b>634</b></p>
             </div>
           </div>
         </div>
@@ -220,13 +219,13 @@
       		value: 300,
       		color: "#46BFBD",
       		highlight: "#5AD3D1",
-      		label: "Complete"
+      		label: "Asociados"
       	},
       	{
       		value: 50,
       		color:"#F7464A",
       		highlight: "#FF5A5E",
-      		label: "In-Progress"
+      		label: "No Asociados"
       	}
       ]
       
