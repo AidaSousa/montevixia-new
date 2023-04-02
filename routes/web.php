@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AssociatedController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ChildrenController;
 use App\Http\Controllers\EventController;
@@ -80,4 +81,13 @@ Route::get('/eventUser-edit/{id}', [EventUserController::class, 'editEventUser']
 Route::put('/eventUser-update/{id}', [EventUserController::class, 'updateEventUser'])->name('eventUser.update');
 Route::get('/eventUser-show', [EventUserController::class, 'showEventUser'])->name('eventUser.show');
 Route::get('/eventUser-destroy/{id}', [EventUserController::class, 'destroyEventUser'])->name('eventUser.destroy');
+
+//Associated
+Route::get('/associated-index', [AssociatedController::class, 'indexAssociated'])->name('associated.index');
+Route::get('/associated-create', [AssociatedController::class, 'createAssociated'])->name('associated.create');
+Route::post('/associated-store', [AssociatedController::class, 'storeAssociated'])->name('associated.store');
+Route::get('/associated-edit/{id}', [AssociatedController::class, 'editAssociated'])->name('associated.edit');
+Route::put('/associated-update/{id}', [AssociatedController::class, 'updateAssociated'])->name('associated.update');
+Route::get('/associated-show', [AssociatedController::class, 'showAssociated'])->name('associated.show');
+Route::get('/associated-destroy/{id}', [AssociatedController::class, 'destroyAssociated'])->name('associated.destroy');
 
