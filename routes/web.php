@@ -28,8 +28,16 @@ Route::get('/dash', function () {
 })->name('dash');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('home-dashboard');
 })->name('dashboard');
+
+Route::get('/associated', function () {
+    return view('associated.show');
+})->name('associated.show');
+
+Route::get('/user', function () {
+    return view('user.index');
+})->name('user.index');
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);

@@ -44,7 +44,7 @@ class AssociatedController extends Controller
     {
         $associated = Associated::findOrFail($id);
         
-        return view('associated.show', compact('child'));
+        return view('associated.show', compact('associated'));
     }
 
     public function edit(Associated $associated)

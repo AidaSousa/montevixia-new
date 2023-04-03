@@ -9,6 +9,8 @@ class Associated extends Model
 {
     use HasFactory;
 
+    protected $table = 'associated';
+
     protected $fillable = [
         'user_id',
         'situacion',
