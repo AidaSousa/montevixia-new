@@ -172,13 +172,13 @@
       		value: 300,
       		color: "#46BFBD",
       		highlight: "#5AD3D1",
-      		label: "Complete"
+      		label: "Asociados"
       	},
       	{
       		value: 50,
       		color:"#F7464A",
       		highlight: "#FF5A5E",
-      		label: "In-Progress"
+      		label: "No asociados"
       	}
       ]
       
