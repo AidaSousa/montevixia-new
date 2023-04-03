@@ -37,4 +37,29 @@ class EventUser extends Model
     public function child() {
         return $this->belongsTo(Child::class);
     }
+
+    protected static function boot() {
+
+        parent::boot();
+
+        static::creating(function ($model) {
+            $model->calculateTotalPrice();
+        });
+
+        static::updating(function ($model) {
+            $model->calculateTotalPrice();
+        });
+    }
+
+    public function calculateTotalPrice() {
+
+        $event = Event::findOrFail($this->event_id);
+        $price = $event->price_no_associated;
+
+        if ( Associated::where('user_id', $this->user_id)->exists()) {
+            $price = $event->price_associated;
+        }
+
+        $this->total_price = $this->quantity * $price;
+    }
 }

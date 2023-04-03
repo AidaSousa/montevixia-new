@@ -13,7 +13,7 @@
     <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
     <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title>Usuarios</title>
+    <title>Asociados</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -120,12 +120,12 @@
     <main class="app-content">
       <div class="app-title">
         <div>
-          <h1><i class="fa fa-user"></i> Usuario</h1>
+          <h1><i class="fa fa-users"></i> Asociados</h1>
           <button class="btn btn-primary" type="button" onclick="openModal();" >Nuevo</button>
         </div>
         <ul class="app-breadcrumb breadcrumb">
           <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-          <li class="breadcrumb-item"><a href="#">Usuarios</a></li>
+          <li class="breadcrumb-item"><a href="#">Asociados</a></li>
         </ul>
       </div>
       
@@ -138,33 +138,57 @@
                       <thead>
                         <tr>
                           <th>ID</th>
+                          <th>Situación</th>
                           <th>Nombre</th>
                           <th>Apelidos</th>
+                          <th>Dirección</th>
+                          <th>D.N.I</th>
+                          <th>Teléfono</th>
                           <th>E-mail</th>
-                          <th>Contraseña</th>
+                          <th>Comedor</th>
+                          <th>Colaborador</th>
+                          <th>Pagos</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td>1</td>
+                          <td>Alta Nueva</td>
                           <td>Julio</td>
                           <td>Peréz</td>
+                          <td>calle Uria, 57, Gijón Asturias 33209</td>
+                          <td>35669277M</td>
+                          <td>656654332</td>
                           <td>julio@gmail.com</td>
-                          <td>123456</td>
+                          <td>SI</td>
+                          <td>SI</td>
+                          <td>Transferencia</td>
                         </tr>
                         <tr>
                           <td>2</td>
+                          <td>Renovación</td>
                           <td>Marta</td>
                           <td>Fernández</td>
+                          <td>calle Río de oro, 5, Gijón Asturias 33203</td>
+                          <td>35827657C</td>
+                          <td>652630092</td>
                           <td>Marta@gmail.com</td>
-                          <td>123456</td>
+                          <td>No</td>
+                          <td>SI</td>
+                          <td>PayPal</td>
                         </tr>
                         <tr>
                           <td>3</td>
+                          <td>Modificación</td>
                           <td>Manu</td>
                           <td>Gimenez</td>
+                          <td>calle Felipe II, 106, Gijón Asturias 33204</td>
+                          <td>35888527V</td>
+                          <td>655530332</td>
                           <td>manu@gmail.com</td>
-                          <td>123456</td>
+                          <td>SI</td>
+                          <td>SI</td>
+                          <td>Transferencia</td>
                         </tr>
                       </tbody>
                     </table>
