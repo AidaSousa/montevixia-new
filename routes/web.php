@@ -6,6 +6,7 @@ use App\Http\Controllers\ChildrenController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\EventUserController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -99,3 +100,6 @@ Route::put('/associated-update/{id}', [AssociatedController::class, 'updateAssoc
 Route::get('/associated-show', [AssociatedController::class, 'showAssociated'])->name('associated.show');
 Route::get('/associated-destroy/{id}', [AssociatedController::class, 'destroyAssociated'])->name('associated.destroy');
 
+//Payment
+Route::get('/checkout', [PaymentController::class, 'checkout'])->name('checkout');
+Route::post('/charge', [PaymentController::class, 'charge'])->name('charge');
