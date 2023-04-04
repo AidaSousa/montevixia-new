@@ -22,7 +22,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="tile">
-                    <h3 class="tile-title text-center">FORMULARIO PEQUE-RUTA</h3>
+                    <h3 class="tile-title text-center m-5">FORMULARIO PEQUE-RUTA</h3>
                     <div class="tile-body">
                         <form>
                             <div class="form-group">
@@ -90,6 +90,69 @@
                                 <div class="form-group" id="formularios-container">
                                     <!-- Este div se usará para contener los formularios agregados -->
                                 </div>
+                            </div>
+                            <hr class="mt-3">
+                            <h4 class="tile-title text-center mt-5 mb-3">CONDICIONES DE PARTICIPACION</h4>
+                            <h5 class="mt-3 mb-3">Debes aceptar las condiciones de participación para que la inscripción sea válida</h5>
+                            <div class="form-group">
+                                <div class="form-check d-flex">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input mb-3" type="checkbox">Confirmo que al menos un niño menor de 12 años se agrega al grupo.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" required>Confirmo que hay un adulto responsable en el grupo.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" required>En todo momento los integrantes del grupo deben cumplir con las instrucciones de las personas que guían la ruta. 
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" required>Confirmo que el grupo tiene las condiciones físicas y mentales adecuadas para realizar la actividad.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" required>Confirmo que acepto las condiciones de participacion de la actividad.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>La unidad familiar es miembro de la AMPA</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ampa" id="ampa_si" value="si" required>
+                                    <label class="form-check-label" for="ampa_si">Si</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ampa" id="ampa_no" value="no" required>
+                                    <label class="form-check-label" for="ampa_no">No</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Autorizo la publicación de fotos en las que aparezcan personas del grupo en el blog del AMPA</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="fotos" id="fotos_si" value="si">
+                                    <label class="form-check-label" for="fotos_si">Si</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="fotos" id="fotos_no" value="no">
+                                    <label class="form-check-label" for="fotos_no">No</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary" type="submit">ENVIAR</button>
                             </div>
                             </div>
                         </form>
