@@ -30,11 +30,11 @@
           <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>INICIAR SESIÓN</h3>
           <div class="form-group">
             <label class="control-label">USUARIO</label>
-            <input id="txtEmail" name="txtEmail" class="form-control" type="email" placeholder="Email" autofocus>
+            <input id="email" name="email" class="form-control" type="email" placeholder="Email" autofocus>
           </div>
           <div class="form-group">
             <label class="control-label">CONTRASEÑA</label>
-            <input id="txtPassword" name="txtPassword" class="form-control" type="password" placeholder="Contraseña">
+            <input id="password" name="password" class="form-control" type="password" placeholder="Contraseña">
           </div>
           @error('message')
             <p class="text-danger">{{ $message }}</p>
