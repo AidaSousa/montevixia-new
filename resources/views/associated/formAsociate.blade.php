@@ -126,7 +126,7 @@ DNI o NIE co seguinte formato 12345678X, o X1234567Z  caso do NIE
                                 <label class="control-label" for="">No caso de estar interesado/a en colaborar coa ANPA, qué consideras que podes aportar? En que área te gustaría axudar ? (festas, actividades, comedor, subvencións, horta...)</label>
                                 <input class="form-control" type="text">
 </div>
-                  
+               
 <div class="form-group">
                                 <h3 class="control-label text-center m-5" for="">DATOS DOS/AS FILLOS/AS NO CENTRO</h3>
                                 <label class="control-label" for="">Fillo/a 1- APELIDOS
@@ -159,9 +159,10 @@ Recordade que para Infantil os grupos son 4º, 5º y 6º</label>
 										<option value="6_EP">6º EP</option>
 										
 									</select>
+                                                        
+</div>
 
-
-                                    <div class="form-group">
+                               <div class="form-group mt-3">
                                 <label class="control-label" for="">Fillo/a 2- APELIDOS
 </label>
                                 <input class="form-control" type="text">
@@ -192,9 +193,43 @@ Recordade que para Infantil os grupos son 4º, 5º y 6º</label>
 										<option value="6_EP">6º EP</option>
 										
 									</select>
+                           
+</div>
+
+                               <div class="form-group mt-3">
+                                <label class="control-label" for="">Fillo/a 3- APELIDOS
+</label>
+                                <input class="form-control" type="text">
+                                <label class="control-label" for="">Fillo/a 3 - NOME
+
+</label>
+                                <input class="form-control" type="text">
+                                <div class="form-group">
+                                    <label class="control-label" for="">Fillo/a 3- DATA NACEMENTO</label>
+                                    <input class="form-control" type="date">
+                                </div>
+                                </div>
+
+                                <div class="form-group">
+								<div class="form-check">
+									<label class="control-label">Fillo/a 3 - Curso (2021-22) *
+*
+Recordade que para Infantil os grupos son 4º, 5º y 6º</label>
+									<select class="form-control">
+										<option value="4_EI">4º EI</option>
+										<option value="5_EI">5º EI</option>
+										<option value="6_EI">6º EI</option>
+										<option value="1_EP">1º EP</option>
+										<option value="2_EP">2º EP</option>
+										<option value="3_EP">3º EP</option>
+										<option value="4_EP">4º EP</option>
+										<option value="5_EP">5º EP</option>
+										<option value="6_EP">6º EP</option>
+										
+									</select>
+                                   
 </br>
 </br>
- 
             <h1>AUTORIZACIONS</h1>
             <p>AUTORIZACIÓN DE PAGOS
 
@@ -257,5 +292,6 @@ No caso de que necesitese recibir os recibos nun determinado período (por exemp
              
         </div>
     </div>  
+
 
 @endsection
