@@ -3330,3 +3330,8 @@ input.num-product::-webkit-inner-spin-button {
   }
 
 }
+
+.btn-custom {
+  background-color: #009688;
+  color: white; 
+}

@@ -23,6 +23,16 @@ Route::get('/', function () {
     return view('home');
 });
 
+//Formulario peque ruta
+Route::get('/pequeruta', function () {
+    return view('forms.rutaPequeForm');
+});
+
+//Formulario asociado vista usuario
+Route::get('/asociate', function () {
+    return view('associated.formAsociate');
+});
+
 Route::get('/dash', function () {
     return view('user.index', ['user' => app()->make('App\Http\Controllers\UserController')->userIndex()]);
 })->name('dash');

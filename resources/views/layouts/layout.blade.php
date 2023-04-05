@@ -65,7 +65,7 @@
 
 						</li>
 						<li>
-							<a href="product.html">Blog</a>
+							<a href="http://anpamontevixia.blogspot.com/" target="_blank">Blog</a>
 						</li>
 
 						<li>
@@ -152,7 +152,7 @@
 				</li>
 
 				<li>
-					<a href="product.html">Blog</a>
+					<a href="http://anpamontevixia.blogspot.com/" target="_blank">Blog</a>
 				</li>
 
 				<li>
@@ -396,7 +396,7 @@
 	</div>
     
         @yield('content')
-    
+	
 
     <!-- Footer -->
 	

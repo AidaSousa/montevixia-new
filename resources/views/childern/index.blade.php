@@ -1,1 +1,0 @@
-esta es la vista index de children
