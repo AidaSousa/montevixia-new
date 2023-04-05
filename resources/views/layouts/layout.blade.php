@@ -396,7 +396,7 @@
 	</div>
     
         @yield('content')
-    
+	
 
     <!-- Footer -->
 	
