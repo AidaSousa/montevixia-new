@@ -10,8 +10,14 @@ class ChildrenController extends Controller
 {
     public function indexChildren() {
 
-        $children = Child::paginate(10);
-        return view('children.index', compact('children'));
+         // Obtiene el usuario actual
+        $user = Auth::user();
+
+        // Obtiene los hijos del usuario actual
+        $child = Child::where('user_id', $user->id)->paginate(10);
+
+        // Retorna la vista con la lista de hijos
+        return view('children.index', ['child' => $child]);
     }
 
     public function createChildren() {

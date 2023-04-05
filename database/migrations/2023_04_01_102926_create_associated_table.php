@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('telefono');
             $table->longText('direccion');
             $table->longText('colaboracion_ampa')->nullable();
-            $table->unsignedBigInteger('payment_id');
+            $table->unsignedBigInteger('payment_id')->nullable();
             $table->timestamps();
 
             $table->foreign('payment_id')->references('id')->on('payments');

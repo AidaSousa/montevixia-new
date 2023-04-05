@@ -38,7 +38,7 @@ Route::get('/dash', function () {
 })->name('dash');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('home-dashboard');
 })->name('dashboard');
 
 Route::get('/associated', function () {
