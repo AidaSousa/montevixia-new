@@ -48,7 +48,7 @@
 		<div class="wrap-menu-desktop">
 			<nav class="limiter-menu-desktop p-l-45">					
 				<!-- Logo desktop -->		
-				<a href="#" class="logo">
+				<a href="{{ url('/') }}" class="logo">
 					<img src="img/anpa.png" alt="IMG-LOGO">
 				</a>
 
@@ -72,17 +72,15 @@
 							<a href="{{ route('login') }}">Mi Perfil</a>
 						</li>
 
-						<li>
-							<a href="{{ route('login') }}">Cerrar Sesion</a>
-            </li>
+						@guest
+        				<li>
+            				<a href="{{ route('login') }}">Login</a>
+        				</li>
+        				<li>
+            				<a href="{{ route('register') }}">Registro</a>
+       					 </li>
+       					 @endguest
 
-						<li>
-							<a href="{{ route('login') }}">Login</a>
-            </li>
-
-						<li>
-							<a href="{{ route('register') }}">Registro</a>
-            </li>
 					</ul>
 				</div>	
 
