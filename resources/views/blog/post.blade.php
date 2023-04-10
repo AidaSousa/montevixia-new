@@ -1,7 +1,5 @@
 @extends('layouts.layout')
 
-
-
 @section('content') <!-- Define la sección de contenido -->
 <div class="container mt-4"> <!-- Contenedor principal con margen superior -->
     <div class="row"> <!-- Fila para el contenido -->
