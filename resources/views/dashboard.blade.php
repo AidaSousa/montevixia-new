@@ -77,8 +77,8 @@
         <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
           <ul class="dropdown-menu settings-menu dropdown-menu-right">
             <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
-            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
-            <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+            <li><a class="dropdown-item" href="{{ route('profile') }}"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+            <li><a class="dropdown-item" href="{{ route('logout') }}"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
           </ul>
         </li>
       </ul>
@@ -96,12 +96,12 @@
         <li><a class="app-menu__item active" href="dashboard.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-users"></i><span class="app-menu__label">Usuarios</span><i class="treeview-indicator fa fa-angle-right"></i></a>
           <ul class="treeview-menu">
-            <li><a class="treeview-item" href="bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Asociados</a></li>
-            <li><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Usuarios</a></li>
+            <li><a class="treeview-item" href="{{ route('associated.index') }}"><i class="icon fa fa-circle-o"></i> Asociados</a></li>
+            <li><a class="treeview-item" href="{{ route('user.index') }}"><i class="icon fa fa-circle-o"></i> Usuarios</a></li>
             <li><a class="treeview-item" href="ui-cards.html"><i class="icon fa fa-circle-o"></i> Roles</a></li>
           </ul>
         </li>
-        <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-archive"></i><span class="app-menu__label">Categorias</span></a></li>
+        <li><a class="app-menu__item" href="{{ route('categories.index') }}"><i class="app-menu__icon fa fa-archive"></i><span class="app-menu__label">Categorias</span></a></li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-star"></i><span class="app-menu__label">Actividades</span><i class="treeview-indicator fa fa-angle-right"></i></a>
           <ul class="treeview-menu">
             <li><a class="treeview-item" href="form-components.html"><i class="icon fa fa-circle-o"></i> Rutas</a></li>
