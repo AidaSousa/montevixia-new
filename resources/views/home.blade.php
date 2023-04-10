@@ -105,7 +105,7 @@
 		<div class="container">
 			<div class="p-b-32">
 				<h3 class="ltext-105 cl5 txt-center respon1">
-					Visión General
+					ULTIMAS ACTIVIDADES
 				</h3>
 			</div>
 
@@ -125,7 +125,7 @@
 											<img src="img/img-13.jpeg" alt="IMG-PRODUCT">
 
 											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-												Quick View
+												Inscribese
 											</a>
 										</div>
 
@@ -155,7 +155,7 @@
 											<img src="img/img-14.jpeg" alt="IMG-PRODUCT">
 
 											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-												Quick View
+												Inscribese
 											</a>
 										</div>
 
@@ -185,7 +185,7 @@
 											<img src="img/img-10.jpeg" alt="IMG-PRODUCT">
 
 											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-												Quick View
+												Inscribese
 											</a>
 										</div>
 
@@ -215,7 +215,7 @@
 											<img src="img/img-11.jpeg" alt="IMG-PRODUCT">
 
 											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-												Quick View
+												Inscríbese
 											</a>
 										</div>
 
@@ -245,7 +245,7 @@
 		<div class="container">
 			<div class="p-b-66">
 				<h3 class="ltext-105 cl5 txt-center respon1">
-					Nuestro Blogs
+					ULTIMAS ENTRADAS AL BLOG
 				</h3>
 			</div>
 
