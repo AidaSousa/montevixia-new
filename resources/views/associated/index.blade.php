@@ -10,10 +10,6 @@
           <h1><i class="fa fa-users"></i> Asociados</h1>
           <a href="{{ route('associated.create') }}" class="btn btn-primary ml-3" type="button" onclick="openModal();"><i class="fa fa-plus"></i>Nuevo</a>
         </div>
-        <ul class="app-breadcrumb breadcrumb">
-          <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-          <li class="breadcrumb-item"><a href="#">Asociados</a></li>
-        </ul>
       </div>
       
         <div class="row">
