@@ -65,7 +65,7 @@
 
 						</li>
 						<li>
-							<a href="http://anpamontevixia.blogspot.com/" target="_blank">Blog</a>
+							<a href="{{ route('blogs.index') }}">Blog</a>
 						</li>
 						@auth
 						<li>
