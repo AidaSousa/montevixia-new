@@ -45,7 +45,9 @@ class BlogController extends Controller
 
     public function show($id)
     {
-        $blog = Blog::find($id);
-        return view('blog.show', compact('blog'));
+        $post = Blog::find($id); // Cambia la variable $blog a $post
+    
+        return view('blog.post', compact('post')); // Utiliza la variable $post en la función compact()
     }
+    
 }

@@ -122,7 +122,7 @@ Route::get('/blog/create', [BlogController::class, 'create'])->name('posts.creat
 Route::post('/blog', [BlogController::class, 'store'])->name('posts.store');
 
 // Ruta para mostrar un blog específico
-Route::get('/blog/{id}', [BlogController::class, 'show'])->name('posts.show');
+Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blogs.show');
 
 // Ruta para mostrar el formulario de edición de un blog
 Route::get('/blog/{id}/edit', [BlogController::class, 'edit'])->name('posts.edit');
