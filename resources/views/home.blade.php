@@ -125,7 +125,7 @@
 											<img src="img/img-13.jpeg" alt="IMG-PRODUCT">
 
 											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-												Quick View
+												Inscríbete
 											</a>
 										</div>
 
@@ -155,7 +155,7 @@
 											<img src="img/img-14.jpeg" alt="IMG-PRODUCT">
 
 											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-												Quick View
+												Inscríbete
 											</a>
 										</div>
 
@@ -185,7 +185,7 @@
 											<img src="img/img-10.jpeg" alt="IMG-PRODUCT">
 
 											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-												Quick View
+													Inscríbete
 											</a>
 										</div>
 
@@ -215,7 +215,7 @@
 											<img src="img/img-11.jpeg" alt="IMG-PRODUCT">
 
 											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-												Quick View
+												Inscríbete
 											</a>
 										</div>
 

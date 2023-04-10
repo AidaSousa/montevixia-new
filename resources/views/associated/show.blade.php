@@ -134,7 +134,7 @@
               <div class="tile">
                 <div class="tile-body">
                   <div class="table-responsive">
-                    <table class="table table-hover table-bordered" id="tableUsuarios">
+                    <table class="table table-hover table-bordered" id="sampleTable">
                       <thead>
                         <tr>
                           <th>ID</th>
