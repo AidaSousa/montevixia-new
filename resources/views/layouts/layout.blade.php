@@ -67,19 +67,23 @@
 						<li>
 							<a href="http://anpamontevixia.blogspot.com/" target="_blank">Blog</a>
 						</li>
-
+						@auth
 						<li>
-							<a href="{{ route('login') }}">Mi Perfil</a>
+							<a href="{{ route('profile') }}">Mi Perfil</a>
 						</li>
 
-						@guest
+						<form action="{{ route('logout') }}" method="GET">
+    						<button type="submit">Cerrar sesión</button>
+						</form>
+
+						@else
         				<li>
             				<a href="{{ route('login') }}">Login</a>
         				</li>
         				<li>
             				<a href="{{ route('register') }}">Registro</a>
        					 </li>
-       					 @endguest
+       					 @endauth
 
 					</ul>
 				</div>	
