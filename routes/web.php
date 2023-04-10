@@ -6,6 +6,7 @@ use App\Http\Controllers\ChildrenController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\EventUserController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -109,3 +110,25 @@ Route::put('/associated-update/{id}', [AssociatedController::class, 'updateAssoc
 Route::get('/associated-show', [AssociatedController::class, 'showAssociated'])->name('associated.show');
 Route::get('/associated-destroy/{id}', [AssociatedController::class, 'destroyAssociated'])->name('associated.destroy');
 
+//BLOG
+// Ruta para mostrar todos los blogs
+Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
+
+
+// Ruta para mostrar el formulario de creación de un blog
+Route::get('/blog/create', [BlogController::class, 'create'])->name('posts.create');
+
+// Ruta para guardar un nuevo blog
+Route::post('/blog', [BlogController::class, 'store'])->name('posts.store');
+
+// Ruta para mostrar un blog específico
+Route::get('/blog/{id}', [BlogController::class, 'show'])->name('posts.show');
+
+// Ruta para mostrar el formulario de edición de un blog
+Route::get('/blog/{id}/edit', [BlogController::class, 'edit'])->name('posts.edit');
+
+// Ruta para actualizar un blog existente
+Route::put('/blog/{id}', [BlogController::class, 'update'])->name('posts.update');
+
+// Ruta para eliminar un blog
+Route::delete('/blog/{id}', [BlogController::class, 'destroy'])->name('posts.destroy');
