@@ -39,7 +39,7 @@
 								
 							<div class="layer-slick1 animated visible-false" data-appear="lightSpeedIn" data-delay="800">
 								<h2 class="ltext-104 cl2 p-t-19 p-b-43 respon1">
-									Categorias
+									Extraescolares
 								</h2>
 							</div>
 								
@@ -61,7 +61,7 @@
 								
 							<div class="layer-slick1 animated visible-false" data-appear="rotateInUpRight" data-delay="800">
 								<h2 class="ltext-104 cl2 p-t-19 p-b-43 respon1">
-									Actividades
+									Excursiones
 								</h2>
 							</div>
 								
@@ -152,7 +152,7 @@
 									<!-- Block2 -->
 									<div class="block2">
 										<div class="block2-pic hov-img0">
-											<img src="img/img-14.jpeg" alt="IMG-PRODUCT">
+											<img src="img/img-14.jpeg" height="209.61" alt="IMG-PRODUCT">
 
 											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 												Inscribese
@@ -254,7 +254,7 @@
 					<div class="blog-item">
 						<div class="hov-img0">
 							<a href="blog-detail.html">
-								<img src="img/img-15.jpeg" alt="IMG-BLOG">
+								<img src="img/img-15.jpeg" height="430" alt="IMG-BLOG">
 							</a>
 						</div>
 
