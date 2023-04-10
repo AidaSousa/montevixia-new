@@ -49,7 +49,7 @@
 			<nav class="limiter-menu-desktop p-l-45">					
 				<!-- Logo desktop -->		
 				<a href="{{ url('/') }}" class="logo">
-					<img src="img/anpa.png" alt="IMG-LOGO">
+					<img src="{{ URL::asset('img/anpa.png') }}" alt="IMG-LOGO">
 				</a>
 
 				<!-- Menu desktop -->
