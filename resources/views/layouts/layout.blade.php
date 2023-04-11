@@ -38,6 +38,7 @@
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/util.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+	<!--georgette iconos-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
 
 
@@ -396,31 +397,28 @@
 	<!-- Footer -->
 	<footer class="bg3 p-t-75 p-b-32">
 		<div class="container">
-		<div class="row justify-content-center">
-
 			<div class="row">
 				<div class="col-sm-6 col-lg-3 p-b-50">
-
-					<ul>
+				<ul text-justify>
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+							< <a href="/contacto" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
 								CONTACTO
 							</a>
 						</li>
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+							<a href="/contacto" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
 								Tlfn.:604 049 984
 							</a>
 						</li>
 
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+							<a href="/contacto" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
 								e-mail: anpaesanjurjo@gmail.com
 							</a>
 						</li>
 
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+							<a href="/contacto" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
 								Praza San Jose, s/n
 								15002, A Coruña
 							</a>
@@ -428,48 +426,73 @@
 					</ul>
 				</div>
 
+				
 				<div class="col-sm-6 col-lg-3 p-b-50">
-					<h4 class="stext-301 cl0 p-b-30">
-
-					</h4>
-
-					<ul>
+				<ul  class="text-justify">
+				<li class="p-b-10">
+					
+							<a href="#" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
+								COMEDOR
+							</a>
+						</li>
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+						<a href="https://jardanaycomedores.es/sanjurjo/wp-login.php?itsec-hb-token=panel&redirect_to=https%3A%2F%2Fjardanaycomedores.es%2Fsanjurjo%2F" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
+   Formulario alta servizo comedor e madrugadores Usuario: torredehercules Contrasinal: comedores2022
+</a>
+
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-lg-3 p-b-50">
+					<ul text-justify>
+						<li class="p-b-10">
+							<a href="#" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
+								T. 981 12 66 27 (de 8 a 18h)
+							</a>
+						</li>
+						<li class="p-b-10">
+							<a href="#" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
+								comedor@jardanay.es
+							</a>
+						</li>
+						<li class="p-b-10 text-justify">
+							<a href="#" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
+							Teléfono (só SMS ou chamasdas en horario de servizo de madrugadores e comedor) 650 471 382
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-lg-3 p-b-50">
+					<ul text-justify>
+						<li class="p-b-10">
+							<a href="#" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
 								Politica de Privacidad
 							</a>
 						</li>
 
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+							<a href="#" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
 								Aviso legal
 							</a>
 						</li>
 
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+							<a href="#" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
 								Politica de Cookies
 							</a>
 						</li>
 					</ul>
 				</div>
-
-				<div class="col-sm-6 col-lg-3 p-b-50">
-				<div class="logo-container">
-					<img src="img/anpa.png" alt="IMG-LOGO" width="300" height="150">
-				</div>
 			</div>
-</div>
 
-
-				<p class="stext-107 cl6 txt-center">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright &copy;<script>
-						document.write(new Date().getFullYear());
-					</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				</p>
-			</div>
+			<p class="stext-107 cl6 txt-center">
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				Copyright &copy;<script>
+					document.write(new Date().getFullYear());
+				</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			</p>
+		</div>
 		</div>
 	</footer>
 
