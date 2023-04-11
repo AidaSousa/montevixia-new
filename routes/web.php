@@ -132,3 +132,6 @@ Route::put('/blog/{id}', [BlogController::class, 'update'])->name('posts.update'
 
 // Ruta para eliminar un blog
 Route::delete('/blog/{id}', [BlogController::class, 'destroy'])->name('posts.destroy');
+
+//Stripe
+Route::post('/create-checkout-session', 'StripeController@createCheckoutSession');
