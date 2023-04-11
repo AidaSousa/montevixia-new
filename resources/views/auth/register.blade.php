@@ -31,7 +31,7 @@
     <form method="POST" action="/register" class="form-horizontal ">
   @csrf
   <div class="form-group">
-    <label for="name" class="col-md-4 control-label">Nombre</label>
+    <label for="name" class="col-md-4 mt-3 control-label">Nombre</label>
     <div class="col-md-8">
       <input type="text" name="name" class="form-control" required>
     </div>
