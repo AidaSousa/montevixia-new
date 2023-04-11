@@ -109,6 +109,8 @@
 				</h3>
 			</div>
 
+			@include('components.calendar')
+
 			<!-- Tab01 -->
 			<div class="tab01">
 				<!-- Tab panes -->
