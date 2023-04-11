@@ -116,10 +116,10 @@ Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
 
 
 // Ruta para mostrar el formulario de creación de un blog
-Route::get('/blog/create', [BlogController::class, 'create'])->name('posts.create');
+Route::get('/blog/create', [BlogController::class, 'create'])->name('blog.create');
 
 // Ruta para guardar un nuevo blog
-Route::post('/blog', [BlogController::class, 'store'])->name('posts.store');
+Route::post('/blog', [BlogController::class, 'store'])->name('blog.store');
 
 // Ruta para mostrar un blog específico
 Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blogs.show');

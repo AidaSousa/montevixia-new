@@ -109,6 +109,7 @@
             <li><a class="treeview-item" href="form-samples.html"><i class="icon fa fa-circle-o"></i> Libros</a></li>
           </ul>
         </li>
+        <li><a class="app-menu__item" href="{{ route('blog.create') }}"><i class="app-menu__icon fas fa-blog"></i><span class="app-menu__label">Blog</span></a>
         <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fas fa-eur"></i><span class="app-menu__label">Pagos</span></a>
         </li>
         <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-send"></i><span class="app-menu__label">E-mail</span></a>
