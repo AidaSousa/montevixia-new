@@ -3331,6 +3331,8 @@ input.num-product::-webkit-inner-spin-button {
 
 }
 
+/* vali buttons */
+
 .btn-primary {
   color: #FFF;
   background-color: #009688;
@@ -3365,3 +3367,6 @@ input.num-product::-webkit-inner-spin-button {
 .show > .btn-primary.dropdown-toggle:focus {
   -webkit-box-shadow: 0 0 0 0 rgba(38, 166, 154, 0.5);
           box-shadow: 0 0 0 0 rgba(38, 166, 154, 0.5);
+        }
+
+
