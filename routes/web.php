@@ -7,6 +7,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\EventUserController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\SubscriptionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -132,3 +133,8 @@ Route::put('/blog/{id}', [BlogController::class, 'update'])->name('posts.update'
 
 // Ruta para eliminar un blog
 Route::delete('/blog/{id}', [BlogController::class, 'destroy'])->name('posts.destroy');
+
+//Ruta para la página de suscripción
+Route::get('/suscripcion', [SubscriptionController::class, 'index'])->name('subscription.index');
+Route::post('/suscripcion/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscription.subscribe');
+Route::post('/stripe/webhook', 'WebhookController@handleWebhook');
