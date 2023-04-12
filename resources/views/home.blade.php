@@ -197,18 +197,16 @@
 		<div class="container">
 			<div class="p-b-66">
 				<h3 class="ltext-105 cl5 txt-center respon1">
-					ÚLTIMAS ENTRADAS BLOG
+					ÚLTIMAS ENTRADAS AL BLOG
 				</h3>
 			</div>
 
 			<div class="row">
-				<div class="col-sm-6 col-md-4 p-b-40">
-					<div class="blog-item">
-						<div class="hov-img0">
-							<a href="blog-detail.html">
-								<img src="img/img-15.jpeg" height="430" alt="IMG-BLOG">
-							</a>
-						</div>
+
+				@foreach($latest_blogs as $blog)
+
+					<div class="col-sm-6 col-md-4 p-b-40">
+						<div class="blog-item">
 
 						<div class="p-t-15">
 							<div class="stext-107 flex-w p-b-14">
@@ -218,51 +216,7 @@
 									</span>
 
 									<span class="cl5">
-										Marta Suarez
-									</span>
-								</span>
-
-								<span>
-									<span class="cl4">
-										el
-									</span>
-
-									<span class="cl5">
-										22 de Junio 2017 
-									</span>
-								</span>
-							</div>
-
-							<h4 class="p-b-12">
-								<a href="blog-detail.html" class="mtext-101 cl2 hov-cl1 trans-04">
-								8 maneras inspiradoras de llevar vestidos en invierno
-								</a>
-							</h4>
-
-							<p class="stext-108 cl6">
-								Duis ut velit gravida nibh bibendum commodo. Suspendisse pellentesque mattis augue id euismod. Interdum et male-suada fames
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4 p-b-40">
-					<div class="blog-item">
-						<div class="hov-img0">
-							<a href="blog-detail.html">
-								<img src="img/img-16.jpeg" alt="IMG-BLOG">
-							</a>
-						</div>
-
-						<div class="p-t-15">
-							<div class="stext-107 flex-w p-b-14">
-								<span class="m-r-3">
-									<span class="cl4">
-										Por
-									</span>
-
-									<span class="cl5">
-										Pedro Hernandez
+										{{ $blog->author }}
 									</span>
 								</span>
 
@@ -271,25 +225,26 @@
 										El
 									</span>
 
-									<span class="cl5">
-										23 de Noviembre 2020
-									</span>
+									
 								</span>
 							</div>
 
 							<h4 class="p-b-12">
-								<a href="blog-detail.html" class="mtext-101 cl2 hov-cl1 trans-04">
-								La gran lista de regalos masculinos para estas fiestas
+								<a href="{{ route('blogs.show', $blog->id) }}" class="mtext-101 cl2 hov-cl1 trans-04">
+									{{ $blog->title }}
 								</a>
 							</h4>
 
 							<p class="stext-108 cl6">
-								Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit ame
+								{{ Str::limit($blog->content, 250) }}
 							</p>
+
 						</div>
 					</div>
-				</div>
+					</div>
+					@endforeach
 
+<!-- 
 				<div class="col-sm-6 col-md-4 p-b-40">
 					<div class="blog-item">
 						<div class="hov-img0">
@@ -332,7 +287,7 @@
 							</p>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
