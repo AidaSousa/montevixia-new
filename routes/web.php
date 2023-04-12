@@ -24,6 +24,11 @@ Route::get('/', function () {
     return view('home');
 });
 
+//vista contacto footer
+Route::get('/contacto', function () {
+    return view('footer.contactoFooter');
+});
+
 //Formulario peque ruta
 Route::get('/pequeruta', function () {
     return view('forms.rutaPequeForm');
