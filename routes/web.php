@@ -7,6 +7,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\EventUserController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SubscriptionController;
 use Illuminate\Support\Facades\Route;
@@ -60,6 +61,30 @@ Route::get('/user', function () {
     return view('user.index');
 })->name('user.index');
 
+Route::get('/rutas', function () {
+    return view('rutas.index');
+})->name('rutas.index');
+
+Route::get('/talleres', function () {
+    return view('talleres.index');
+})->name('talleres.index');
+
+Route::get('/libros', function () {
+    return view('libros.index');
+})->name('libros.index');
+
+Route::get('/pagos', function () {
+    return view('pagos.index');
+})->name('pagos.index');
+
+Route::get('/roles', function () {
+    return view('roles.index');
+})->name('roles.index');
+
+Route::get('/logout', function () {
+    return view('logout.index');
+})->name('logout.index');
+
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 Route::get('/logout', [LoginController::class, 'logout'])
@@ -73,7 +98,7 @@ Route::post('/register', [LoginController::class, 'register']);
 // Route::get('/email/verify/{id}/{hash}', [VerificationController::class, 'verify'])->name('verification.verify');
 // Route::post('/email/resend', [VerificationController::class, 'resend'])->name('verification.resend');
 
-Route::view('/profile', "user.profile")->middleware('auth')->name('profile');
+Route::get('/profile', [UserController::class, 'showProfile'])->middleware('auth')->name('user.profile');
 
 //Children
 Route::get('/children-index', [ChildrenController::class, 'indexChildren'])->name('children.index');
@@ -82,7 +107,7 @@ Route::post('/children-store', [ChildrenController::class, 'storeChildren'])->na
 Route::get('/children-edit/{id}', [ChildrenController::class, 'editChildren'])->name('children.edit');
 Route::put('/children-update/{id}', [ChildrenController::class, 'updateChildren'])->name('children.update');
 Route::get('/children-show', [ChildrenController::class, 'showChildren'])->name('children.show');
-Route::get('/children-destroy/{id}', [ChildrenController::class, 'destroyChildren'])->name('children.destroy');
+Route::delete('/children-destroy/{id}', [ChildrenController::class, 'destroyChildren'])->name('children.destroy');
 
 //Categories
 Route::get('/category-index', [CategoryController::class, 'indexCategory'])->name('categories.index');
@@ -115,13 +140,13 @@ Route::get('/eventUser-show', [EventUserController::class, 'showEventUser'])->na
 Route::get('/eventUser-destroy/{id}', [EventUserController::class, 'destroyEventUser'])->name('eventUser.destroy');
 
 //Associated
-Route::get('/associated-index', [AssociatedController::class, 'indexAssociated'])->name('associated.index');
-Route::get('/associated-create', [AssociatedController::class, 'createAssociated'])->name('associated.create');
+Route::match(['get', 'post'], '/associated-index', [AssociatedController::class, 'indexAssociated'])->name('associated.index');
+Route::post('/associated-create', [AssociatedController::class, 'createAssociated'])->name('associated.create');
 Route::post('/associated-store', [AssociatedController::class, 'storeAssociated'])->name('associated.store');
 Route::get('/associated-edit/{id}', [AssociatedController::class, 'editAssociated'])->name('associated.edit');
 Route::put('/associated-update/{id}', [AssociatedController::class, 'updateAssociated'])->name('associated.update');
 Route::get('/associated-show', [AssociatedController::class, 'showAssociated'])->name('associated.show');
-Route::get('/associated-destroy/{id}', [AssociatedController::class, 'destroyAssociated'])->name('associated.destroy');
+Route::delete('/associated-destroy/{id}', [AssociatedController::class, 'destroyAssociated'])->name('associated.destroy');
 
 //BLOG
 // Ruta para mostrar todos los blogs

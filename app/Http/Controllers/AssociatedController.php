@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Auth;
 
 class AssociatedController extends Controller
 {
-    public function indexAssociated() {
-
+    public function indexAssociated() 
+    {
         $associated = Associated::paginate(10);
         return view('associated.index', ['associated' => $associated]);
     }
@@ -47,13 +47,15 @@ class AssociatedController extends Controller
         return view('associated.show', compact('associated'));
     }
 
-    public function edit(Associated $associated)
+    public function editAssociated($id)
     {
-        return view('associated.edit', compact('associated'));
+        $associated = Associated::findOrFail($id);
+        return view('associated.edit', ['associated' => $associated]);
     }
 
-    public function update(Request $request, Associated $associated)
+    public function updateAssociated(Request $request, $id)
     {
+        $associated = Associated::findOrFail($id);
         $associated->situacion = $request->input('situacion');
         $associated->email_comunicacion_directa = $request->input('email_comunicacion_directa');
         $associated->beca_comedor = $request->input('beca_comedor');
@@ -70,13 +72,30 @@ class AssociatedController extends Controller
         return redirect()->route('associated.index')->with('success', 'Asociado actualizado correctamente');
     }
 
-    public function destroy(Associated $associated)
-    {
-        if($associated->user_id != Auth::user()->id) {
-            return redirect()->back()->withErrors('No tienes permiso para eliminar este asociado');
-        }
+    // public function destroyAssociated(Associated $associated)
+    // {
+    //     if($associated->user_id != Auth::user()->id) {
+    //         return redirect()->back()->withErrors('No tienes permiso para eliminar este asociado');
+    //     }
 
-        $associated->delete();
-        return redirect()->route('associated.index')->with('success', 'Asociado eliminado correctamente');
+    //     $associated->delete();
+    //     return redirect()->route('associated.index')->with('success', 'Asociado eliminado correctamente');
+    // }
+
+    public function destroyAssociated($id)
+{
+    $associated = Associated::find($id);
+
+    if (!$associated) {
+        return redirect()->route('associated.index')->withErrors('El asociado no existe');
     }
+
+    // if($associated->user_id != Auth::user()->id) {
+    //     return redirect()->back()->withErrors('No tienes permiso para eliminar este asociado');
+    // }
+
+    $associated->delete();
+    return redirect()->route('associated.index')->with('success', 'Asociado eliminado correctamente');
+}
+
 }
