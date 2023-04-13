@@ -1,0 +1,1 @@
+esta es la vista index de events
