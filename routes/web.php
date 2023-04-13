@@ -7,6 +7,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\EventUserController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SubscriptionController;
 use Illuminate\Support\Facades\Route;
@@ -102,7 +103,7 @@ Route::post('/register', [LoginController::class, 'register']);
 // Route::get('/email/verify/{id}/{hash}', [VerificationController::class, 'verify'])->name('verification.verify');
 // Route::post('/email/resend', [VerificationController::class, 'resend'])->name('verification.resend');
 
-Route::view('/profile', "user.profile")->middleware('auth')->name('profile');
+Route::get('/profile', [UserController::class, 'showProfile'])->middleware('auth')->name('user.profile');
 
 //Children
 Route::get('/children-index', [ChildrenController::class, 'indexChildren'])->name('children.index');
@@ -111,7 +112,7 @@ Route::post('/children-store', [ChildrenController::class, 'storeChildren'])->na
 Route::get('/children-edit/{id}', [ChildrenController::class, 'editChildren'])->name('children.edit');
 Route::put('/children-update/{id}', [ChildrenController::class, 'updateChildren'])->name('children.update');
 Route::get('/children-show', [ChildrenController::class, 'showChildren'])->name('children.show');
-Route::get('/children-destroy/{id}', [ChildrenController::class, 'destroyChildren'])->name('children.destroy');
+Route::delete('/children-destroy/{id}', [ChildrenController::class, 'destroyChildren'])->name('children.destroy');
 
 //Categories
 Route::get('/category-index', [CategoryController::class, 'indexCategory'])->name('categories.index');

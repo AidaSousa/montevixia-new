@@ -70,7 +70,7 @@
                     <br/>
                     <br/>
 					<div class="row">
-                        @include('children.index')
+                        @include('children.index', ['children' => $children])
 					
 					</div>
 				</div>
