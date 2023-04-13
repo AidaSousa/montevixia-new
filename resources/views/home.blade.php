@@ -8,7 +8,7 @@
 	<section class="section-slide">
 		<div class="wrap-slick1 rs1-slick1">
 			<div class="slick1">
-				<div class="item-slick1" style="background-image: url(img/img-1.jpg);">
+				<div class="item-slick1" style="background-image: url(img/comedor.jpeg);">
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30">
 							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
@@ -16,8 +16,8 @@
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
-								<h2 class="ltext-104 cl2 p-t-19 p-b-43 text-white respon1">
-									Actividades
+								<h2 class="ltext-104 cl2 p-t-19 p-b-43 respon1">
+									Comedor
 								</h2>
 							</div>
 								
@@ -61,7 +61,7 @@
 								
 							<div class="layer-slick1 animated visible-false" data-appear="rotateInUpRight" data-delay="800">
 								<h2 class="ltext-104 cl2 p-t-19 p-b-43 text-white respon1">
-									Excursiones
+									Pequerutas
 								</h2>
 							</div>
 								
@@ -86,9 +86,11 @@
 				<h3 class="ltext-105 cl5 txt-center respon1">
 					ÚLTIMAS ACTIVIDADES
 				</h3>
+
+				@include('components.calendar')
 			</div>
 
-			@include('components.calendar')
+			
 
 			<!-- Tab01 -->
 			<div class="tab01">
@@ -134,7 +136,11 @@
 									<!-- Block2 -->
 									<div class="block2">
 										<div class="block2-pic hov-img0">
+<<<<<<< HEAD
 											<img src="img/img-1.jpg" alt="IMG-PRODUCT">
+=======
+										<img src="img/img-1.jpg" alt="IMG-PRODUCT">
+>>>>>>> 7c4605f43869097af0b621ef828ab3ef3509b1c7
 
 											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 												Inscribese
@@ -197,99 +203,60 @@
 		<div class="container">
 			<div class="p-b-66">
 				<h3 class="ltext-105 cl5 txt-center respon1">
-					ÚLTIMAS ENTRADAS BLOG
+					ÚLTIMAS ENTRADAS AL BLOG
 				</h3>
 			</div>
 
 			<div class="row">
-				<div class="col-sm-6 col-md-4 p-b-40">
-					<div class="blog-item">
-						<div class="hov-img0">
-							<a href="blog-detail.html">
-								<img src="img/img-15.jpeg" height="430" alt="IMG-BLOG">
-							</a>
-						</div>
 
-						<div class="p-t-15">
-							<div class="stext-107 flex-w p-b-14">
-								<span class="m-r-3">
-									<span class="cl4">
-										Por
-									</span>
+		@foreach($latest_blogs as $blog)
 
-									<span class="cl5">
-										Marta Suarez
-									</span>
-								</span>
-
-								<span>
-									<span class="cl4">
-										el
-									</span>
-
-									<span class="cl5">
-										22 de Junio 2017 
-									</span>
-								</span>
-							</div>
-
-							<h4 class="p-b-12">
-								<a href="blog-detail.html" class="mtext-101 cl2 hov-cl1 trans-04">
-								8 maneras inspiradoras de llevar vestidos en invierno
-								</a>
-							</h4>
-
-							<p class="stext-108 cl6">
-								Duis ut velit gravida nibh bibendum commodo. Suspendisse pellentesque mattis augue id euismod. Interdum et male-suada fames
-							</p>
-						</div>
+			<div class="col-sm-6 col-md-4 p-b-40">
+				<div class="blog-item">
+					<div class="hov-img0">
+						<a href="{{ route('blogs.show', $blog->id) }}">
+							<img class="w-100 custom-img" src="{{ asset($blog->image_path) }}" alt="Imagen del blog">
+						</a>
 					</div>
-				</div>
+					<div class="p-t-15">
+					<div class="stext-107 flex-w p-b-14">
+						<span class="m-r-3">
+							<span class="cl4">
+								Por
+							</span>
 
-				<div class="col-sm-6 col-md-4 p-b-40">
-					<div class="blog-item">
-						<div class="hov-img0">
-							<a href="blog-detail.html">
-								<img src="img/img-16.jpeg" alt="IMG-BLOG">
-							</a>
-						</div>
+							<span class="cl5">
+							{{ isset($blog->author) ? $blog->author : 'Administrador' }}
+							</span>
+						</span>
 
-						<div class="p-t-15">
-							<div class="stext-107 flex-w p-b-14">
-								<span class="m-r-3">
-									<span class="cl4">
-										Por
-									</span>
+						<span>
+							<span class="cl4">
+								El
+							</span>
 
-									<span class="cl5">
-										Pedro Hernandez
-									</span>
-								</span>
-
-								<span>
-									<span class="cl4">
-										El
-									</span>
-
-									<span class="cl5">
-										23 de Noviembre 2020
-									</span>
-								</span>
-							</div>
-
-							<h4 class="p-b-12">
-								<a href="blog-detail.html" class="mtext-101 cl2 hov-cl1 trans-04">
-								La gran lista de regalos masculinos para estas fiestas
-								</a>
-							</h4>
-
-							<p class="stext-108 cl6">
-								Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit ame
-							</p>
-						</div>
+							<span class="cl5">
+							{{ $blog->created_at?->format('d \d\e F Y') }}
+							</span>
+						</span>
 					</div>
-				</div>
 
+					<h4 class="p-b-12">
+						<a href="{{ route('blogs.show', $blog->id) }}" class="mtext-101 cl2 hov-cl1 trans-04">
+							{{ $blog->title }}
+						</a>
+					</h4>
+
+					<p class="stext-108 cl6 text-justify">
+						{{ Str::limit($blog->content, 150) }}
+					</p>
+
+				</div>
+			</div>
+			</div>
+@endforeach
+
+<!-- 
 				<div class="col-sm-6 col-md-4 p-b-40">
 					<div class="blog-item">
 						<div class="hov-img0">
@@ -332,7 +299,7 @@
 							</p>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>

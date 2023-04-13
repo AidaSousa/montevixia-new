@@ -11,6 +11,8 @@ use Illuminate\Support\Str;
 use App\Mail\VerifyEmail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\URL;
+use Stripe\Stripe;
+use Stripe\Customer;
 
 class LoginController extends Controller
 {
@@ -39,9 +41,21 @@ class LoginController extends Controller
 
         $user->save();
 
+        Stripe::setApiKey(env('STRIPE_SECRET'));
+        $customer = Customer::create([
+            'email' => $request->email,
+            // Puedes añadir más datos del cliente en Stripe aquí, por ejemplo:
+            // 'name' => $request->name,
+            // 'surname' => $request->surname,
+        ]);
+
+        // Asociar el identificador del cliente de Stripe al usuario
+        $user->stripe_customer_id = $customer->id;
+        $user->save();
+
         Auth::login($user);
 
-        return redirect()->to('/profile');
+        return redirect()->route('user.profile');
 
         //Envía el correo electrónico de verificación al usuario
 
@@ -91,6 +105,6 @@ class LoginController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->to('/home');
+        return redirect()->to('/');
     }
 }
