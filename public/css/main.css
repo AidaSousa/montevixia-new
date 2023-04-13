@@ -2999,6 +2999,12 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 /*---------------------------------------------*/
+.blog-image {
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
 .hov-img0 img.custom-img {
   width: 100%; /* El ancho será igual al contenedor padre */
   height: 250px; /* Altura fija de 300px */
