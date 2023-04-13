@@ -20,7 +20,7 @@
                                 <h2>{{ $blog->title }}</h2>
                             </a>
                         </h4>
-                        <a href="blog-detail.html" class="hov-img0 how-pos5-parent">
+                        <a href="{{ route('blogs.show', $blog->id) }}" class="hov-img0 how-pos5-parent">
                             <img src="{{ asset($blog->image_path) }}" alt="Imagen del blog" class="blog-image">
                         </a>
                         <p class="stext-117 cl6">
