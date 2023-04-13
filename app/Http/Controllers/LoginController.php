@@ -11,6 +11,8 @@ use Illuminate\Support\Str;
 use App\Mail\VerifyEmail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\URL;
+use Stripe\Stripe;
+use Stripe\Customer;
 
 class LoginController extends Controller
 {
@@ -37,6 +39,18 @@ class LoginController extends Controller
         $user->role_id = $request->role_id;
         // $user->email_verification_token = Str::random(32); //Genera un token de verificación único
 
+        $user->save();
+
+        Stripe::setApiKey(env('STRIPE_SECRET'));
+        $customer = Customer::create([
+            'email' => $request->email,
+            // Puedes añadir más datos del cliente en Stripe aquí, por ejemplo:
+            // 'name' => $request->name,
+            // 'surname' => $request->surname,
+        ]);
+
+        // Asociar el identificador del cliente de Stripe al usuario
+        $user->stripe_customer_id = $customer->id;
         $user->save();
 
         Auth::login($user);
