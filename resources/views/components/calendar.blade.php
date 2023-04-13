@@ -1,14 +1,17 @@
 
-	<div class="container">
+<div class="container">
+  
+  <div class="row">
 
-		<div class="card">
-		
-		<div id='calendar'></div>
+    <div class="col-12 col-md-6 col-lg-6 mx-auto">
+     
+        <div id="calendar"></div>
+      
+    </div>
 
-		<div>
+  </div>
 
-
-	</div>
+</div>
 
 @push('scripts')
 

@@ -86,9 +86,11 @@
 				<h3 class="ltext-105 cl5 txt-center respon1">
 					ÚLTIMAS ACTIVIDADES
 				</h3>
+
+				@include('components.calendar')
 			</div>
 
-			@include('components.calendar')
+			
 
 			<!-- Tab01 -->
 			<div class="tab01">
@@ -134,6 +136,7 @@
 									<!-- Block2 -->
 									<div class="block2">
 										<div class="block2-pic hov-img0">
+										<img src="img/img-1.jpg" alt="IMG-PRODUCT">
 
 											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 												Inscribese
