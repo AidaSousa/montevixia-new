@@ -15,7 +15,7 @@
 								<div class="mt-3">
 									<h4>{{ auth()->user()->name }}</h4>
 									<p class="text-secondary mb-1">{{auth()->user()->surname }}</p>
-									<a class="btn btn-primary text-white btn-custom" href="{{ route('subscription.index') }}">Hacerme socio</a>
+									<a class="btn btn-primary text-white btn-custom" href="{{ route('subscription.index') }}" style="background-color: #009284; border: 1px solid #009284;">Hacerme socio</a>
                                     
 									<form action="{{ route('subscription.cancel') }}" method="post">
     								@csrf {{-- Agrega el token CSRF --}}
@@ -69,7 +69,7 @@
 							<div class="row">
 								<div class="col-sm-3"></div>
 								<div class="col-sm-9 text-secondary">
-                                    <button type="submit" class="btn btn-primary px-4">Guardar cambios</button>
+                                    <button type="submit" class="btn btn-primary px-4" style="background-color: #009284; border: 1px solid #009284;">Guardar cambios</button>
 								</div>
 							</div>
 						</div>

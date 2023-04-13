@@ -44,13 +44,11 @@ class LoginController extends Controller
         Stripe::setApiKey(env('STRIPE_SECRET'));
         $customer = Customer::create([
             'email' => $request->email,
-            // Puedes añadir más datos del cliente en Stripe aquí, por ejemplo:
-            // 'name' => $request->name,
-            // 'surname' => $request->surname,
+            'name' => $request->name,
         ]);
 
         // Asociar el identificador del cliente de Stripe al usuario
-        $user->stripe_customer_id = $customer->id;
+        $user->stripe_id = $customer->id;
         $user->save();
 
         Auth::login($user);
