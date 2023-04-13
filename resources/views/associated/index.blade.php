@@ -44,13 +44,12 @@
                           <td>{{$asso->colaboracion_ampa}}</td>
                           <td>
                           <div class="d-flex">
-                            <a href="#" data-toggle="modal" data-target="#ModalEdit" class="btn btn-info ml-3" type="button" onclick="openModal();">Editar</a>
-                          </div>
+                            <a href="{{ route('associated.edit', $asso->id) }}" class="btn btn-sm btn-primary">Editar</a>                          </div>
                             <form method="POST" action="{{ route('associated.destroy', $asso->id) }}" style="display:inline">
                               {{ csrf_field() }}
                               {{ method_field('DELETE') }}
                           <div class="d-flex">
-                            <a href="#" data-toggle="modal" data-target="#ModalDestroy" class="btn btn-danger ml-3" type="button" onclick="openModal();">Eliminar</a>
+                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('¿Estás seguro de que quieres eliminar este asociado?')">Eliminar</button>
                           </div>
                             </form>
                           </td>

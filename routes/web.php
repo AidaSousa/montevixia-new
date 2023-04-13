@@ -7,6 +7,8 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\EventUserController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SubscriptionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,18 +22,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-<<<<<<< HEAD
-Route::get('/create', function () {
-    return view('ModalCreate');
-=======
 //vista contacto footer
 Route::get('/contacto', function () {
     return view('footer.contactoFooter');
->>>>>>> cbd470317a81cd57976ac911e459af3b54d267fc
 });
 
 
@@ -49,17 +44,10 @@ Route::get('/asociate', function () {
     return view('associated.formAsociate');
 });
 
-<<<<<<< HEAD
-Route::get('/emails', function () {
-    return view('emails.index');
-})->name('emails.index');
-
-=======
 //Formulario banco libros
 Route::get('/bancolibros', function () {
     return view('forms.banco-libros');
 });
->>>>>>> cbd470317a81cd57976ac911e459af3b54d267fc
 
 Route::get('/dash', function () {
     return view('user.index', ['user' => app()->make('App\Http\Controllers\UserController')->userIndex()]);
@@ -159,7 +147,7 @@ Route::post('/associated-store', [AssociatedController::class, 'storeAssociated'
 Route::get('/associated-edit/{id}', [AssociatedController::class, 'editAssociated'])->name('associated.edit');
 Route::put('/associated-update/{id}', [AssociatedController::class, 'updateAssociated'])->name('associated.update');
 Route::get('/associated-show', [AssociatedController::class, 'showAssociated'])->name('associated.show');
-Route::get('/associated-destroy/{id}', [AssociatedController::class, 'destroyAssociated'])->name('associated.destroy');
+Route::delete('/associated-destroy/{id}', [AssociatedController::class, 'destroyAssociated'])->name('associated.destroy');
 
 //BLOG
 // Ruta para mostrar todos los blogs
@@ -167,10 +155,10 @@ Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
 
 
 // Ruta para mostrar el formulario de creación de un blog
-Route::get('/blog/create', [BlogController::class, 'create'])->name('posts.create');
+Route::get('/blog/create', [BlogController::class, 'create'])->name('blog.create');
 
 // Ruta para guardar un nuevo blog
-Route::post('/blog', [BlogController::class, 'store'])->name('posts.store');
+Route::post('/blog', [BlogController::class, 'store'])->name('blog.store');
 
 // Ruta para mostrar un blog específico
 Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blogs.show');
@@ -183,6 +171,19 @@ Route::put('/blog/{id}', [BlogController::class, 'update'])->name('posts.update'
 
 // Ruta para eliminar un blog
 Route::delete('/blog/{id}', [BlogController::class, 'destroy'])->name('posts.destroy');
+
+//Stripe
+Route::post('/create-checkout-session', 'StripeController@createCheckoutSession');
+
+//Ruta para la página de suscripción
+Route::get('/suscripcion', [SubscriptionController::class, 'index'])->name('subscription.index');
+Route::post('/suscripcion/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscription.subscribe');
+Route::post('/stripe/webhook', 'WebhookController@handleWebhook');
+
+//Ruta para la página de suscripción
+Route::get('/suscripcion', [SubscriptionController::class, 'index'])->name('subscription.index');
+Route::post('/suscripcion/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscription.subscribe');
+Route::post('/stripe/webhook', 'WebhookController@handleWebhook');
 
 //Calendario
 Route::get('/calendar', function () {

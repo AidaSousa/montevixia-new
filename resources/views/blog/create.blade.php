@@ -1,10 +1,10 @@
-@extends('layouts.layout')
+@extends('dashboard')
 
 @section('content')
 <div class="container">
     <h1>Crear nuevo Blog</h1>
 
-    <form action="{{ route('blogs.store') }}" method="post" enctype="multipart/form-data">
+    <form action="{{ route('blog.store') }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="title">Título</label>
@@ -19,6 +19,10 @@
         <div class="form-group">
             <label for="image">Imagen</label>
             <input type="file" name="image" id="image" class="form-control-file">
+        </div>
+        <div class="form-group">
+            <label for="category">Categoría</label>
+            <input type="text" name="category" id="category" class="form-control">
         </div>
 
         <button type="submit" class="btn btn-primary">Crear Blog</button>

@@ -18,7 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Main CSS-->
-    <link rel="stylesheet" type="text/css" href="css/main.temp.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.temp.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -109,9 +109,10 @@
             <li><a class="treeview-item" href="{{ route('libros.index') }}"><i class="icon fa fa-circle-o"></i> Libros</a></li>
           </ul>
         </li>
+        <li><a class="app-menu__item" href="{{ route('blog.create') }}"><i class="app-menu__icon fas fa-blog"></i><span class="app-menu__label">Blog</span></a>
         <li><a class="app-menu__item" href="{{ route('pagos.index') }}"><i class="app-menu__icon fa fas fa-eur"></i><span class="app-menu__label">Pagos</span></a>
         </li>
-        <li><a class="app-menu__item" href="{{ route('emails.index') }}"><i class="app-menu__icon fa fa-send"></i><span class="app-menu__label">E-mail</span></a>
+        <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-send"></i><span class="app-menu__label">E-mail</span></a>
         </li>
         <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-sign-out"></i><span class="app-menu__label">Logout</span></a>
         </li>
