@@ -107,5 +107,5 @@ Route::post('/associated-store', [AssociatedController::class, 'storeAssociated'
 Route::get('/associated-edit/{id}', [AssociatedController::class, 'editAssociated'])->name('associated.edit');
 Route::put('/associated-update/{id}', [AssociatedController::class, 'updateAssociated'])->name('associated.update');
 Route::get('/associated-show', [AssociatedController::class, 'showAssociated'])->name('associated.show');
-Route::get('/associated-destroy/{id}', [AssociatedController::class, 'destroyAssociated'])->name('associated.destroy');
+Route::delete('/associated-destroy/{id}', [AssociatedController::class, 'destroyAssociated'])->name('associated.destroy');
 
