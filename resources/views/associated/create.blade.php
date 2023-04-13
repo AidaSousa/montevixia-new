@@ -1,4 +1,4 @@
-<form method="POST" enctype="multipart/form-data" action="{{ route('associated.store') }}">
+<form class="form-horizontal" method="POST" enctype="multipart/form-data" action="{{ route('associated.store') }}">
   <div class="modal fade text-left" id="ModalCreate" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
@@ -11,7 +11,6 @@
             <div class="col-md-12 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <form class="form-horizontal" method="POST" action="{{ route('associated.store') }}"  enctype="multipart/form-data">
                             {{ csrf_field() }}
                             <div class="form-group{{ $errors->has('situacion') ? ' has-error' : '' }}">
                                 <label for="situacion" class="col-md-4 control-label">Situación</label>
@@ -123,7 +122,6 @@
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                     </div>
                                 </div>
-                        </form>
                     </div>
                 </div>
             </div>
