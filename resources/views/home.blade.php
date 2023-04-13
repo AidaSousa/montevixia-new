@@ -8,7 +8,7 @@
 	<section class="section-slide">
 		<div class="wrap-slick1 rs1-slick1">
 			<div class="slick1">
-				<div class="item-slick1" style="background-image: url(img/img-1.jpg);">
+				<div class="item-slick1" style="background-image: url(img/comedor.jpeg);">
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30">
 							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
@@ -16,8 +16,8 @@
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
-								<h2 class="ltext-104 cl2 p-t-19 p-b-43 text-white respon1">
-									Actividades
+								<h2 class="ltext-104 cl2 p-t-19 p-b-43 respon1">
+									Comedor
 								</h2>
 							</div>
 								
@@ -61,7 +61,7 @@
 								
 							<div class="layer-slick1 animated visible-false" data-appear="rotateInUpRight" data-delay="800">
 								<h2 class="ltext-104 cl2 p-t-19 p-b-43 text-white respon1">
-									Excursiones
+									Pequerutas
 								</h2>
 							</div>
 								
