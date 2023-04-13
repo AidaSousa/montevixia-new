@@ -28,6 +28,6 @@
         </select>
     </div>
     <div>
-        <button class="btn btn-primary btn-custom px-4 mt-3" type="submit">Editar</button>
+        <button class="btn btn-success btn-custom px-4 mt-3" type="submit">Editar</button>
     </div>
 </form>
