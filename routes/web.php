@@ -45,6 +45,12 @@ Route::get('/extraescolares', function () {
     return view('activities.extraescolares');
 });
 
+//vista Actividades Culturales
+Route::get('/culturales', function () {
+    return view('activities.culturales');
+});
+
+
 //Formulario banco libros
 Route::get('/banco-libros', function () {
     return view('forms.banco-libros');
