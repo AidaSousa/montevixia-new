@@ -30,7 +30,6 @@ Route::get('/contacto', function () {
 });
 
 
-
 //Formulario peque ruta
 Route::get('/pequeruta', function () {
     return view('forms.rutaPequeForm');
@@ -39,6 +38,11 @@ Route::get('/pequeruta', function () {
 //vista excursion
 Route::get('/excursion', function () {
     return view('activities.excursion');
+});
+
+//vista Actividades extraescolares
+Route::get('/extraescolares', function () {
+    return view('activities.extraescolares');
 });
 
 //Formulario banco libros
