@@ -2999,6 +2999,12 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 /*---------------------------------------------*/
+.hov-img0 img.custom-img {
+  width: 100%; /* El ancho será igual al contenedor padre */
+  height: 250px; /* Altura fija de 300px */
+  object-fit: cover; /* Ajustar y recortar la imagen para llenar el contenedor */
+}
+
 .how-bor2,
 .how-bor1 {
   position: relative;

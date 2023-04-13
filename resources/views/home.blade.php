@@ -203,46 +203,52 @@
 
 			<div class="row">
 
-				@foreach($latest_blogs as $blog)
+		@foreach($latest_blogs as $blog)
 
-					<div class="col-sm-6 col-md-4 p-b-40">
-						<div class="blog-item">
-
-						<div class="p-t-15">
-							<div class="stext-107 flex-w p-b-14">
-								<span class="m-r-3">
-									<span class="cl4">
-										Por
-									</span>
-
-									<span class="cl5">
-										{{ $blog->author }}
-									</span>
-								</span>
-
-								<span>
-									<span class="cl4">
-										El
-									</span>
-
-									
-								</span>
-							</div>
-
-							<h4 class="p-b-12">
-								<a href="{{ route('blogs.show', $blog->id) }}" class="mtext-101 cl2 hov-cl1 trans-04">
-									{{ $blog->title }}
-								</a>
-							</h4>
-
-							<p class="stext-108 cl6">
-								{{ Str::limit($blog->content, 250) }}
-							</p>
-
-						</div>
+			<div class="col-sm-6 col-md-4 p-b-40">
+				<div class="blog-item">
+					<div class="hov-img0">
+						<a href="{{ route('blogs.show', $blog->id) }}">
+							<img class="w-100 custom-img" src="{{ asset($blog->image_path) }}" alt="Imagen del blog">
+						</a>
 					</div>
+					<div class="p-t-15">
+					<div class="stext-107 flex-w p-b-14">
+						<span class="m-r-3">
+							<span class="cl4">
+								Por
+							</span>
+
+							<span class="cl5">
+							{{ isset($blog->author) ? $blog->author : 'Administrador' }}
+							</span>
+						</span>
+
+						<span>
+							<span class="cl4">
+								El
+							</span>
+
+							<span class="cl5">
+							{{ $blog->created_at?->format('d \d\e F Y') }}
+							</span>
+						</span>
 					</div>
-					@endforeach
+
+					<h4 class="p-b-12">
+						<a href="{{ route('blogs.show', $blog->id) }}" class="mtext-101 cl2 hov-cl1 trans-04">
+							{{ $blog->title }}
+						</a>
+					</h4>
+
+					<p class="stext-108 cl6 text-justify">
+						{{ Str::limit($blog->content, 150) }}
+					</p>
+
+				</div>
+			</div>
+			</div>
+@endforeach
 
 <!-- 
 				<div class="col-sm-6 col-md-4 p-b-40">
