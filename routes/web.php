@@ -36,6 +36,11 @@ Route::get('/pequeruta', function () {
     return view('forms.rutaPequeForm');
 });
 
+//vista excursion
+Route::get('/excursion', function () {
+    return view('activities.excursion');
+});
+
 //Formulario banco libros
 Route::get('/banco-libros', function () {
     return view('forms.banco-libros');

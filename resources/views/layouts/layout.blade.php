@@ -67,7 +67,7 @@
 								<ul class="sub-menu">
 									<li><a href="index.html">Actividades culturales</a></li>
 									<li><a href="home-02.html">Actividades extraescolares</a></li>
-									<li><a href="home-03.html">Excursiones</a></li>
+									<li><a href="/excursion">Excursiones</a></li>
 								</ul>
 
 						</li>
