@@ -8,7 +8,7 @@
       <div class="app-title">
         <div class="d-flex">
           <h1><i class="fa fa-users"></i> Asociados</h1>
-          <a href="{{ route('associated.create') }}" class="btn btn-primary ml-3" type="button" onclick="openModal();"><i class="fa fa-plus"></i>Nuevo</a>
+          <a href="{{ route('associated.create') }}" type="button" class="btn btn-primary ml-3" data-toggle="modal" data-target="#ModalCreate" type="button"><i class="fa fa-plus"></i>Nuevo</a>
         </div>
       </div>
       
@@ -43,11 +43,15 @@
                           <td>{{$asso->beca_comedor}}</td>
                           <td>{{$asso->colaboracion_ampa}}</td>
                           <td>
-                            <a href="{{ route('associated.edit', $asso->id) }}" class="btn btn-sm btn-primary">Editar</a>
+                          <div class="d-flex">
+                            <a href="#" data-toggle="modal" data-target="#ModalEdit" class="btn btn-info ml-3" type="button" onclick="openModal();">Editar</a>
+                          </div>
                             <form method="POST" action="{{ route('associated.destroy', $asso->id) }}" style="display:inline">
                               {{ csrf_field() }}
                               {{ method_field('DELETE') }}
-                              <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('¿Estás seguro de que quieres eliminar este asociado?')">Eliminar</button>
+                          <div class="d-flex">
+                            <a href="#" data-toggle="modal" data-target="#ModalDestroy" class="btn btn-danger ml-3" type="button" onclick="openModal();">Eliminar</a>
+                          </div>
                             </form>
                           </td>
                         </tr>
@@ -59,7 +63,5 @@
               </div>
             </div>
         </div>
-
-
-
+@include('associated.create')
 @endsection
