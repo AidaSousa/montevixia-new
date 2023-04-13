@@ -41,7 +41,7 @@ class LoginController extends Controller
 
         Auth::login($user);
 
-        return redirect()->to('/profile');
+        return redirect()->route('user.profile');
 
         //Envía el correo electrónico de verificación al usuario
 
