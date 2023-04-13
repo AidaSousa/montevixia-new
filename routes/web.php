@@ -65,6 +65,30 @@ Route::get('/user', function () {
     return view('user.index');
 })->name('user.index');
 
+Route::get('/rutas', function () {
+    return view('rutas.index');
+})->name('rutas.index');
+
+Route::get('/talleres', function () {
+    return view('talleres.index');
+})->name('talleres.index');
+
+Route::get('/libros', function () {
+    return view('libros.index');
+})->name('libros.index');
+
+Route::get('/pagos', function () {
+    return view('pagos.index');
+})->name('pagos.index');
+
+Route::get('/roles', function () {
+    return view('roles.index');
+})->name('roles.index');
+
+Route::get('/logout', function () {
+    return view('logout.index');
+})->name('logout.index');
+
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 Route::get('/logout', [LoginController::class, 'logout'])
@@ -117,13 +141,13 @@ Route::get('/eventUser-show', [EventUserController::class, 'showEventUser'])->na
 Route::get('/eventUser-destroy/{id}', [EventUserController::class, 'destroyEventUser'])->name('eventUser.destroy');
 
 //Associated
-Route::get('/associated-index', [AssociatedController::class, 'indexAssociated'])->name('associated.index');
-Route::get('/associated-create', [AssociatedController::class, 'createAssociated'])->name('associated.create');
+Route::match(['get', 'post'], '/associated-index', [AssociatedController::class, 'indexAssociated'])->name('associated.index');
+Route::post('/associated-create', [AssociatedController::class, 'createAssociated'])->name('associated.create');
 Route::post('/associated-store', [AssociatedController::class, 'storeAssociated'])->name('associated.store');
 Route::get('/associated-edit/{id}', [AssociatedController::class, 'editAssociated'])->name('associated.edit');
 Route::put('/associated-update/{id}', [AssociatedController::class, 'updateAssociated'])->name('associated.update');
 Route::get('/associated-show', [AssociatedController::class, 'showAssociated'])->name('associated.show');
-Route::get('/associated-destroy/{id}', [AssociatedController::class, 'destroyAssociated'])->name('associated.destroy');
+Route::delete('/associated-destroy/{id}', [AssociatedController::class, 'destroyAssociated'])->name('associated.destroy');
 
 //BLOG
 // Ruta para mostrar todos los blogs
