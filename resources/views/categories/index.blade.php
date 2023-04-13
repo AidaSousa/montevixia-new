@@ -8,7 +8,7 @@
       <div class="app-title">
         <div class="d-flex">
           <h1><i class="fa fa-archive"></i> Categorias</h1>
-          <a href="{{ route('associated.create') }}" class="btn btn-primary ml-3" type="button" onclick="openModal();"><i class="fa fa-plus"></i>Nuevo</a>
+          <a href="{{ route('categories.create') }}" class="btn btn-primary ml-3" type="button" onclick="openModal();"><i class="fa fa-plus"></i>Nuevo</a>
         </div>
       </div>
       
@@ -26,21 +26,24 @@
                         </tr>
                       </thead>
                       <tbody>
+                        @foreach($categories as $category)
                         <tr>
-                          <td>1</td>
-                          <td>Excursiones</td>
-                          <td></td>
+                        <td>{{$category->id}}</td>
+                          <td>{{$category->name}}</td>
+                          <td>
+                          <div class="d-flex">
+                            <a href="{{ route('categories.edit', $category->id) }}" class="btn btn-sm btn-primary">Editar</a>
+                          </div>
+                            <form method="POST" action="{{ route('categories.destroy', $category->id) }}" style="display:inline">
+                              {{ csrf_field() }}
+                              {{ method_field('DELETE') }}
+                          <div class="d-flex">
+                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('¿Estás seguro de que quieres eliminar esta categoría?')">Eliminar</button>
+                          </div>
+                            </form>
+                          </td>
                         </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>Comedor</td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>Talleres</td>
-                          <td></td>
-                        </tr>
+                        @endforeach
                       </tbody>
                     </table>
                     </div>

@@ -132,7 +132,7 @@ Route::post('/category-store', [CategoryController::class, 'storeCategory'])->na
 Route::get('/category-edit/{id}', [CategoryController::class, 'editCategory'])->name('categories.edit');
 Route::put('/category-update/{id}', [CategoryController::class, 'updateCategory'])->name('categories.update');
 Route::get('/category-show', [CategoryController::class, 'showCategory'])->name('categories.show');
-Route::get('/category-destroy/{id}', [CategoryController::class, 'destroyCategory'])->name('categories.destroy');
+Route::delete('/category-destroy/{id}', [CategoryController::class, 'destroyCategory'])->name('categories.destroy');
 
 //Events
 Route::get('/event-index', [EventController::class, 'indexEvent'])->name('events.index');
