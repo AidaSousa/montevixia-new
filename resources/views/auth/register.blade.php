@@ -32,35 +32,35 @@
   @csrf
   <div class="form-group ">
     <label for="name" class="col-md-4 mt-3 control-label">Nombre</label>
-    <div class="col-md-8 ">
+    <div class="col-md-12 ">
       <input type="text" name="name" class="form-control" required>
     </div>
   </div>
 
   <div class="form-group">
     <label for="surname" class="col-md-4 control-label">Apellido</label>
-    <div class="col-md-8">
+    <div class="col-md-12">
       <input type="text" name="surname" class="form-control">
     </div>
   </div>
 
   <div class="form-group">
     <label for="email" class="col-md-4 control-label">Email</label>
-    <div class="col-md-8">
+    <div class="col-md-12">
       <input type="email" name="email" class="form-control" required>
     </div>
   </div>
 
   <div class="form-group">
     <label for="password" class="col-md-4 control-label">Contraseña</label>
-    <div class="col-md-8">
+    <div class="col-md-12">
       <input type="password" name="password" class="form-control" required>
     </div>
   </div>
 
   <div class="form-group">
     <label for="password_confirmation" class="col-md-4 control-label">Confirmar contraseña</label>
-    <div class="col-md-8">
+    <div class="col-md-12">
       <input type="password" name="password_confirmation" class="form-control" required>
     </div>
   </div>

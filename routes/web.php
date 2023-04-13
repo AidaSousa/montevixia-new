@@ -24,14 +24,29 @@ Route::get('/', function () {
     return view('home');
 });
 
+//vista contacto footer
+Route::get('/contacto', function () {
+    return view('footer.contactoFooter');
+});
+
+
 //Formulario peque ruta
 Route::get('/pequeruta', function () {
     return view('forms.rutaPequeForm');
 });
 
+//Formulario banco libros
+Route::get('/banco-libros', function () {
+    return view('forms.banco-libros');
+});
 //Formulario asociado vista usuario
 Route::get('/asociate', function () {
     return view('associated.formAsociate');
+});
+
+//Formulario banco libros
+Route::get('/bancolibros', function () {
+    return view('forms.banco-libros');
 });
 
 Route::get('/dash', function () {
