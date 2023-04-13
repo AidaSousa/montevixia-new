@@ -18,7 +18,7 @@
             - Está previsto o servizo de autobús e guías especializados/as
             - Máximo de persoas inscritas por unidade familiar: 5
             - Asignación de prazas: por orde de inscrición.</p>
-            <img src="img/img-5.png" alt="Peque ruta">
+            <img src="img/img-5.jpg" alt="Peque ruta">
         </div>
         <div class="row justify-content-center">
             <div class="col-md-16">
