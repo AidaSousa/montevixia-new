@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Auth;
 
 class AssociatedController extends Controller
 {
-    public function indexAssociated() {
-
+    public function indexAssociated() 
+    {
         $associated = Associated::paginate(10);
         return view('associated.index', ['associated' => $associated]);
     }
