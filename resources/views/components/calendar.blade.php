@@ -1,6 +1,5 @@
-extends('layouts.layout')
 
-@section('content')
+
 	<div class="container">
 
 		<div class="card">
@@ -11,7 +10,7 @@ extends('layouts.layout')
 
 
 	</div>
-@endsection
+
 @push('scripts')
 
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js"></script>
