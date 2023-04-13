@@ -63,7 +63,7 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li class="active-menu">
-								<a href="index.html">Actividades</a>
+								<a href="{{ route('events.events') }}">Actividades</a>
 								<ul class="sub-menu">
 									<li><a href="/culturales">Actividades culturales</a></li>
 									<li><a href="/extraescolares">Actividades extraescolares</a></li>
@@ -88,7 +88,7 @@
             				<a href="{{ route('login') }}">Login</a>
         				</li>
         				<li>
-            				<a href="{{ route('register') }}">Registro</a>
+            				<a href="{{ route('register') }}">Rexistro</a>
        					 </li>
        					 @endauth
 
