@@ -24,8 +24,14 @@ Route::get('/', function () {
     return view('home');
 });
 
+<<<<<<< HEAD
 Route::get('/create', function () {
     return view('ModalCreate');
+=======
+//vista contacto footer
+Route::get('/contacto', function () {
+    return view('footer.contactoFooter');
+>>>>>>> cbd470317a81cd57976ac911e459af3b54d267fc
 });
 
 
@@ -34,15 +40,26 @@ Route::get('/pequeruta', function () {
     return view('forms.rutaPequeForm');
 });
 
+//Formulario banco libros
+Route::get('/banco-libros', function () {
+    return view('forms.banco-libros');
+});
 //Formulario asociado vista usuario
 Route::get('/asociate', function () {
     return view('associated.formAsociate');
 });
 
+<<<<<<< HEAD
 Route::get('/emails', function () {
     return view('emails.index');
 })->name('emails.index');
 
+=======
+//Formulario banco libros
+Route::get('/bancolibros', function () {
+    return view('forms.banco-libros');
+});
+>>>>>>> cbd470317a81cd57976ac911e459af3b54d267fc
 
 Route::get('/dash', function () {
     return view('user.index', ['user' => app()->make('App\Http\Controllers\UserController')->userIndex()]);
@@ -166,3 +183,8 @@ Route::put('/blog/{id}', [BlogController::class, 'update'])->name('posts.update'
 
 // Ruta para eliminar un blog
 Route::delete('/blog/{id}', [BlogController::class, 'destroy'])->name('posts.destroy');
+
+//Calendario
+Route::get('/calendar', function () {
+    return view('components.calendar');
+});
