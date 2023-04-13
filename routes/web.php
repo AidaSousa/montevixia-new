@@ -29,6 +29,11 @@ Route::get('/contacto', function () {
     return view('footer.contactoFooter');
 });
 
+//vista calendar
+Route::get('/calendario', function () {
+    return view('components.calendario2');
+});
+
 
 //Formulario peque ruta
 Route::get('/pequeruta', function () {

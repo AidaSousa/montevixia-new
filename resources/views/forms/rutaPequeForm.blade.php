@@ -8,7 +8,7 @@
 <div class="row">
     <div class="col-md-16 col-xl-4 p-b-30 m-lr-auto">
         <div class="block1 wrap-pic-w">
-            <img src="img/img-6.png" alt="Peque ruta">
+            <img src="img/pequeruta-img.png" alt="Peque ruta">
             <h1>INSCRICIÓN PEQUERUTA DO SANJURJO. RÍO DOS DOUS NOMES. COIRÓS  1/6/2023</h1>
             <p>Saída a natureza para facer a ruta do Río dos dous nomes co obxectivo de pasar un día ao aire libre, compartir este espazo co resto das familias e aprender da natureza.
 
