@@ -24,9 +24,14 @@ Route::get('/', function () {
     return view('home');
 });
 
+<<<<<<< HEAD
+Route::get('/create', function () {
+    return view('ModalCreate');
+=======
 //vista contacto footer
 Route::get('/contacto', function () {
     return view('footer.contactoFooter');
+>>>>>>> cbd470317a81cd57976ac911e459af3b54d267fc
 });
 
 
@@ -44,10 +49,17 @@ Route::get('/asociate', function () {
     return view('associated.formAsociate');
 });
 
+<<<<<<< HEAD
+Route::get('/emails', function () {
+    return view('emails.index');
+})->name('emails.index');
+
+=======
 //Formulario banco libros
 Route::get('/bancolibros', function () {
     return view('forms.banco-libros');
 });
+>>>>>>> cbd470317a81cd57976ac911e459af3b54d267fc
 
 Route::get('/dash', function () {
     return view('user.index', ['user' => app()->make('App\Http\Controllers\UserController')->userIndex()]);
@@ -64,6 +76,30 @@ Route::get('/associated', function () {
 Route::get('/user', function () {
     return view('user.index');
 })->name('user.index');
+
+Route::get('/rutas', function () {
+    return view('rutas.index');
+})->name('rutas.index');
+
+Route::get('/talleres', function () {
+    return view('talleres.index');
+})->name('talleres.index');
+
+Route::get('/libros', function () {
+    return view('libros.index');
+})->name('libros.index');
+
+Route::get('/pagos', function () {
+    return view('pagos.index');
+})->name('pagos.index');
+
+Route::get('/roles', function () {
+    return view('roles.index');
+})->name('roles.index');
+
+Route::get('/logout', function () {
+    return view('logout.index');
+})->name('logout.index');
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
@@ -117,8 +153,8 @@ Route::get('/eventUser-show', [EventUserController::class, 'showEventUser'])->na
 Route::get('/eventUser-destroy/{id}', [EventUserController::class, 'destroyEventUser'])->name('eventUser.destroy');
 
 //Associated
-Route::get('/associated-index', [AssociatedController::class, 'indexAssociated'])->name('associated.index');
-Route::get('/associated-create', [AssociatedController::class, 'createAssociated'])->name('associated.create');
+Route::match(['get', 'post'], '/associated-index', [AssociatedController::class, 'indexAssociated'])->name('associated.index');
+Route::post('/associated-create', [AssociatedController::class, 'createAssociated'])->name('associated.create');
 Route::post('/associated-store', [AssociatedController::class, 'storeAssociated'])->name('associated.store');
 Route::get('/associated-edit/{id}', [AssociatedController::class, 'editAssociated'])->name('associated.edit');
 Route::put('/associated-update/{id}', [AssociatedController::class, 'updateAssociated'])->name('associated.update');
