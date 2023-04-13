@@ -163,3 +163,6 @@ Route::post('/stripe/webhook', 'WebhookController@handleWebhook');
 Route::get('/calendar', function () {
     return view('components.calendar');
 });
+
+//Cancelar suscripción
+Route::post('/cancel-subscription', 'App\Http\Controllers\SubscriptionController@cancel')->name('subscription.cancel');

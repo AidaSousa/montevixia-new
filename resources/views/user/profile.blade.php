@@ -16,6 +16,11 @@
 									<h4>{{ auth()->user()->name }}</h4>
 									<p class="text-secondary mb-1">{{auth()->user()->surname }}</p>
 									<a class="btn btn-primary text-white btn-custom" href="{{ route('subscription.index') }}">Hacerme socio</a>
+									<form action="{{ route('subscription.cancel') }}" method="post">
+    								@csrf {{-- Agrega el token CSRF --}}
+    									<button type="submit">Cancelar suscripción</button>
+									</form>
+								
 								</div>
 							</div>
 							<hr class="my-4">
