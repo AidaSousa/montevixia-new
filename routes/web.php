@@ -44,11 +44,6 @@ Route::get('/asociate', function () {
     return view('associated.formAsociate');
 });
 
-//Formulario banco libros
-Route::get('/bancolibros', function () {
-    return view('forms.banco-libros');
-});
-
 Route::get('/dash', function () {
     return view('user.index', ['user' => app()->make('App\Http\Controllers\UserController')->userIndex()]);
 })->name('dash');
@@ -106,6 +101,9 @@ Route::get('/event-edit/{id}', [EventController::class, 'editEvent'])->name('eve
 Route::put('/event-update/{id}', [EventController::class, 'updateEvent'])->name('events.update');
 Route::get('/event-show', [EventController::class, 'showEvent'])->name('events.show');
 Route::get('/event-destroy/{id}', [EventController::class, 'destroyEvent'])->name('events.destroy');
+Route::get('/actividades', function () {
+    return view('events.events');
+})->name('events.events');
 
 //Event user
 Route::get('/eventUser-index', [EventUserController::class, 'indexEventUser'])->name('eventUser.index');
