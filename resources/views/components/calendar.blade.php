@@ -3,7 +3,7 @@
 	<div class="container">
 
 		<div class="card">
-		hola
+		
 		<div id='calendar'></div>
 
 		<div>
@@ -27,5 +27,7 @@
       });
 
 </script>
+
+
 
 @endpush
