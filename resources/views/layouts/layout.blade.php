@@ -41,6 +41,8 @@
 	<!--georgette iconos-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
 
+	   
+
 
 	<title>@yield('title') - Ampa Montevixia</title>
 
@@ -61,11 +63,11 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li class="active-menu">
-								<a href="index.html">Actividades</a>
+								<a href="{{ route('events.events') }}">Actividades</a>
 								<ul class="sub-menu">
-									<li><a href="index.html">Actividades culturales</a></li>
-									<li><a href="home-02.html">Actividades extraescolares</a></li>
-									<li><a href="home-03.html">Excursiones</a></li>
+									<li><a href="/culturales">Actividades culturales</a></li>
+									<li><a href="/extraescolares">Actividades extraescolares</a></li>
+									<li><a href="/excursion">Excursiones</a></li>
 								</ul>
 
 						</li>
@@ -74,7 +76,7 @@
 						</li>
 						@auth
 						<li>
-							<a href="{{ route('profile') }}">Mi Perfil</a>
+							<a href="{{ route('user.profile') }}">Mi Perfil</a>
 						</li>
 
 						<form action="{{ route('logout') }}" method="GET">
@@ -86,7 +88,7 @@
             				<a href="{{ route('login') }}">Login</a>
         				</li>
         				<li>
-            				<a href="{{ route('register') }}">Registro</a>
+            				<a href="{{ route('register') }}">Rexistro</a>
        					 </li>
        					 @endauth
 
@@ -501,9 +503,13 @@
 			})
 		});
 	</script>
+<<<<<<< HEAD
+	<script src="{{ asset('js/main.js') }}"></script>
+=======
 
 	@stack('scripts')
   <script src="{{ asset('js/main.js') }}"></script>
+>>>>>>> 7c4605f43869097af0b621ef828ab3ef3509b1c7
 
 </body>
 

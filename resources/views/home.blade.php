@@ -136,7 +136,11 @@
 									<!-- Block2 -->
 									<div class="block2">
 										<div class="block2-pic hov-img0">
+<<<<<<< HEAD
+											<img src="img/img-1.jpg" alt="IMG-PRODUCT">
+=======
 										<img src="img/img-1.jpg" alt="IMG-PRODUCT">
+>>>>>>> 7c4605f43869097af0b621ef828ab3ef3509b1c7
 
 											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 												Inscribese
