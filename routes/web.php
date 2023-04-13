@@ -44,6 +44,11 @@ Route::get('/asociate', function () {
     return view('associated.formAsociate');
 });
 
+//Formulario banco libros
+Route::get('/bancolibros', function () {
+    return view('forms.banco-libros');
+});
+
 Route::get('/dash', function () {
     return view('user.index', ['user' => app()->make('App\Http\Controllers\UserController')->userIndex()]);
 })->name('dash');
