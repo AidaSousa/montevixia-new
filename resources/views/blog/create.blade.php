@@ -20,6 +20,10 @@
             <label for="image">Imagen</label>
             <input type="file" name="image" id="image" class="form-control-file">
         </div>
+        <div class="form-group">
+            <label for="category">Categoría</label>
+            <input type="text" name="category" id="category" class="form-control">
+        </div>
 
         <button type="submit" class="btn btn-primary">Crear Blog</button>
         <a href="{{ route('blogs.index') }}" class="btn btn-secondary">Cancelar</a>

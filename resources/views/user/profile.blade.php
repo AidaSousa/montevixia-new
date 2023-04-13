@@ -62,7 +62,7 @@
 							<div class="row">
 								<div class="col-sm-3"></div>
 								<div class="col-sm-9 text-secondary">
-                                    <button type="submit" class="btn btn-primary px-4">Guardar cambios</button>
+                                    <button type="submit" class="btn btn-success px-4">Guardar cambios</button>
 								</div>
 							</div>
 						</div>
@@ -70,7 +70,7 @@
                     <br/>
                     <br/>
 					<div class="row">
-                        @include('children.index')
+                        @include('children.index', ['children' => $children])
 					
 					</div>
 				</div>

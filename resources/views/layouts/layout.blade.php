@@ -41,6 +41,8 @@
 	<!--georgette iconos-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
 
+	   
+
 
 	<title>@yield('title') - Ampa Montevixia</title>
 
@@ -61,11 +63,11 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li class="active-menu">
-								<a href="index.html">Actividades</a>
+								<a href="{{ route('events.events') }}">Actividades</a>
 								<ul class="sub-menu">
-									<li><a href="index.html">Actividades culturales</a></li>
-									<li><a href="home-02.html">Actividades extraescolares</a></li>
-									<li><a href="home-03.html">Excursiones</a></li>
+									<li><a href="/culturales">Actividades culturales</a></li>
+									<li><a href="/extraescolares">Actividades extraescolares</a></li>
+									<li><a href="/excursion">Excursiones</a></li>
 								</ul>
 
 						</li>
@@ -74,7 +76,7 @@
 						</li>
 						@auth
 						<li>
-							<a href="{{ route('profile') }}">Mi Perfil</a>
+							<a href="{{ route('user.profile') }}">Mi Perfil</a>
 						</li>
 
 						<form action="{{ route('logout') }}" method="GET">
@@ -86,49 +88,31 @@
             				<a href="{{ route('login') }}">Login</a>
         				</li>
         				<li>
-            				<a href="{{ route('register') }}">Registro</a>
+            				<a href="{{ route('register') }}">Rexistro</a>
        					 </li>
        					 @endauth
 
 					</ul>
 				</div>	
 
-<<<<<<< HEAD
 				<!-- Icon header 
 				<div class="wrap-icon-header flex-w flex-r-m h-full">
 					<div class="flex-c-m h-full p-r-24">
-=======
-					<!-- Icon header -->
-					<!--<div class="wrap-icon-header flex-w flex-r-m h-full">
-						 <div class="flex-c-m h-full p-r-24">
->>>>>>> cbd470317a81cd57976ac911e459af3b54d267fc
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-modal-search">
 							<i class="zmdi zmdi-search"></i>
 						</div> 
 					</div>-->
-<<<<<<< HEAD
-							
-=======
 
->>>>>>> cbd470317a81cd57976ac911e459af3b54d267fc
 					<!-- <div class="flex-c-m h-full p-l-18 p-r-25 bor5">
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
 							<i class="zmdi zmdi-shopping-cart"></i>
 						</div>
 					</div> -->
-<<<<<<< HEAD
 							
 					<!-- <div class="flex-c-m h-full p-lr-19">
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-sidebar">
 							<i class="zmdi zmdi-menu"></i>
 						</div> -->
-=======
-
-					<!--<div class="flex-c-m h-full p-lr-19">
-						<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-sidebar">
-							<i class="zmdi zmdi-menu"></i>
-						</div>-->
->>>>>>> cbd470317a81cd57976ac911e459af3b54d267fc
 					</div>
 			</div>
 			</nav>
@@ -520,6 +504,7 @@
 			})
 		});
 	</script>
+	<script src="{{ asset('js/main.js') }}"></script>
 
 	@stack('scripts')
   <script src="{{ asset('js/main.js') }}"></script>
