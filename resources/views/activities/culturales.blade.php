@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('title', 'Formulario Peque Ruta')
+@section('title', 'culturales')
 
 @section('content')
 
