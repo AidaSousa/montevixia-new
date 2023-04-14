@@ -65,7 +65,6 @@
 							<li class="active-menu">
 								<a href="{{ route('events.events') }}">Actividades</a>
 								<ul class="sub-menu">
-									<li><a href="/culturales">Actividades culturales</a></li>
 									<li><a href="/extraescolares">Actividades extraescolares</a></li>
 									<li><a href="/excursion">Excursiones</a></li>
 								</ul>
@@ -95,23 +94,24 @@
 					</ul>
 				</div>	
 
-					<!-- Icon header -->
-					<!--<div class="wrap-icon-header flex-w flex-r-m h-full">
-						 <div class="flex-c-m h-full p-r-24">
+				<!-- Icon header 
+				<div class="wrap-icon-header flex-w flex-r-m h-full">
+					<div class="flex-c-m h-full p-r-24">
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-modal-search">
 							<i class="zmdi zmdi-search"></i>
 						</div> 
 					</div>-->
+
 					<!-- <div class="flex-c-m h-full p-l-18 p-r-25 bor5">
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
 							<i class="zmdi zmdi-shopping-cart"></i>
 						</div>
 					</div> -->
-
-					<!--<div class="flex-c-m h-full p-lr-19">
+							
+					<!-- <div class="flex-c-m h-full p-lr-19">
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-sidebar">
 							<i class="zmdi zmdi-menu"></i>
-						</div>-->
+						</div> -->
 					</div>
 			</div>
 			</nav>
@@ -154,7 +154,6 @@
 					<li>
 						<a href="index.html">Actividades</a>
 						<ul class="sub-menu-m">
-							<li><a href="index.html">Actividades culturales</a></li>
 							<li><a href="home-02.html">Actividades extraescolares</a></li>
 							<li><a href="home-03.html">Excursiones</a></li>
 						</ul>
@@ -299,7 +298,7 @@
 				<div class="col-sm-6 col-lg-3 p-b-50">
 				<ul text-justify>
 						<li class="p-b-10">
-							< <a href="/contacto" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
+							<a href="/contacto" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
 								CONTACTO
 							</a>
 						</li>
@@ -387,7 +386,7 @@
 				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 				Copyright &copy;<script>
 					document.write(new Date().getFullYear());
-				</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+				</script> All rights reserved | This template is made with ❤ by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 			</p>
 		</div>
@@ -502,12 +501,11 @@
 				ps.update();
 			})
 		});
-	</script
+	</script>
 	<script src="{{ asset('js/main.js') }}"></script>
 
 	@stack('scripts')
   <script src="{{ asset('js/main.js') }}"></script>
-
 
 </body>
 

@@ -1,3 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#009688">
+    <link rel="stylesheet" type="text/css" href="/css/main.temp.css">
+
+    
+    <title>Registro</title>
+  </head>
+  
+  <section class="material-half-bg">
+      <div class="cover"></div>
+    </section>
+    <section class="login-content">
+      
+      <div class="login-box p-3 rounded-50">
+        <div id="divLoading" >
+          <div>
+            <!-- <img src="/img/loading.svg" alt="Loading"> -->
+          </div>
+        </div>
+
+
 <form method="POST" action="{{ route('children.update', ['id' => $children->id]) }}">
     {{ csrf_field() }}
     {{ method_field('PUT') }}
@@ -31,3 +57,9 @@
         <button class="btn btn-success btn-custom px-4 mt-3" type="submit">Editar</button>
     </div>
 </form>
+
+</div>
+    </section>
+  
+  </body>
+</html>
