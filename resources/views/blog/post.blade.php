@@ -9,6 +9,7 @@
             <img src="{{ asset($post->image_path) }}" alt="Imagen del post" class="img-fluid mb-4"> <!-- Imagen del post con margen inferior -->
 
             <!-- Botón de regreso -->
+        
             <a href="{{ route('blogs.index') }}" class="btn btn-success btn-sm btn-block mb-4">Volver</a> <!-- Botón centrado, grande y de ancho completo con margen inferior -->
         </div>
     </div>
