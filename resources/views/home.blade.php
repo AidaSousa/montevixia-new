@@ -136,11 +136,7 @@
 									<!-- Block2 -->
 									<div class="block2">
 										<div class="block2-pic hov-img0">
-<<<<<<< HEAD
 											<img src="img/img-1.jpg" alt="IMG-PRODUCT">
-=======
-										<img src="img/img-1.jpg" alt="IMG-PRODUCT">
->>>>>>> 7c4605f43869097af0b621ef828ab3ef3509b1c7
 
 											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
 												Inscribese
@@ -256,50 +252,6 @@
 			</div>
 @endforeach
 
-<!-- 
-				<div class="col-sm-6 col-md-4 p-b-40">
-					<div class="blog-item">
-						<div class="hov-img0">
-							<a href="blog-detail.html">
-								<img src="img/img-17.jpeg" alt="IMG-BLOG">
-							</a>
-						</div>
-
-						<div class="p-t-15">
-							<div class="stext-107 flex-w p-b-14">
-								<span class="m-r-3">
-									<span class="cl4">
-										Por
-									</span>
-
-									<span class="cl5">
-										Rebecca Gutierrez
-									</span>
-								</span>
-
-								<span>
-									<span class="cl4">
-										EL
-									</span>
-
-									<span class="cl5">
-										2 de Abril 2021 
-									</span>
-								</span>
-							</div>
-
-							<h4 class="p-b-12">
-								<a href="blog-detail.html" class="mtext-101 cl2 hov-cl1 trans-04">
-								5 tendencias de moda de invierno a primavera que hay que probar ya
-								</a>
-							</h4>
-
-							<p class="stext-108 cl6">
-								Proin nec vehicula lorem, a efficitur ex. Nam vehicula nulla vel erat tincidunt, sed hendrerit ligula porttitor. Fusce sit amet maximus nunc
-							</p>
-						</div>
-					</div>
-				</div> -->
 			</div>
 		</div>
 	</section>
