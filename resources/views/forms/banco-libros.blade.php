@@ -104,7 +104,19 @@
                                 </div>
                             </div>
 
-                            <button>Enviar</button>
+                            <div class="form-group">
+                                <button class="btn btn-custom" type="submit">ENVIAR</button>
+                            </div>
+                            </div>
+                        </form>
+
+                        <style>
+  .btn-custom {
+    background-color: #009688;
+    color: white;
+    
+  }
+</style>
                         </div>
                     </div>
             </div>
