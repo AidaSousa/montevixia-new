@@ -363,7 +363,7 @@
 				<div class="col-sm-6 col-lg-3 p-b-50">
 					<ul text-justify>
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
+							<a href="/politica" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
 								Politica de Privacidad
 							</a>
 						</li>
@@ -502,14 +502,12 @@
 				ps.update();
 			})
 		});
-	</script>
-<<<<<<< HEAD
+	</script
 	<script src="{{ asset('js/main.js') }}"></script>
-=======
 
 	@stack('scripts')
   <script src="{{ asset('js/main.js') }}"></script>
->>>>>>> 7c4605f43869097af0b621ef828ab3ef3509b1c7
+
 
 </body>
 

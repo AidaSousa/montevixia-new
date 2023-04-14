@@ -6,7 +6,7 @@
 
 
 <div class="row grid mt-8 mb-8">
-    <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item ruta mx-auto" style="margin-top: 120px; margin-bottom: 150px;">
+    <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item ruta mx-auto" style="margin-top: 120px; margin-bottom: 150px">
 
         <div class="block2">
             <div class="block2-pic hov-img0">
