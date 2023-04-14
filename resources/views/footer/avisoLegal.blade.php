@@ -1,198 +1,22 @@
 @extends('layouts.layout')
 
-@section('title', 'politica privacidad')
+@section('title', 'Aviso Legal')
 
 @section('content')
 
+
 <section class="bg0 p-t-75 p-b-120 text-center">
     <div class="container" style="text-align: justify">
-    
+
         <div class="row p-b-148">
             <div class="col-md-7 col-lg-8">
                 <div class="p-t-7 p-r-85 p-r-15-lg p-r-0-md">
                     <h3 class="mtext-111 cl2 p-b-16">
-                        POLÍTICA DE PRIVACIDADE WEB
+                        AVISO LEGAL
                     </h3>
 
                     <p class="stext-113 cl6 p-b-26">
-                        ANPA Monte Vixia, en aplicación da normativa vixente en materia de protección de
-                        datos de carácter persoal, informa de que os datos persoais recollidos a través dos
-                        formularios do Sitio Web: www.anpamontevixia.org, están incluídos en ficheiros
-                        automatizados propios dos usuarios dos servizos de ANPA Monte Vixia.
-                        A recollida e tratamento automatizado de datos persoais ten como finalidade o
-                        mantemento da relación comercial e a realización de tarefas de información,
-                        formación, asesoramento e outras actividades da Anpa Monte Vixia.
-                        Estes datos só serán cedidos a aquelas entidades que sexan necesarias coa única
-                        finalidade de ceder cumprimento da mencionada finalidade.
-                        A ANPA Monte Vixia adopta as medidas necesarias para garantir a seguridade,
-                        integridade e confidencialidade dos datos de acordo co establecido no Regulamento
-                        (UE) 2016/679 do Parlamento Europeo e do Consello, do 27 de abril de 2016,
-                        relativo á protección das persoas físicas no que respecta ao tratamento de datos
-                        persoais e á súa libre circulación.
-                        O usuario poderá exercer en calquera momento os dereitos de acceso, oposición,
-                        rectificación e cancelación recoñecidas no citado Regulamento (UE). O exercicio
-                        destes dereitos pode facelo o propio usuario a través do correo electrónico a:
-                        anpamontevixia@gmail.com ou no enderezo: Praza San José S/N, 15002 A Coruña.
-                        O usuario declara que todos os datos facilitados por el son certos e correctos, e
-                        comprométese a conservalos actualizado, comunicando os cambios a
-                        www.anpamontevixia.org.
-                        Finalidade do tratamento dos datos persoais:
-                        Con que finalidade trataremos os teus datos persoais?
-                        Na Anpa Monte Vixia trataremos os seus datos persoais recollidos a través do Sitio
-                        Web www.anpamontevixia.org, coas seguintes finalidades:
-                        • 1. No caso de contratar servizos ofertados a través de
-                        www.anpamontevixia.org, a xestión, administración, información, prestación e
-                        mellora da servizo.
-                        • 2. Envío da información solicitada a través dos formularios facilitados en
-                        www.anpamontevixia.org
-                        • 3. Enviar boletíns (newsletters), así como comunicacións comerciais de
-                        promocións e/ou publicidade dos servizos ofrecidos pola Anpa Monte Vixia e
-                        o sector.
-                        Lembrámoslle que pode opoñerse ao envío de comunicacións comerciais por
-                        calquera medio e en calquera momento, enviando un correo electrónico ao
-                        enderezo indicado anteriormente.
-                        Os campos dos ditos rexistros son obrigatorios, imposibilitando a realización das
-                        finalidades expresadas se non se facilitan estes datos.
-                        Durante canto tempo se conservan os datos persoais recollidos?
-                        Os datos persoais facilitados conservaranse mentres se manteña a relación
-                        asociativa ou se solicite a mesma
-                        supresión e durante o período polo que poidan xurdir responsabilidades legais polos
-                        servizos prestados.
-                        Lexitimación:
-                        O tratamento dos seus datos realízase coas seguintes bases legais que o lexitiman:
-                        1. A solicitude de información e/ou a utilización dos servizos da Anpa Monte Vixia,
-                        cuxos
-                        Os termos e condicións poranse á súa disposición en todo caso, con carácter previo
-                        a unha posible contratación.
-                        2. Consentimento libre, específico, informado e inequívoco, sempre que o
-                        informemos poñendo aá súa disposición desta política de privacidade, que despois
-                        de lela, se está de acordo, pode aceptar mediante unha declaración ou acción
-                        afirmativa clara, como marcar unha casilla proporcionada ao efecto.
-                        No caso de que non nos facilite os seus datos ou o faga de forma errónea ou
-                        incompleta, non poderemos atender a súa solicitude, polo que resulta totalmente
-                        imposible facilitarlle a información solicitada ou realizar a contratación de Servizos.
-                        Persoas Destinatarios:
-                        Os datos non serán comunicados a ningún terceiro alleo á Anpa Monte Vixia, salvo
-                        obriga legal.
-                        Como xestores de tratamento, temos contratados os seguintes provedores de
-                        servizos, téndonos comprometido ao cumprimento das disposicións
-                        regulamentarias, aplicables en materia de protección de datos, no momento da
-                        contratación:
-                        · (XERENTE)
-                        ___________________________________________________________, con
-                        domicilio en __________________________________________, NIF/CIF nº
-                        ________________________, presta servizos de
-                        ______________________________________ .
-                        ♣ Podes consultar a política de privacidade e outros aspectos legais da empresa a
-                        continuación ligazón: _________________________________________________
-                        · (XERENTE) _________________________________________________, con
-                        domicilio en _____________________________________________, NIF/CIF nº
-                        _________________________, presta servizos de
-                        ___________________________________________.
-                        ♣ Podes consultar a política de privacidade e outros aspectos legais da empresa a
-                        continuación ligazón: _____________________________________________
-                        Datos recollidos polos usuarios dos servizos
-                        Nos casos en que o usuario inclúa ficheiros con datos persoais nos servidores de
-                        hospedaxe compartida, Anpa Monte Vixia non se fai responsable do incumprimento
-                        por parte da persoa do GDPR.
-                        Conservación de datos segundo a LSSI
-                        A Anpa Monte Vixia informa que, como prestadora de servizos de hospedaxe de
-                        datos e en virtude do disposto na Lei 34/2002, do 11 de xullo, de Servizos da
-                        Sociedade da Información e de Comercio Electrónico (LSSI), conserva durante un
-                        período máximo de 12 meses a información esencial. identificar a orixe dos datos
-                        almacenados e o momento no que se iniciou a prestación do servizo. A
-                        conservación destes datos non afecta ao segredo das comunicacións e só poderán
-                        ser utilizados no marco dunha investigación penal ou para salvagardar a seguridade
-                        cidadá, poñendo a disposición dos xuíces e/ou tribunais ou do Ministerio que así o
-                        requira.
-                        A comunicación de datos ás Forzas e Corpos do Estado farase de acordo co
-                        disposto na normativa de protección de datos de carácter persoal.
-                        Dereitos de propiedade intelectual Anpa Monte Vixia
-                        A Anpa Monte Vixia é titular de todos os dereitos de autor, propiedade intelectual e
-                        industrial, "know how" e calquera outro dereito relacionado cos contidos da páxina
-                        web www.anpamontevixia.org e dos servizos que nel se ofrecen, así como dos
-                        programas necesarios para a súa implantación e información relacionada.
-                        Non está permitida a reprodución, publicación e/ou uso non estritamente privado
-                        dos contidos, totais ou parciales, do sitio web www.anpamontevixia.org sen o
-                        consentimento previo por escrito.
-                        Propiedade intelectual do software
-                        O usuario deberá respectar os programas de terceiros postos a disposición pola
-                        Anpa Monte Vixia, aínda que sexan gratuítos e/ou de acceso público.
-                        A Anpa Monte Vixia posúe os dereitos de explotación e propiedade intelectual
-                        necesarios do software.
-                        O usuario non adquire ningún dereito ou licenza para o servizo contratado, sobre o
-                        software necesario para a prestación do servizo, nin sobre a información técnica
-                        para o seguimento do servizo, salvo os dereitos e licenzas necesarios para o
-                        cumprimento dos servizos contratados e só pola súa duración.
-                        Para calquera actuación que exceda do cumprimento do contrato, o usuario
-                        necesitará autorización escrita de Anpa Monte Vixia, quedando prohibido o acceso,
-                        modificación, visualización da configuración, estrutura e ficheiros dos servidores
-                        propiedade de Anpa Monte Vixia, asumindo responsabilidade penal derivada de
-                        calquera incidente que poida producirse en servidores e sistemas de seguridade
-                        como consecuencia directa dunha actuación neglixente ou dolosa pola súa parte.
-                        Propiedade intelectual do contido aloxado
-                        O uso contrario á lexislación en materia de propiedade intelectual dos servizos
-                        prestados por Anpa Monte Vixia e, en particular:
-                        • O uso contrario ás leis españolas ou que infrinxa dereitos de terceiros.
-                        • A publicación ou transmisión de calquera contido que, a xuízo da Anpa Monte
-                        Vixia, sexa violentos, obscenos, abusivos, ilegales, racistas, xenófobos ou
-                        difamatorios.
-                        • Os cracks, os números de serie dos programas ou calquera outro contido que
-                        vulnere os dereitos de propiedade. intelectual de terceiros
-                        • A recollida e/ou uso de datos persoais doutros usuarios sen o seu
-                        consentimento expreso ou en contravención o disposto no Regulamento (UE)
-                        2016/679 do Parlamento Europeo e do Consello, do 27 de abril de 2016,
-                        relativa á protección das persoas físicas no que respecta ao tratamento de
-                        datos persoais e á gratuidade a súa circulación.
-                        • O uso do servidor de correo e dos enderezos de correo electrónico do
-                        dominio para o envío de mensaxes de correo masivo de spam
-                        O usuario é responsable do contido da súa páxina web, da información transmitida e
-                        almacenada, das ligazóns de hipertexto, das reclamacións de terceiros e das
-                        accións legais en materia de propiedade intelectual.
-                        Dereitos de terceiros e protección dos menores.
-                        O usuario é responsable das leis e normativas vixentes e das normas que teñan que
-                        ver co funcionamento do servizo en liña, o comercio electrónico, os dereitos de
-                        autor, o mantemento da orde pública, así como os principios universais de uso de
-                        Internet.
-                        O usuario indemnizará a Anpa Monte Vixia polos gastos xerados pola imputación de
-                        Anpa Monte Vixia en calquera causa cuxa responsabilidade fose imputable ao
-                        usuario, incluído honorarios e gastos de defensa xurídica, mesmo no caso dunha
-                        decisión xudicial non firme.
-                        Protección da información aloxada
-                        A Anpa Monte Vixia realiza copias de seguridade dos contidos aloxados nos seus
-                        servidores, non obstante non se fai responsable da perda ou eliminación accidental
-                        de datos por parte dos usuarios. Do mesmo xeito, non garante a substitución total
-                        dos datos borrados polos usuarios, xa que os citados datos poderían ter sido
-                        borrados e/ou modificados durante o período de tempo transcorrido desde a última
-                        copia de seguridade.
-                        Os servizos ofrecidos, agás os servizos específicos de copia de seguridade, non
-                        inclúen a substitución dos contidos almacenados nas copias de seguridade
-                        realizadas por Anpa Monte Vixia, cando esta perda sexa imputable ao usuario; neste
-                        caso, determinarase unha tarifa en función da complexidade e volume da
-                        recuperación, sempre coa aceptación previa do usuario.
-                        A substitución dos datos borrados só está incluída no prezo do servizo cando a
-                        perda do contido se deba a causas imputables á Anpa Monte Vixia.
-                        comunicacións comerciais
-                        En aplicación da LSSI. A Anpa Monte Vixia non enviará comunicacións publicitarias
-                        ou promocionais por correo electrónico ou outro medio electrónico de comunicación
-                        equivalente que non fosen previamente solicitadas ou autorizadas expresamente
-                        polos destinatarios das mesmas.
-                        No caso de usuarios cos que exista unha relación asociativa previa, Anpa Monte
-                        Vixia está autorizada para o envío de comunicacións promocionais sobre os
-                        servizos de Anpa Monte Vixia similares aos que inicialmente foron contratados co
-                        cliente.
-                        En todo caso, o usuario, logo de acreditar a súa identidade, poderá solicitar que non
-                        se lle remita máis información comercial a través das canles de Atención ao Cliente.
-                        "Acepto a Política de Privacidade",
-                        "Lin e estou dacordo",
-                        "Acepto as condicións de uso do servizo e a política de privacidade",
 
-                    <p class="stext-113 cl6 p-b-26">
-                        Donec gravida lorem elit, quis condimentum ex semper sit amet. Fusce eget ligula magna. Aliquam aliquam imperdiet sodales. Ut fringilla turpis in vehicula vehicula. Pellentesque congue ac orci ut gravida. Aliquam erat volutpat. Donec iaculis lectus a arcu facilisis, eu sodales lectus sagittis. Etiam pellentesque, magna vel dictum rutrum, neque justo eleifend elit, vel tincidunt erat arcu ut sem. Sed rutrum, turpis ut commodo efficitur, quam velit convallis ipsum, et maximus enim ligula ac ligula.
-                    </p>
-
-                    <p class="stext-113 cl6 p-b-26">
-    
                         A ANPA MONTE VIXIA, responsable da páxina web, en diante RESPONSABLE, pon
                         a disposición dos usuarios este documento, co que pretende dar cumprimento ás
                         obrigas establecidas na Lei 34/2002, do 11 de xullo, de Servizos ás Empresas de
@@ -462,7 +286,184 @@
                         casos, a asociación procederá a modificar ou substituír a dita estipulación por outra
                         válida e executiva e que, na medida do posible, alcance o obxectivo e pretensión
                         reflectidos na estipulación orixinal.
+
+
+                        POLÍTICA DE PRIVACIDADE WEB
+                        Protección de datos persoais segundo a LOPDDD
+                        ANPA Monte Vixia, en aplicación da normativa vixente en materia de protección de
+                        datos de carácter persoal, informa de que os datos persoais recollidos a través dos
+                        formularios do Sitio Web: www.anpamontevixia.org, están incluídos en ficheiros
+                        automatizados propios dos usuarios dos servizos de ANPA Monte Vixia.
+                        A recollida e tratamento automatizado de datos persoais ten como finalidade o
+                        mantemento da relación comercial e a realización de tarefas de información,
+                        formación, asesoramento e outras actividades da Anpa Monte Vixia.
+                        Estes datos só serán cedidos a aquelas entidades que sexan necesarias coa única
+                        finalidade de ceder cumprimento da mencionada finalidade.
+                        A ANPA Monte Vixia adopta as medidas necesarias para garantir a seguridade,
+                        integridade e confidencialidade dos datos de acordo co establecido no Regulamento
+                        (UE) 2016/679 do Parlamento Europeo e do Consello, do 27 de abril de 2016,
+                        relativo á protección das persoas físicas no que respecta ao tratamento de datos
+                        persoais e á súa libre circulación.
+                        O usuario poderá exercer en calquera momento os dereitos de acceso, oposición,
+                        rectificación e cancelación recoñecidas no citado Regulamento (UE). O exercicio
+                        destes dereitos pode facelo o propio usuario a través do correo electrónico a:
+                        anpamontevixia@gmail.com ou no enderezo: Praza San José S/N, 15002 A Coruña.
+                        O usuario declara que todos os datos facilitados por el son certos e correctos, e
+                        comprométese a conservalos actualizado, comunicando os cambios a
+                        www.anpamontevixia.org.
+                        Finalidade do tratamento dos datos persoais:
+                        Con que finalidade trataremos os teus datos persoais?
+                        Na Anpa Monte Vixia trataremos os seus datos persoais recollidos a través do Sitio
+                        Web www.anpamontevixia.org, coas seguintes finalidades:
+                        • 1. No caso de contratar servizos ofertados a través de
+                        www.anpamontevixia.org, a xestión, administración, información, prestación e
+                        mellora da servizo.
+                        • 2. Envío da información solicitada a través dos formularios facilitados en
+                        www.anpamontevixia.org
+                        • 3. Enviar boletíns (newsletters), así como comunicacións comerciais de
+                        promocións e/ou publicidade dos servizos ofrecidos pola Anpa Monte Vixia e
+                        o sector.
+                        Lembrámoslle que pode opoñerse ao envío de comunicacións comerciais por
+                        calquera medio e en calquera momento, enviando un correo electrónico ao
+                        enderezo indicado anteriormente.
+                        Os campos dos ditos rexistros son obrigatorios, imposibilitando a realización das
+                        finalidades expresadas se non se facilitan estes datos.
+                        Durante canto tempo se conservan os datos persoais recollidos?
+                        Os datos persoais facilitados conservaranse mentres se manteña a relación
+                        asociativa ou se solicite a mesma
+                        supresión e durante o período polo que poidan xurdir responsabilidades legais polos
+                        servizos prestados.
+                        Lexitimación:
+                        O tratamento dos seus datos realízase coas seguintes bases legais que o lexitiman:
+                        1. A solicitude de información e/ou a utilización dos servizos da Anpa Monte Vixia,
+                        cuxos
+                        Os termos e condicións poranse á súa disposición en todo caso, con carácter previo
+                        a unha posible contratación.
+                        2. Consentimento libre, específico, informado e inequívoco, sempre que o
+                        informemos poñendo aá súa disposición desta política de privacidade, que despois
+                        de lela, se está de acordo, pode aceptar mediante unha declaración ou acción
+                        afirmativa clara, como marcar unha casilla proporcionada ao efecto.
+                        No caso de que non nos facilite os seus datos ou o faga de forma errónea ou
+                        incompleta, non poderemos atender a súa solicitude, polo que resulta totalmente
+                        imposible facilitarlle a información solicitada ou realizar a contratación de Servizos.
+                        Persoas Destinatarios:
+                        Os datos non serán comunicados a ningún terceiro alleo á Anpa Monte Vixia, salvo
+                        obriga legal.
+                        Como xestores de tratamento, temos contratados os seguintes provedores de
+                        servizos, téndonos comprometido ao cumprimento das disposicións
+                        regulamentarias, aplicables en materia de protección de datos, no momento da
+                        contratación:
+                        · (XERENTE)
+                        ___________________________________________________________, con
+                        domicilio en __________________________________________, NIF/CIF nº
+                        ________________________, presta servizos de
+                        ______________________________________ .
+                        ♣ Podes consultar a política de privacidade e outros aspectos legais da empresa a
+                        continuación ligazón: _________________________________________________
+                        · (XERENTE) _________________________________________________, con
+                        domicilio en _____________________________________________, NIF/CIF nº
+                        _________________________, presta servizos de
+                        ___________________________________________.
+                        ♣ Podes consultar a política de privacidade e outros aspectos legais da empresa a
+                        continuación ligazón: _____________________________________________
+                        Datos recollidos polos usuarios dos servizos
+                        Nos casos en que o usuario inclúa ficheiros con datos persoais nos servidores de
+                        hospedaxe compartida, Anpa Monte Vixia non se fai responsable do incumprimento
+                        por parte da persoa do GDPR.
+                        Conservación de datos segundo a LSSI
+                        A Anpa Monte Vixia informa que, como prestadora de servizos de hospedaxe de
+                        datos e en virtude do disposto na Lei 34/2002, do 11 de xullo, de Servizos da
+                        Sociedade da Información e de Comercio Electrónico (LSSI), conserva durante un
+                        período máximo de 12 meses a información esencial. identificar a orixe dos datos
+                        almacenados e o momento no que se iniciou a prestación do servizo. A
+                        conservación destes datos non afecta ao segredo das comunicacións e só poderán
+                        ser utilizados no marco dunha investigación penal ou para salvagardar a seguridade
+                        cidadá, poñendo a disposición dos xuíces e/ou tribunais ou do Ministerio que así o
+                        requira.
+                        A comunicación de datos ás Forzas e Corpos do Estado farase de acordo co
+                        disposto na normativa de protección de datos de carácter persoal.
+                        Dereitos de propiedade intelectual Anpa Monte Vixia
+                        A Anpa Monte Vixia é titular de todos os dereitos de autor, propiedade intelectual e
+                        industrial, "know how" e calquera outro dereito relacionado cos contidos da páxina
+                        web www.anpamontevixia.org e dos servizos que nel se ofrecen, así como dos
+                        programas necesarios para a súa implantación e información relacionada.
+                        Non está permitida a reprodución, publicación e/ou uso non estritamente privado
+                        dos contidos, totais ou parciales, do sitio web www.anpamontevixia.org sen o
+                        consentimento previo por escrito.
+                        Propiedade intelectual do software
+                        O usuario deberá respectar os programas de terceiros postos a disposición pola
+                        Anpa Monte Vixia, aínda que sexan gratuítos e/ou de acceso público.
+                        A Anpa Monte Vixia posúe os dereitos de explotación e propiedade intelectual
+                        necesarios do software.
+                        O usuario non adquire ningún dereito ou licenza para o servizo contratado, sobre o
+                        software necesario para a prestación do servizo, nin sobre a información técnica
+                        para o seguimento do servizo, salvo os dereitos e licenzas necesarios para o
+                        cumprimento dos servizos contratados e só pola súa duración.
+                        Para calquera actuación que exceda do cumprimento do contrato, o usuario
+                        necesitará autorización escrita de Anpa Monte Vixia, quedando prohibido o acceso,
+                        modificación, visualización da configuración, estrutura e ficheiros dos servidores
+                        propiedade de Anpa Monte Vixia, asumindo responsabilidade penal derivada de
+                        calquera incidente que poida producirse en servidores e sistemas de seguridade
+                        como consecuencia directa dunha actuación neglixente ou dolosa pola súa parte.
+                        Propiedade intelectual do contido aloxado
+                        O uso contrario á lexislación en materia de propiedade intelectual dos servizos
+                        prestados por Anpa Monte Vixia e, en particular:
+                        • O uso contrario ás leis españolas ou que infrinxa dereitos de terceiros.
+                        • A publicación ou transmisión de calquera contido que, a xuízo da Anpa Monte
+                        Vixia, sexa violentos, obscenos, abusivos, ilegales, racistas, xenófobos ou
+                        difamatorios.
+                        • Os cracks, os números de serie dos programas ou calquera outro contido que
+                        vulnere os dereitos de propiedade. intelectual de terceiros
+                        • A recollida e/ou uso de datos persoais doutros usuarios sen o seu
+                        consentimento expreso ou en contravención o disposto no Regulamento (UE)
+                        2016/679 do Parlamento Europeo e do Consello, do 27 de abril de 2016,
+                        relativa á protección das persoas físicas no que respecta ao tratamento de
+                        datos persoais e á gratuidade a súa circulación.
+                        • O uso do servidor de correo e dos enderezos de correo electrónico do
+                        dominio para o envío de mensaxes de correo masivo de spam
+                        O usuario é responsable do contido da súa páxina web, da información transmitida e
+                        almacenada, das ligazóns de hipertexto, das reclamacións de terceiros e das
+                        accións legais en materia de propiedade intelectual.
+                        Dereitos de terceiros e protección dos menores.
+                        O usuario é responsable das leis e normativas vixentes e das normas que teñan que
+                        ver co funcionamento do servizo en liña, o comercio electrónico, os dereitos de
+                        autor, o mantemento da orde pública, así como os principios universais de uso de
+                        Internet.
+                        O usuario indemnizará a Anpa Monte Vixia polos gastos xerados pola imputación de
+                        Anpa Monte Vixia en calquera causa cuxa responsabilidade fose imputable ao
+                        usuario, incluído honorarios e gastos de defensa xurídica, mesmo no caso dunha
+                        decisión xudicial non firme.
+                        Protección da información aloxada
+                        A Anpa Monte Vixia realiza copias de seguridade dos contidos aloxados nos seus
+                        servidores, non obstante non se fai responsable da perda ou eliminación accidental
+                        de datos por parte dos usuarios. Do mesmo xeito, non garante a substitución total
+                        dos datos borrados polos usuarios, xa que os citados datos poderían ter sido
+                        borrados e/ou modificados durante o período de tempo transcorrido desde a última
+                        copia de seguridade.
+                        Os servizos ofrecidos, agás os servizos específicos de copia de seguridade, non
+                        inclúen a substitución dos contidos almacenados nas copias de seguridade
+                        realizadas por Anpa Monte Vixia, cando esta perda sexa imputable ao usuario; neste
+                        caso, determinarase unha tarifa en función da complexidade e volume da
+                        recuperación, sempre coa aceptación previa do usuario.
+                        A substitución dos datos borrados só está incluída no prezo do servizo cando a
+                        perda do contido se deba a causas imputables á Anpa Monte Vixia.
+                        comunicacións comerciais
+                        En aplicación da LSSI. A Anpa Monte Vixia non enviará comunicacións publicitarias
+                        ou promocionais por correo electrónico ou outro medio electrónico de comunicación
+                        equivalente que non fosen previamente solicitadas ou autorizadas expresamente
+                        polos destinatarios das mesmas.
+                        No caso de usuarios cos que exista unha relación asociativa previa, Anpa Monte
+                        Vixia está autorizada para o envío de comunicacións promocionais sobre os
+                        servizos de Anpa Monte Vixia similares aos que inicialmente foron contratados co
+                        cliente.
+                        En todo caso, o usuario, logo de acreditar a súa identidade, poderá solicitar que non
+                        se lle remita máis información comercial a través das canles de Atención ao Cliente.
+                        "Acepto a Política de Privacidade",
+                        "Lin e estou dacordo",
+                        "Acepto as condicións de uso do servizo e a política de privacidade"
+
                     </p>
+
                 </div>
             </div>
         </div>

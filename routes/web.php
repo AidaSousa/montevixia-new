@@ -56,6 +56,11 @@ Route::get('/politica', function () {
     return view('footer.politicaPrivacidad');
 });
 
+//vista Aviso legal
+Route::get('/aviso', function () {
+    return view('footer.avisoLegal');
+});
+
 //Formulario banco libros
 Route::get('/banco-libros', function () {
     return view('forms.banco-libros');
