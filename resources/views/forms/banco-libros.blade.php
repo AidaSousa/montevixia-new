@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="row justify-content-center">
-    <div class="col-md-6">
+    <div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
         <div class="tile">
             <h3 class="tile-title text-center">BANCO LIBROS "ENTRE FAMILIAS" 2020-2021</h3>
             <div class="tile-body ">
@@ -105,23 +105,18 @@
                             </div>
 
                             <div class="form-group">
-                                <button class="btn btn-custom" type="submit">ENVIAR</button>
+                                <button class="btn btn-custom" type="submit" style="background-color: #009688;
+    color: white;">ENVIAR</button>
                             </div>
-                            </div>
-                        </form>
-
-                        <style>
-  .btn-custom {
-    background-color: #009688;
-    color: white;
-    
-  }
-</style>
                         </div>
-                    </div>
+                </form>
+
+
             </div>
         </div>
     </div>
+</div>
+</div>
 </div>
 
 @endsection
