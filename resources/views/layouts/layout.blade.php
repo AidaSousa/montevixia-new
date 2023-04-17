@@ -65,7 +65,6 @@
 							<li class="active-menu">
 								<a href="{{ route('events.events') }}">Actividades</a>
 								<ul class="sub-menu">
-									<li><a href="/culturales">Actividades culturales</a></li>
 									<li><a href="/extraescolares">Actividades extraescolares</a></li>
 									<li><a href="/excursion">Excursiones</a></li>
 								</ul>
@@ -155,7 +154,6 @@
 					<li>
 						<a href="index.html">Actividades</a>
 						<ul class="sub-menu-m">
-							<li><a href="index.html">Actividades culturales</a></li>
 							<li><a href="home-02.html">Actividades extraescolares</a></li>
 							<li><a href="home-03.html">Excursiones</a></li>
 						</ul>
@@ -300,7 +298,7 @@
 				<div class="col-sm-6 col-lg-3 p-b-50">
 				<ul text-justify>
 						<li class="p-b-10">
-							< <a href="/contacto" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
+							<a href="/contacto" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
 								CONTACTO
 							</a>
 						</li>
@@ -388,7 +386,7 @@
 				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 				Copyright &copy;<script>
 					document.write(new Date().getFullYear());
-				</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+				</script> All rights reserved | This template is made with ❤ by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 			</p>
 		</div>

@@ -2132,7 +2132,7 @@ input.num-product::-webkit-inner-spin-button {
 .cl3 {color: #666;}
 .cl4 {color: #999;}
 .cl5 {color: #222;}
-.cl6 {color: #888;}
+.cl6 {color: #555;}
 .cl7 {color: #b2b2b2;}
 .cl8 {color: #555;}
 .cl9 {color: #aaa;}
@@ -3009,12 +3009,6 @@ input.num-product::-webkit-inner-spin-button {
   max-width: 100%;
   height: 400px;
   object-fit: cover;
-}
-
-.hov-img0 img.custom-img {
-  width: 100%; /* El ancho será igual al contenedor padre */
-  height: 250px; /* Altura fija de 300px */
-  object-fit: cover; /* Ajustar y recortar la imagen para llenar el contenedor */
 }
 
 .how-bor2,

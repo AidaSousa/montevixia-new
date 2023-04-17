@@ -37,13 +37,13 @@ Route::get('/pequeruta', function () {
 });
 
 //vista excursion
-Route::get('/excursion', function () {
-    return view('activities.excursion');
+Route::get('/excursiones', function () {
+    return view('events.excursiones');
 });
 
 //vista Actividades extraescolares
 Route::get('/extraescolares', function () {
-    return view('activities.extraescolares');
+    return view('events.extraescolares');
 });
 
 //vista Actividades Culturales

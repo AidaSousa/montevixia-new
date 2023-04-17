@@ -1,59 +1,135 @@
 @extends('layouts.layout')
 
-@section('title', 'Formulario Peque Ruta')
+@section('title', 'Actividades')
 
 @section('content')
 
 
-<div class="row grid mt-8 mb-8">
-    <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item ruta mx-auto" style="margin-top: 120px; margin-bottom: 150px;">
 
-        <div class="block2">
-            <div class="block2-pic hov-img0">
-                <h2 class="text-center">PEQUE-RUTA</h2>
-                <img src="img/pequeruta-3.jpg" alt="IMG">
-                <a href="/pequeruta" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
-                    <button>INSCRIBETE</button>
-                </a>
-            </div>
-            <h4 class="mt-4">RESUMEN</h4>
-            <p style="text-align: justify">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-        </div>
 
-    </div>
+	<!-- Subcategorías actividades -->
+	<section class="sec-product bg0 p-t-100 p-b-50">
+		<div class="container">
 
-    <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item ruta mx-auto" style="margin-top: 120px; margin-bottom: 150px;">
-    
-        <div class="block2">
-            <div class="block2-pic hov-img0">
-                <h2 class="text-center">PINTURA</h2>
-                <img src="img/onosopatio-2.jpg" alt="IMG">
+        <div class="p-b-66">
+				<h3 class="ltext-105 cl5 txt-center respon1">
+					SUBCATEGORÍAS
+				</h3>
+		</div>
 
-                <a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
-                    <button>INSCRIBETE</button>
-                </a>
-            </div>
-            <h4 class="mt-4">RESUMEN</h4>
-            <p style="text-align: justify">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+			<!-- Tab01 -->
+			<div class="tab01">
+				<!-- Tab panes -->
+				<div class="tab-content p-t-50">
+					<!-- - -->
+					<div class="tab-pane fade show active" id="best-seller" role="tabpanel">
+						<!-- Slide2 -->
+						<div class="wrap-slick2">
+							<div class="slick2">
+								<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
+									<!-- Block2 -->
+									<div class="block2 ">
+                                        <a href="/excursiones">
+										<div class="block2-pic hov-img0">
+											<img src="img/pequeruta-3.jpg" alt="IMG-EXCURSIONES" class="w-100 custom-img">
 
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item ruta mx-auto" style="margin-top: 120px; margin-bottom: 150px;">
-    
-        <div class="block2">
-            <div class="block2-pic hov-img0">
-                <h2 class="text-center">BAILE</h2>
-                <img src="img/onosopatio.jpg" alt="IMG">
+											<a href="/excursiones" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-link-page">
+												Ver más
+											</a>
+										</div>
+                                        </a>
+										<div class="block2-txt flex-w flex-t p-t-14">
+											<div class="block2-txt-child1 flex-col-l ">
+												<a href="/excursiones" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+													Excursiones
+												</a>
 
-                <a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
-                    <button>INSCRIBETE</button>
-                </a>
-            </div>
-            <h4 class="mt-4">RESUMEN</h4>
-            <p style="text-align: justify">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-        </div>
-    </div>
-</div>
+											</div>
+
+											<div class="block2-txt-child2 flex-r p-t-3">
+												<a href="/excursiones" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
+								
+									<!-- Block2 -->
+									<div class="block2">
+                                        <a href="/extraescolares">
+										<div class="block2-pic hov-img0">
+											<img src="img/img-1.jpg" alt="IMG-EXTRAESCOLARES" class="w-100 custom-img">
+
+											<a href="/extraescolares" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-link-page">
+												Ver más
+											</a>
+										</div>
+                                        </a>
+										<div class="block2-txt flex-w flex-t p-t-14">
+											<div class="block2-txt-child1 flex-col-l ">
+												<a href="/extraescolares" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+													Extraescolares
+												</a>
+
+											</div>
+
+											<div class="block2-txt-child2 flex-r p-t-3">
+												<a href="/extraescolares" class="btn-addwish-b2 dis-block pos-relative js-link-page">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
+									<!-- Block2 -->
+									<div class="block2">
+										<div class="block2-pic hov-img0">
+											<img src="img/pequeruta-img.png" alt="IMG-PEQUERUTA" class="w-100 custom-img">
+
+											<a href="route{{ ('forms.rutaPequeForm') }}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+												Inscríbete
+											</a>
+										</div>
+
+										<div class="block2-txt flex-w flex-t p-t-14">
+											<div class="block2-txt-child1 flex-col-l ">
+												<a href="/pequeruta" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+													Pequerutas
+												</a>
+
+											</div>
+
+											<div class="block2-txt-child2 flex-r p-t-3">
+												<a href="/pequeruta" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+			</div>
+		</div>
+	</section>
+
+    <!-- Actividades -->
+	<section class="sec-blog bg0 p-t-60 p-b-90">
+		<div class="container">
+			<div class="p-b-66">
+				<h3 class="ltext-105 cl5 txt-center respon1">
+					ACTIVIDADES
+				</h3>
+			</div>
+
+			<div class="row">
+
+            <h3>Aquí un buen foreach</h3>
+
+			</div>
+		</div>
+	</section>
 
 
 @endsection
