@@ -1,4 +1,51 @@
-<form class="form-horizontal" method="POST" enctype="multipart/form-data" action="{{ route('associated.store') }}">
+
+<!-- Modal -->
+<div class="modal fade" id="modalCreate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Crear Asociado</h5>
+                <button type="button" class="btn-close" data-toggle="modal" data-target="#ModalCreate" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#ModalCreate">Close</button>
+                <button type="submit" class="btn btn-primary">Guardar cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" py-5>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4>
+                        Asociados
+                        <button type="button" class=" btn btn-primary" data-toggle="modal" data-target="#ModalCreate" data-bs-target="#exampleModal">Crear Asociado</button>
+                    </h4>
+                </div>
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- <form class="form-horizontal" method="POST" enctype="multipart/form-data" action="{{ route('associated.store') }}">
   <div class="modal fade text-left" id="ModalCreate" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
@@ -122,13 +169,13 @@
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>    
+            </div>    
         </div>
       </div>
     </div>
   </div>
-</form>
+</form> -->

@@ -11,6 +11,7 @@
             <!-- Botón de regreso -->
         
             <a href="{{ route('blogs.index') }}"  class="btn btn-custom">Volver</a> <!-- Botón centrado, grande y de ancho completo con margen inferior -->
+
         </div>
     </div>
 </div>
