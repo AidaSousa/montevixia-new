@@ -64,10 +64,6 @@
 						<ul class="main-menu">
 							<li class="active-menu">
 								<a href="{{ route('events.events') }}">Actividades</a>
-								<ul class="sub-menu">
-									<li><a href="/extraescolares">Actividades extraescolares</a></li>
-									<li><a href="/excursion">Excursiones</a></li>
-								</ul>
 
 						</li>
 						<li>
@@ -153,10 +149,6 @@
 				<ul class="main-menu-m">
 					<li>
 						<a href="index.html">Actividades</a>
-						<ul class="sub-menu-m">
-							<li><a href="home-02.html">Actividades extraescolares</a></li>
-							<li><a href="home-03.html">Excursiones</a></li>
-						</ul>
 						<span class="arrow-main-menu-m">
 							<i class="fa fa-angle-right" aria-hidden="true"></i>
 						</span>

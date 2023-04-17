@@ -16,7 +16,7 @@
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
-								<h2 class="ltext-104 cl2 p-t-19 p-b-43 respon1">
+								<h2 class="ltext-104 cl2 p-t-19 p-b-43 respon1 text-white">
 									Comedor
 								</h2>
 							</div>
@@ -38,13 +38,16 @@
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="lightSpeedIn" data-delay="800">
-								<h2 class="ltext-104 cl2 p-t-19 p-b-43 text-white respon1">
-									O noso patio
+								<h2 class="ltext-104 cl2 p-t-19 p-b-43 text-white respon1">				
+								Portal de Inscricións Federación de Anpas
 								</h2>
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="slideInUp" data-delay="1600">
-								<a href="/blogs" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+								<a href=<a href="https://www.fedapascoruna.org/inscripciones/" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+    Ver
+</a>
+ class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
 									Ver
 								</a>
 							</div>
