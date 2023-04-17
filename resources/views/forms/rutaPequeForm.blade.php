@@ -9,7 +9,7 @@
         <div class="block1 wrap-pic-w">
             <img src="img/pequeruta-img.png" alt="Peque ruta">
             <h1>INSCRICIÓN PEQUERUTA DO SANJURJO. RÍO DOS DOUS NOMES. COIRÓS 1/6/2023</h1>
-            <p>Saída a natureza para facer a ruta do Río dos dous nomes co obxectivo de pasar un día ao aire libre, compartir este espazo co resto das familias e aprender da natureza.
+            <p class="text-justify">Saída a natureza para facer a ruta do Río dos dous nomes co obxectivo de pasar un día ao aire libre, compartir este espazo co resto das familias e aprender da natureza.
 
                 Condicións:
                 - Actividade gratuíta para familias socias da ANPA e con custe de 8 euros para as no socias
@@ -27,7 +27,7 @@
                         <form action="" method="POST">
                             @csrf
                             <div class="form-group">
-                                <label class="control-label" for="">Número total de personas en el grupo</label>
+                                <label class="control-label" for="">Número total de persoas do grupo</label>
                                 <select class="form-control">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -46,11 +46,11 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <h3 class="control-label text-center m-5" for="">DATOS DEL ADULTO RESPONSABLE</h3>
-                                <label class="control-label" for="">Nombre y apellidos</label>
+                                <h3 class="control-label text-center m-5" for="">Datos da persoa adulta responsable do grupo</h3>
+                                <label class="control-label" for="">Nome e apelidos</label>
                                 <input class="form-control" type="text">
                                 <div class="form-group">
-                                    <label class="control-label" for="">Fecha de nacimiento</label>
+                                    <label class="control-label" for="">Data de nacemento</label>
                                     <input class="form-control" type="date">
                                 </div>
                             </div>
@@ -63,15 +63,15 @@
                                 <input class="form-control" type="tel">
                             </div>
                             <div class="form-group">
-                                <h3 class="tile-title text-center m-5">DATOS DE LA PERSONA ADICIONAL</h3>
+                                <h3 class="tile-title text-center m-5">DATOS DO RESTO DO GRUPO</h3>
                                 <div class="form-group">
-                                    <label class="control-label">Nombre y apellidos</label>
+                                    <label class="control-label">Nome e apelidos</label>
                                     <input class="form-control" type="text">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="control-label">Fecha de nacimiento</label>
+                                <label class="control-label">Data do nacemento</label>
                                 <input class="form-control" type="date">
                             </div>
                             <div class="form-group">
@@ -90,45 +90,45 @@
                             </div>
                     </div>
                     <hr class="mt-3">
-                    <h3 class="tile-title text-center mt-5 mb-3">CONDICIONES DE PARTICIPACION</h3>
-                    <h4 class="mt-3 mb-3">Debes aceptar las condiciones de participación para que la inscripción sea válida</h4>
+                    <h3 class="tile-title text-center mt-5 mb-3">Condicións de participación</h3>
+                    <h4 class="mt-3 mb-3">Debes aceptar as condicións de participación para que a inscrición sexa valida.</h4>
                     <div class="form-group">
                         <div class="form-check d-flex">
                             <label class="form-check-label"><br />
-                                <input class="form-check-input mb-3" type="checkbox">Confirmo que al menos un niño menor de 12 años se agrega al grupo.
+                                <input class="form-check-input mb-3" type="checkbox">Confirmo que no grupo se engade alomenos un menor de 12 anos.
                             </label>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="form-check">
                             <label class="form-check-label"></br>
-                                <input class="form-check-input" type="checkbox" required>Confirmo que hay un adulto responsable en el grupo.
+                                <input class="form-check-input" type="checkbox" required>Confirmo que no grupo existe unha persoa adulta responsable do grupo.
                             </label>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="form-check">
                             <label class="form-check-label"></br>
-                                <input class="form-check-input" type="checkbox" required>En todo momento los integrantes del grupo deben cumplir con las instrucciones de las personas que guían la ruta.
+                                <input class="form-check-input" type="checkbox" required>En todo momento as persoas cumpriran as instrucións das persoas guías da ruta
                             </label>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="form-check">
                             <label class="form-check-label"></br>
-                                <input class="form-check-input" type="checkbox" required>Confirmo que el grupo tiene las condiciones físicas y mentales adecuadas para realizar la actividad.
+                                <input class="form-check-input" type="checkbox" required>Confirmo que o grupo ten as condicións físicas e psíquicas adecuadas para desenvolver a actividad
                             </label>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="form-check">
                             <label class="form-check-label"></br>
-                                <input class="form-check-input" type="checkbox" required>Confirmo que acepto las condiciones de participacion de la actividad.
+                                <input class="form-check-input" type="checkbox" required>Confirmo que aceptamos as bases de participación da actividade
                             </label>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>La unidad familiar es miembro de la AMPA</label>
+                        <label>A unidade familiar é socia da ANPA</label>
                         <div class="form-check form-check-inline mr-1 form-check-label">
                             <input class="form-check-input ml-1" type="radio" name="ampa" id="ampa_si" value="si" required>
                             <label class="form-check-label" for="ampa_si">Si</label>
@@ -139,7 +139,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Autorizo la publicación de fotos en las que aparezcan personas del grupo en el blog del AMPA</label>
+                        <label>Autorizo a publicación de fotos nas que aparecen persoas do grupo no blogue da ANPA</label>
                         <div class="form-check form-check-inline mr-1 form-check-label">
                             <input class="form-check-input ml-1" type="radio" name="fotos" id="fotos_si" value="si">
                             <label class="form-check-label" for="fotos_si">Si</label>
