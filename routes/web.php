@@ -187,10 +187,10 @@ Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
 
 
 // Ruta para mostrar el formulario de creación de un blog
-Route::get('/blog/create', [BlogController::class, 'create'])->name('posts.create');
+Route::get('/blog/create', [BlogController::class, 'create'])->name('blog.create');
 
 // Ruta para guardar un nuevo blog
-Route::post('/blog', [BlogController::class, 'store'])->name('posts.store');
+Route::post('/blog', [BlogController::class, 'store'])->name('blog.store');
 
 // Ruta para mostrar un blog específico
 Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blogs.show');
@@ -203,6 +203,9 @@ Route::put('/blog/{id}', [BlogController::class, 'update'])->name('posts.update'
 
 // Ruta para eliminar un blog
 Route::delete('/blog/{id}', [BlogController::class, 'destroy'])->name('posts.destroy');
+
+//Stripe
+Route::post('/create-checkout-session', 'StripeController@createCheckoutSession');
 
 //Ruta para la página de suscripción
 Route::get('/suscripcion', [SubscriptionController::class, 'index'])->name('subscription.index');
