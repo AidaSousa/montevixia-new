@@ -362,13 +362,13 @@
 				<div class="col-sm-6 col-lg-3 p-b-50">
 					<ul text-justify>
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
+							<a href="/politica" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
 								Politica de Privacidad
 							</a>
 						</li>
 
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
+							<a href="/aviso" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
 								Aviso legal
 							</a>
 						</li>
