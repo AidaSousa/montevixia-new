@@ -44,7 +44,7 @@
 	   
 
 
-	<title>@yield('title') - Ampa Montevixia</title>
+	<title>@yield('title') - Anpa Montevixia</title>
 
 </head>
 
@@ -155,24 +155,26 @@
 					</li>
 
 					<li>
-						<a href="http://anpamontevixia.blogspot.com/" target="_blank">Blog</a>
+						<a href="{{ route('blogs.index') }}">Blog</a>
 					</li>
 
-				<li>
-					<a href="{{ route('login') }}">Mi Perfil</a>
-				</li>
+					@auth
+						<li>
+							<a href="{{ route('user.profile') }}">Mi Perfil</a>
+						</li>
 
-				<li>
-					<a href="{{ route('login') }}">Cerrar Sesion</a>
-        </li>
+						<form action="{{ route('logout') }}" method="GET">
+    						<button type="submit">Cerrar sesión</button>
+						</form>
 
-					<li>
-						<a href="{{ route('login') }}">Login</a>
-					</li>
-
-					<li>
-						<a href="{{ route('register') }}">Registro</a>
-					</li>
+						@else
+        				<li>
+            				<a href="{{ route('login') }}">Login</a>
+        				</li>
+        				<li>
+            				<a href="{{ route('register') }}">Rexistro</a>
+       					 </li>
+       				@endauth
 				</ul>
 			</div>
 

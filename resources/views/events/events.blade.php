@@ -27,42 +27,14 @@
 						<div class="wrap-slick2">
 							<div class="slick2">
 								<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-									<!-- Block2 -->
-									<div class="block2 ">
-                                        <a href="/excursiones">
-										<div class="block2-pic hov-img0">
-											<img src="img/pequeruta-3.jpg" alt="IMG-EXCURSIONES" class="w-100 custom-img">
-
-											<a href="/excursiones" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-link-page">
-												Ver más
-											</a>
-										</div>
-                                        </a>
-										<div class="block2-txt flex-w flex-t p-t-14">
-											<div class="block2-txt-child1 flex-col-l ">
-												<a href="/excursiones" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-													Excursiones
-												</a>
-
-											</div>
-
-											<div class="block2-txt-child2 flex-r p-t-3">
-												<a href="/excursiones" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
 								
 									<!-- Block2 -->
 									<div class="block2">
-                                        <a href="/extraescolares">
+                                        <a href=>
 										<div class="block2-pic hov-img0">
 											<img src="img/img-1.jpg" alt="IMG-EXTRAESCOLARES" class="w-100 custom-img">
 
-											<a href="/extraescolares" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-link-page">
+											<a href="https://www.fedapascoruna.org/inscripciones/" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-link-page">
 												Ver más
 											</a>
 										</div>
@@ -70,13 +42,13 @@
 										<div class="block2-txt flex-w flex-t p-t-14">
 											<div class="block2-txt-child1 flex-col-l ">
 												<a href="/extraescolares" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-													Extraescolares
+												 Portal de Inscricións Federación de Anpas
 												</a>
 
 											</div>
 
 											<div class="block2-txt-child2 flex-r p-t-3">
-												<a href="/extraescolares" class="btn-addwish-b2 dis-block pos-relative js-link-page">
+												<a href="https://www.fedapascoruna.org/inscripciones/" class="btn-addwish-b2 dis-block pos-relative js-link-page">
 												</a>
 											</div>
 										</div>

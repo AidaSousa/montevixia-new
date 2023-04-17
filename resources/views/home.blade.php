@@ -44,11 +44,8 @@
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="slideInUp" data-delay="1600">
-								<a href=<a href="https://www.fedapascoruna.org/inscripciones/" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-    Ver
-</a>
- class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-									Ver
+								<a href="https://www.fedapascoruna.org/inscripciones/" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+    								Ver
 								</a>
 							</div>
 						</div>
