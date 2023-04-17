@@ -27,6 +27,8 @@
         </select>
     </div>
     <div>
-        <button class="btn btn-success btn-custom px-4 mt-3" type="submit">Agregar hijo</button>
+        <button class="btn btn-success btn-custom px-4 mt-3" type="submit"  style="background-color: #009688;color: white;">
+        Agregar hijo
+        </button>
     </div>
 </form>

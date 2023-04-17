@@ -54,7 +54,7 @@
         </select>
     </div>
     <div>
-        <button class="btn btn-success btn-custom px-4 mt-3" type="submit">Editar</button>
+        <button class="btn btn-custom px-4 mt-3" type="submit"  style="background-color: #009688;color: white;">Editar</button>
     </div>
 </form>
 

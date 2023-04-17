@@ -15,7 +15,7 @@
 								<div class="mt-3">
 									<h4>{{ auth()->user()->name }}</h4>
 									<p class="text-secondary mb-1">{{auth()->user()->surname }}</p>
-									<a class="btn btn-primary text-white btn-custom" href="{{ route('subscription.index') }}">Hacerme socio</a>
+									<a class="btn btn-success btn-custom" href="{{ route('subscription.index') }}"  style="background-color: #009688">Hacerme socio</a>
 								</div>
 							</div>
 							<hr class="my-4">
@@ -62,7 +62,9 @@
 							<div class="row">
 								<div class="col-sm-3"></div>
 								<div class="col-sm-9 text-secondary">
-                                    <button type="submit" class="btn btn-success px-4">Guardar cambios</button>
+                                    <button type="submit" class="btn btn-custom px-4"  style="background-color: #009688;
+    color: white;">Guardar cambios</button>
+									
 								</div>
 							</div>
 						</div>
