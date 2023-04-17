@@ -53,5 +53,5 @@
         </div>
 
 
-
+@include('categories.create')
 @endsection

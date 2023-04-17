@@ -43,7 +43,8 @@
                           <td>{{$asso->colaboracion_ampa}}</td>
                           <td>
                           <div class="d-flex">
-                            <a href="#" type="button" data-toggle="modal" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>                          
+                                      <a href="{{ route('associated.edit', $asso->id) }}" type="button" data-toggle="modal" data-target="#ModalEdit" class="btn btn-sm btn-primary">Editar</a> 
+
                           </div>
                             <form method="POST" action="{{ route('associated.destroy', $asso->id) }}" style="display:inline">
                               {{ csrf_field() }}
