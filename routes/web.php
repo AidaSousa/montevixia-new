@@ -7,6 +7,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\EventUserController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SubscriptionController;
 use Illuminate\Support\Facades\Route;
@@ -35,6 +36,31 @@ Route::get('/pequeruta', function () {
     return view('forms.rutaPequeForm');
 });
 
+//vista excursion
+Route::get('/excursiones', function () {
+    return view('events.excursiones');
+});
+
+//vista Actividades extraescolares
+Route::get('/extraescolares', function () {
+    return view('events.extraescolares');
+});
+
+//vista Actividades Culturales
+Route::get('/culturales', function () {
+    return view('activities.culturales');
+});
+
+//vista Politica de Privacidad
+Route::get('/politica', function () {
+    return view('footer.politicaPrivacidad');
+});
+
+//vista Aviso legal
+Route::get('/aviso', function () {
+    return view('footer.avisoLegal');
+});
+
 //Formulario banco libros
 Route::get('/banco-libros', function () {
     return view('forms.banco-libros');
@@ -42,11 +68,6 @@ Route::get('/banco-libros', function () {
 //Formulario asociado vista usuario
 Route::get('/asociate', function () {
     return view('associated.formAsociate');
-});
-
-//Formulario banco libros
-Route::get('/bancolibros', function () {
-    return view('forms.banco-libros');
 });
 
 Route::get('/dash', function () {
@@ -85,6 +106,14 @@ Route::get('/roles', function () {
     return view('roles.index');
 })->name('roles.index');
 
+Route::get('/event', function () {
+    return view('events.index');
+})->name('event.index');
+
+Route::get('/event', function () {
+    return view('events.create');
+})->name('event.create');
+
 Route::get('/logout', function () {
     return view('logout.index');
 })->name('logout.index');
@@ -102,7 +131,7 @@ Route::post('/register', [LoginController::class, 'register']);
 // Route::get('/email/verify/{id}/{hash}', [VerificationController::class, 'verify'])->name('verification.verify');
 // Route::post('/email/resend', [VerificationController::class, 'resend'])->name('verification.resend');
 
-Route::view('/profile', "user.profile")->middleware('auth')->name('profile');
+Route::get('/profile', [UserController::class, 'showProfile'])->middleware('auth')->name('user.profile');
 
 //Children
 Route::get('/children-index', [ChildrenController::class, 'indexChildren'])->name('children.index');
@@ -111,7 +140,7 @@ Route::post('/children-store', [ChildrenController::class, 'storeChildren'])->na
 Route::get('/children-edit/{id}', [ChildrenController::class, 'editChildren'])->name('children.edit');
 Route::put('/children-update/{id}', [ChildrenController::class, 'updateChildren'])->name('children.update');
 Route::get('/children-show', [ChildrenController::class, 'showChildren'])->name('children.show');
-Route::get('/children-destroy/{id}', [ChildrenController::class, 'destroyChildren'])->name('children.destroy');
+Route::delete('/children-destroy/{id}', [ChildrenController::class, 'destroyChildren'])->name('children.destroy');
 
 //Categories
 Route::get('/category-index', [CategoryController::class, 'indexCategory'])->name('categories.index');
@@ -120,7 +149,7 @@ Route::post('/category-store', [CategoryController::class, 'storeCategory'])->na
 Route::get('/category-edit/{id}', [CategoryController::class, 'editCategory'])->name('categories.edit');
 Route::put('/category-update/{id}', [CategoryController::class, 'updateCategory'])->name('categories.update');
 Route::get('/category-show', [CategoryController::class, 'showCategory'])->name('categories.show');
-Route::get('/category-destroy/{id}', [CategoryController::class, 'destroyCategory'])->name('categories.destroy');
+Route::delete('/category-destroy/{id}', [CategoryController::class, 'destroyCategory'])->name('categories.destroy');
 
 //Events
 Route::get('/event-index', [EventController::class, 'indexEvent'])->name('events.index');
@@ -130,6 +159,9 @@ Route::get('/event-edit/{id}', [EventController::class, 'editEvent'])->name('eve
 Route::put('/event-update/{id}', [EventController::class, 'updateEvent'])->name('events.update');
 Route::get('/event-show', [EventController::class, 'showEvent'])->name('events.show');
 Route::get('/event-destroy/{id}', [EventController::class, 'destroyEvent'])->name('events.destroy');
+Route::get('/actividades', function () {
+    return view('events.events');
+})->name('events.events');
 
 //Event user
 Route::get('/eventUser-index', [EventUserController::class, 'indexEventUser'])->name('eventUser.index');

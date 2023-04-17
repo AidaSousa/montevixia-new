@@ -14,10 +14,10 @@ class ChildrenController extends Controller
         $user = Auth::user();
 
         // Obtiene los hijos del usuario actual
-        $child = Child::where('user_id', $user->id)->paginate(10);
+        $children = Child::where('user_id', $user->id);
 
         // Retorna la vista con la lista de hijos
-        return view('children.index', ['child' => $child]);
+        return view('children.index', ['children' => $children]);
     }
 
     public function createChildren() {
@@ -37,14 +37,14 @@ class ChildrenController extends Controller
 
         $children->save();
 
-        return redirect()->route('children.index')->with('success', 'Children created successfully!!');
+        return redirect()->route('user.profile')->with('success', 'Children created successfully!!');
     }
 
     public function showChildren($id) {
 
         $children = Child::findOrFail($id);
         
-        return view('children.show', compact('child'));
+        return view('children.show', compact('children'));
     }
 
     public function editChildren($id) {
@@ -63,7 +63,7 @@ class ChildrenController extends Controller
         
         $children->save();
 
-        return redirect()->route('children.index')->with('success', 'Children updated successfully!!');
+        return redirect()->route('user.profile')->with('success', 'Children updated successfully!!');
     }
 
     public function destroyChildren($id) {
@@ -75,6 +75,6 @@ class ChildrenController extends Controller
         }
 
         $children->delete();
-        return redirect()->route('children.index');
+        return redirect()->route('user.profile');
     }
 }

@@ -1,13 +1,11 @@
 @extends('layouts.layout')
 
-@section('title', 'Banco Libros')
+@section('title', 'Contacto')
 
 @section('content')
 
-<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('img/img-9.jpeg')">
-    <h2 class="ltext-105 cl0 txt-center">
-        Contacto
-    </h2>
+<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('img/anpa-cabecera.jpg')">
+    
 </section>
 <section class="bg0 p-t-104 p-b-116">
     <div class="container">
@@ -15,7 +13,7 @@
             <div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
                 <form>
                     <h4 class="mtext-105 cl2 txt-center p-b-30">
-                        Contactanos
+                        Contáctanos
                     </h4>
                     <div class="bor8 m-b-20 how-pos4-parent">
                         <input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="tu correo electronico">
@@ -38,7 +36,7 @@
                     </span>
                     <div class="size-212 p-t-2">
                         <span class="mtext-110 cl2">
-                            Direccion
+                            Dirección
                         </span>
                         <p class="stext-115 cl6 size-213 p-t-18">
                             Asociación de Nais e Pais Eduardo Sanjurjo
@@ -53,7 +51,7 @@
                     </span>
                     <div class="size-212 p-t-2">
                         <span class="mtext-110 cl2">
-                            telefono
+                            Teléfono
                         </span>
                         <p class="stext-115 cl1 size-213 p-t-18">
                             604 049 984
@@ -66,7 +64,7 @@
                     </span>
                     <div class="size-212 p-t-2">
                         <span class="mtext-110 cl2">
-                            Correo electronico
+                            Correo electrónico
                         </span>
                         <p class="stext-115 cl1 size-213 p-t-18">
                             anpaesanjurjo@gmail.com

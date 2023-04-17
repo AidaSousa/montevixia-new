@@ -41,6 +41,8 @@
 	<!--georgette iconos-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
 
+	   
+
 
 	<title>@yield('title') - Ampa Montevixia</title>
 
@@ -61,11 +63,10 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li class="active-menu">
-								<a href="index.html">Actividades</a>
+								<a href="{{ route('events.events') }}">Actividades</a>
 								<ul class="sub-menu">
-									<li><a href="index.html">Actividades culturales</a></li>
-									<li><a href="home-02.html">Actividades extraescolares</a></li>
-									<li><a href="home-03.html">Excursiones</a></li>
+									<li><a href="/extraescolares">Actividades extraescolares</a></li>
+									<li><a href="/excursion">Excursiones</a></li>
 								</ul>
 
 						</li>
@@ -74,7 +75,7 @@
 						</li>
 						@auth
 						<li>
-							<a href="{{ route('profile') }}">Mi Perfil</a>
+							<a href="{{ route('user.profile') }}">Mi Perfil</a>
 						</li>
 
 						<form action="{{ route('logout') }}" method="GET">
@@ -86,30 +87,31 @@
             				<a href="{{ route('login') }}">Login</a>
         				</li>
         				<li>
-            				<a href="{{ route('register') }}">Registro</a>
+            				<a href="{{ route('register') }}">Rexistro</a>
        					 </li>
        					 @endauth
 
 					</ul>
 				</div>	
 
-					<!-- Icon header -->
-					<!--<div class="wrap-icon-header flex-w flex-r-m h-full">
-						 <div class="flex-c-m h-full p-r-24">
+				<!-- Icon header 
+				<div class="wrap-icon-header flex-w flex-r-m h-full">
+					<div class="flex-c-m h-full p-r-24">
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-modal-search">
 							<i class="zmdi zmdi-search"></i>
 						</div> 
 					</div>-->
+
 					<!-- <div class="flex-c-m h-full p-l-18 p-r-25 bor5">
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
 							<i class="zmdi zmdi-shopping-cart"></i>
 						</div>
 					</div> -->
-
-					<!--<div class="flex-c-m h-full p-lr-19">
+							
+					<!-- <div class="flex-c-m h-full p-lr-19">
 						<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-sidebar">
 							<i class="zmdi zmdi-menu"></i>
-						</div>-->
+						</div> -->
 					</div>
 			</div>
 			</nav>
@@ -152,7 +154,6 @@
 					<li>
 						<a href="index.html">Actividades</a>
 						<ul class="sub-menu-m">
-							<li><a href="index.html">Actividades culturales</a></li>
 							<li><a href="home-02.html">Actividades extraescolares</a></li>
 							<li><a href="home-03.html">Excursiones</a></li>
 						</ul>
@@ -297,7 +298,7 @@
 				<div class="col-sm-6 col-lg-3 p-b-50">
 				<ul text-justify>
 						<li class="p-b-10">
-							< <a href="/contacto" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
+							<a href="/contacto" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
 								CONTACTO
 							</a>
 						</li>
@@ -361,13 +362,13 @@
 				<div class="col-sm-6 col-lg-3 p-b-50">
 					<ul text-justify>
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
+							<a href="/politica" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
 								Politica de Privacidad
 							</a>
 						</li>
 
 						<li class="p-b-10">
-							<a href="#" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
+							<a href="/aviso" class="stext-107 cl7 hov-cl1 trans-04 text-decoration-none">
 								Aviso legal
 							</a>
 						</li>
@@ -385,7 +386,7 @@
 				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 				Copyright &copy;<script>
 					document.write(new Date().getFullYear());
-				</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+				</script> All rights reserved | This template is made with ❤ by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 			</p>
 		</div>
@@ -501,6 +502,7 @@
 			})
 		});
 	</script>
+	<script src="{{ asset('js/main.js') }}"></script>
 
 	@stack('scripts')
   <script src="{{ asset('js/main.js') }}"></script>
