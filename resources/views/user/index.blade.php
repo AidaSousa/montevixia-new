@@ -8,7 +8,7 @@
       <div class="app-title">
         <div class="d-flex">
           <h1><i class="fa fa-users"></i> Usuarios</h1>
-          <a href="{{ route('associated.create') }}" class="btn btn-primary ml-3" type="button" onclick="openModal();"><i class="fa fa-plus"></i>Nuevo</a>
+          <a href="{{ route('usuarios.create') }}" class="btn btn-primary ml-3" type="button" onclick="openModal();"><i class="fa fa-plus"></i>Nuevo</a>
         </div>
       </div>
       

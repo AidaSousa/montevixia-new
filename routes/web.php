@@ -77,6 +77,10 @@ Route::get('/user', function () {
     return view('user.index');
 })->name('user.index');
 
+Route::get('/usuario', function () {
+    return view('usuarios.create');
+})->name('usuarios.create');
+
 Route::get('/rutas', function () {
     return view('rutas.index');
 })->name('rutas.index');
@@ -96,6 +100,14 @@ Route::get('/pagos', function () {
 Route::get('/roles', function () {
     return view('roles.index');
 })->name('roles.index');
+
+Route::get('/event', function () {
+    return view('events.index');
+})->name('event.index');
+
+Route::get('/event', function () {
+    return view('events.create');
+})->name('event.create');
 
 Route::get('/logout', function () {
     return view('logout.index');

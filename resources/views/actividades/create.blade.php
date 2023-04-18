@@ -1,11 +1,9 @@
-<form class="form-horizontal" method="POST" enctype="multipart/form-data" action="{{ route('associated.update', ['id' => $associated->id] ) }}">
-    {{ csrf_field() }}
-    {{ method_field('PUT') }}
-  <div class="modal fade text-left" id="ModalEdit" tabindex="-1" role="dialog" aria-hidden="true">
+<form class="form-horizontal" method="POST" enctype="multipart/form-data" action="{{ route('event.store') }}">
+  <div class="modal fade text-left" id="ModalCreate" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Editar asociado</h4>
+          <h4 class="modal-title">Crear nuevo asociado</h4>
         </div>
         <div class="modal-body">
         <div class="container">
@@ -13,14 +11,15 @@
             <div class="col-md-12 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-body">
+                            {{ csrf_field() }}
                             <div class="form-group{{ $errors->has('situacion') ? ' has-error' : '' }}">
                                 <label for="situacion" class="col-md-4 control-label">Situación</label>
                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                     <select id="situacion" name="situacion" class="form-control" required autofocus>
                                         <option value="">Seleccione</option>
-                                        <option value="Alta-nueva" {{ $associated->situacion == 'Alta-nueva' ? 'selected' : '' }}>Alta nueva</option>
-                                        <option value="Renovacion" {{ $associated->situacion == 'Renovacion' ? 'selected' : '' }}>Renovación</option>
-                                        <option value="Modificacion-datos"  {{ $associated->situacion == 'Modificacion-datos' ? 'selected' : '' }}>Modificación datos</option>
+                                        <option value="Alta-nueva">Alta nueva</option>
+                                        <option value="Renovacion">Renovación</option>
+                                        <option value="Modificacion-datos">Modificación datos</option>
                                     </select>
                                     @if ($errors->has('situacion'))
                                         <span class="help-block">
@@ -114,21 +113,22 @@
                                         <strong>{{ $errors->first('colaboracion_ampa') }}</strong>
                                     </span>
                                     @endif
-                                </div>
-
+                                </div> <br>
                                 <div class="form-group">
                                     <div class="col-md-6 col-md-offset-4">
                                         <button type="submit" class="btn btn-primary">
-                                            Editar asociado
+                                            Registrar asociado
                                         </button>
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>    
+            </div>
         </div>
+    </div>    
+        </div>
+      </div>
     </div>
-@endsection
+  </div>
+</form>

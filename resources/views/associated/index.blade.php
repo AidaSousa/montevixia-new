@@ -63,5 +63,5 @@
             </div>
         </div>
 
-
+@include('associated.create')
 @endsection
