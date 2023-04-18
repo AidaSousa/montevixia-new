@@ -35,7 +35,7 @@
                                 </div>
                             </div>
                             <div class="form-group{{ $errors->has('situacion') ? ' has-error' : '' }}">
-                            <label for="name_padre_madre" class="col-md-4 control-label">Fecha de inicio de actividad</label>
+                            <label for="name_padre_madre" type="date" class="col-md-4 control-label">Fecha de inicio de actividad</label>
                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                     <input id="name_padre_madre" type="text" class="form-control" name="name_padre_madre" value="{{ old('name_padre_madre') }}" required>
                                     @if ($errors->has('name_padre_madre'))
@@ -68,7 +68,7 @@
                                 </div>
                             </div>
                             <div class="form-group{{ $errors->has('situacion') ? ' has-error' : '' }}">
-                            <label for="name_padre_madre" class="col-md-4 control-label">Fecha de finalización de actividad</label>
+                            <label for="name_padre_madre" type="date" class="col-md-4 control-label">Fecha de finalización de actividad</label>
                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                     <input id="name_padre_madre" type="text" class="form-control" name="name_padre_madre" value="{{ old('name_padre_madre') }}" required>
                                     @if ($errors->has('name_padre_madre'))
@@ -89,9 +89,6 @@
                                     @endif
                                 </div>
                             </div>
-                            
-                            
-                            
                                 <div class="form-group">
                                     <div class="col-md-6 col-md-offset-4">
                                         <button type="submit" class="btn btn-primary">
@@ -100,11 +97,11 @@
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>    
+            </div>    
         </div>
       </div>
     </div>

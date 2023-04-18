@@ -10,9 +10,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $latest_blogs = Blog::latest()->take(3)->get();
+        // $latest_blogs = Blog::latest()->take(3)->get();
 
-        return view('home', compact('latest_blogs'));
+        // return view('home', compact('latest_blogs'));
     }
    
 }

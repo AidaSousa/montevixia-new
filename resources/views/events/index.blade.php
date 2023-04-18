@@ -27,7 +27,7 @@
                           <th>Precio no asociado</th>
                           <th>Precio asociado</th>
                           <th>Fecha de finalización</th>
-                          <th>Id categoria</th>
+                          <th>Categoria</th>
                           <th>Acciones</th>
                         </tr>
                       </thead>

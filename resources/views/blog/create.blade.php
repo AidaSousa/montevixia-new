@@ -1,10 +1,10 @@
-@extends('layouts.layout')
+@extends('dashboard')
 
 @section('content')
 <div class="container">
     <h1>Crear nuevo Blog</h1>
 
-    <form action="{{ route('blogs.store') }}" method="post" enctype="multipart/form-data">
+    <form action="{{ route('blog.store') }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="title">Título</label>

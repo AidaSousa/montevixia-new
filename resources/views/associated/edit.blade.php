@@ -5,6 +5,7 @@
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
+
           <h4 class="modal-title">Editar asociado</h4>
         </div>
         <div class="modal-body">
@@ -13,6 +14,9 @@
             <div class="col-md-12 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-body">
+
+                            {{ csrf_field() }}
+
                             <div class="form-group{{ $errors->has('situacion') ? ' has-error' : '' }}">
                                 <label for="situacion" class="col-md-4 control-label">Situación</label>
                                 <div class="col-xs-12 col-sm-12 col-md-12">
