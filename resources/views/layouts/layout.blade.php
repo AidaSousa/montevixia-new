@@ -376,6 +376,24 @@
 
 	<script src="{{ asset('js/perfect-scrollbar.min.js') }}"></script>
 	<script>
+		$('.js-pscroll').each(function(){
+			$(this).css('position','relative');
+			$(this).css('overflow','hidden');
+			var ps = new PerfectScrollbar(this, {
+				wheelSpeed: 1,
+				scrollingThreshold: 1000,
+				wheelPropagation: false,
+			});
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+	</script>
+
+	
+	<!-- <script src="{{ asset('js/perfect-scrollbar.min.js') }}"></script>
+	<script>
 		$('.js-pscroll').each(function() {
 			$(this).css('position', 'relative');
 			$(this).css('overflow', 'hidden');
@@ -389,11 +407,12 @@
 				ps.update();
 			})
 		});
-	</script>
+	</script> -->
+
+
 	<script src="{{ asset('js/main.js') }}"></script>
 
 	@stack('scripts')
-  <script src="{{ asset('js/main.js') }}"></script>
 
 </body>
 
