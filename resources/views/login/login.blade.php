@@ -33,7 +33,7 @@
             <input id="email" name="email" class="form-control" type="email" placeholder="Email" autofocus>
           </div>
           <div class="form-group">
-            <label class="control-label">CONTRASEÑA</label>
+            <label class="control-label">CONTRASINAL</label>
             <input id="password" name="password" class="form-control" type="password" placeholder="Contraseña">
           </div>
           @error('message')
@@ -41,7 +41,7 @@
           @enderror
           <div class="form-group">
             <div class="utility">
-              <p class="semibold-text mb-2"><a href="#" data-toggle="flip">¿Olvidaste tu contraseña?</a></p>
+              <p class="semibold-text mb-2"><a href="#" data-toggle="flip">Esqueciches o teu contrasinal?</a></p>
             </div>
           </div>
           <div id="alertLogin" class="text-center"></div>
@@ -50,7 +50,7 @@
           </div>
         </form>
         <form id="formRecetPass" name="formRecetPass" class="forget-form" action="">
-          <h5 class="login-head"><i class="fa fa-lg fa-fw fa-lock"></i>¿Olvidaste contraseña?</h5>
+          <h5 class="login-head"><i class="fa fa-lg fa-fw fa-lock"></i>Esqueciches o teu contrasinal?</h5>
           <div class="form-group">
             <label class="control-label">EMAIL</label>
             <input id="txtEmailReset" name="txtEmailReset" class="form-control" type="email" placeholder="Email">

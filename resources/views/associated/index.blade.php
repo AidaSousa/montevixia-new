@@ -4,7 +4,6 @@
 
 @section('content')
 
-
       <div class="app-title">
         <div class="d-flex">
           <h1><i class="fa fa-users"></i> Asociados</h1>
@@ -44,12 +43,14 @@
                           <td>{{$asso->colaboracion_ampa}}</td>
                           <td>
                           <div class="d-flex">
-                            <a href="{{ route('associated.edit', $asso->id) }}" class="btn btn-sm btn-primary">Editar</a>                          </div>
+                                      <a href="{{ route('associated.edit', $asso->id) }}" type="button" data-toggle="modal" data-target="#ModalEdit" class="btn btn-sm btn-primary">Editar</a> 
+
+                          </div>
                             <form method="POST" action="{{ route('associated.destroy', $asso->id) }}" style="display:inline">
                               {{ csrf_field() }}
                               {{ method_field('DELETE') }}
                           <div class="d-flex">
-                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('¿Estás seguro de que quieres eliminar este asociado?')">Eliminar</button>
+                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('¿Estás seguro de que quieres eliminar este asociado?')"><i class="fa fa-trash"></i></button>
                           </div>
                             </form>
                           </td>
@@ -62,5 +63,6 @@
               </div>
             </div>
         </div>
-@include('associated.create')
+
+
 @endsection
