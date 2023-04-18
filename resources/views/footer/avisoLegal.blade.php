@@ -461,9 +461,18 @@
                         "Acepto a Política de Privacidade",
                         "Lin e estou dacordo",
                         "Acepto as condicións de uso do servizo e a política de privacidade"
-
                     </p>
-
+                    <div class="form-group">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" style="margin-bottom: 40px" type="checkbox">Acepto a Política de Privacidade
+                            </label>
+                            <div class="form-group" style="margin-bottom: 80px">
+                                <button class="btn btn-custom " type="submit" style="background-color: #009688;
+    color: white">ENVIAR</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

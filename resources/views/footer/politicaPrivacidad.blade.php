@@ -6,7 +6,7 @@
 
 <section class="bg0 p-t-75 p-b-120 text-center">
     <div class="container" style="text-align: justify">
-    
+
         <div class="row p-b-148">
             <div class="col-md-7 col-lg-8">
                 <div class="p-t-7 p-r-85 p-r-15-lg p-r-0-md">
@@ -192,7 +192,7 @@
                     </p>
 
                     <p class="stext-113 cl6 p-b-26">
-    
+
                         A ANPA MONTE VIXIA, responsable da páxina web, en diante RESPONSABLE, pon
                         a disposición dos usuarios este documento, co que pretende dar cumprimento ás
                         obrigas establecidas na Lei 34/2002, do 11 de xullo, de Servizos ás Empresas de
@@ -463,6 +463,18 @@
                         válida e executiva e que, na medida do posible, alcance o obxectivo e pretensión
                         reflectidos na estipulación orixinal.
                     </p>
+
+                    <div class="form-group">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" style="margin-bottom: 20px" type="checkbox">Acepto a Política de Privacidade
+                            </label>
+                            <div class="form-group" style="margin-bottom: 10px">
+                                <button class="btn btn-custom " type="submit" style="background-color: #009688;
+    color: white">ENVIAR</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
