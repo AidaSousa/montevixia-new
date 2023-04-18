@@ -3,7 +3,7 @@
     <label for="email">Email</label>
     <input type="email" name="email" required>
 
-    <label for="password">Contraseña</label>
+    <label for="password">ContrasINAL</label>
     <input type="password" name="password" required>
 
     

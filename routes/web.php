@@ -106,6 +106,14 @@ Route::get('/roles', function () {
     return view('roles.index');
 })->name('roles.index');
 
+Route::get('/event', function () {
+    return view('events.index');
+})->name('event.index');
+
+Route::get('/event', function () {
+    return view('events.create');
+})->name('event.create');
+
 Route::get('/logout', function () {
     return view('logout.index');
 })->name('logout.index');
@@ -141,7 +149,7 @@ Route::post('/category-store', [CategoryController::class, 'storeCategory'])->na
 Route::get('/category-edit/{id}', [CategoryController::class, 'editCategory'])->name('categories.edit');
 Route::put('/category-update/{id}', [CategoryController::class, 'updateCategory'])->name('categories.update');
 Route::get('/category-show', [CategoryController::class, 'showCategory'])->name('categories.show');
-Route::get('/category-destroy/{id}', [CategoryController::class, 'destroyCategory'])->name('categories.destroy');
+Route::delete('/category-destroy/{id}', [CategoryController::class, 'destroyCategory'])->name('categories.destroy');
 
 //Events
 Route::get('/event-index', [EventController::class, 'indexEvent'])->name('events.index');
@@ -179,10 +187,10 @@ Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
 
 
 // Ruta para mostrar el formulario de creación de un blog
-Route::get('/blog/create', [BlogController::class, 'create'])->name('posts.create');
+Route::get('/blog/create', [BlogController::class, 'create'])->name('blog.create');
 
 // Ruta para guardar un nuevo blog
-Route::post('/blog', [BlogController::class, 'store'])->name('posts.store');
+Route::post('/blog', [BlogController::class, 'store'])->name('blog.store');
 
 // Ruta para mostrar un blog específico
 Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blogs.show');
@@ -195,6 +203,9 @@ Route::put('/blog/{id}', [BlogController::class, 'update'])->name('posts.update'
 
 // Ruta para eliminar un blog
 Route::delete('/blog/{id}', [BlogController::class, 'destroy'])->name('posts.destroy');
+
+//Stripe
+Route::post('/create-checkout-session', 'StripeController@createCheckoutSession');
 
 //Ruta para la página de suscripción
 Route::get('/suscripcion', [SubscriptionController::class, 'index'])->name('subscription.index');

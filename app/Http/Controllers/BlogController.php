@@ -19,29 +19,40 @@ class BlogController extends Controller
     
     public function create()
     {
-        return view('posts.create');
+        return view('blog.create');
     }
 
     public function store(Request $request)
-    {
-        $request->validate([
-            'title' => 'required',
-            'content' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Validación de la imagen
-        ]);
+{
+    // Validar los datos del formulario
+    $request->validate([
+        'title' => 'required',
+        'content' => 'required',
+        'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // Validación para la imagen
+    ]);
 
-        $post = new Blog([
-            'title' => $request->get('title'),
-            'content' => $request->get('content'),
-        ]);
+    // Obtener el nombre original del archivo
+    $imageName = $request->file('image')->getClientOriginalName();
 
-        if ($request->hasFile('image')) {
-            $image = $request->file('image');
-            $post->saveImage($image); // Llama a la función saveImage() para guardar la imagen
-        }
+    // Mover la imagen a la carpeta de imágenes en public
+    $request->file('image')->move(public_path('img'), $imageName);
 
-        return redirect()->route('posts.index')->with('success', 'Post creado exitosamente');
-    }
+    // Obtener la ruta relativa de la imagen
+    $imagePath = 'img/' . $imageName;
+
+    // Crear un nuevo objeto Blog con los datos del formulario
+    $blog = new Blog([
+        'title' => $request->get('title'),
+        'content' => $request->get('content'),
+        'image_path' => $imagePath,
+    ]);
+
+    // Guardar el objeto Blog en la base de datos
+    $blog->save();
+
+    // Redirigir a la página de inicio o a la página de detalle del blog creado
+    return redirect()->route('blogs.index')->with('success', 'Blog creado exitosamente');
+}
 
     public function show($id)
     {
