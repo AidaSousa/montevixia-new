@@ -7,25 +7,18 @@
 <div class="row justify-content-center">
     <div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
         <div class="tile">
-            <h3 class="tile-title text-center">BANCO LIBROS "ENTRE FAMILIAS" 2020-2021</h3>
-            <div class="tile-body ">
+            <h3 class="tile-title text-center mb-4">BANCO LIBROS "ENTRE FAMILIAS"</h3>
+            <div class="tile-body text-justify">
                 <p>Os libros de texto correspondentes ao proxecto do Banco de Libros entre familias é unha iniciativa voluntaria. As familias reciben os libros como préstamo e devólvenos ao final de curso. Cada libro conta cunha pegatina e un selo da anpa para identificalos. O banco de libros cubre os cursos 3, 4, 5 e 6 de Educación Primaria.</p>
 
-                <p>Informarvos de varios aspectos a ter en conta en relación ao banco de libros entre familias para o curso escolar 20-21:</p>
+                <p>Informarvos de varios aspectos a ter en conta en relación ao banco de libros entre familias para o curso escolar 23-24:</p>
 
                 <ol>
                     <li>Debido ao cambio de libros nos cursos de 3º e 5º de Educación Primaria, o banco só se realizará para os cursos de 4º e 6º de Educación Primaria</li>
-                    <br>
-                    <li>Este formulario é para as familias que queran recibir libros para o curso 2020-2021. (Se algunha o que quere e doar, pode poñerse en contacto con nos a través do mail anpaesanjurjo@gmail.com, en principio a doazón recollerase o 1 de setembro)</li>
-                    <br>
+                    <li>Este formulario é para as familias que queran recibir libros para o curso 2023-2024. (Se algunha o que quere e doar, pode poñerse en contacto con nos a través do mail anpaesanjurjo@gmail.com)</li>
                     <li>Os criterios de entrega dos libros no caso de rexistrarse máis solicitudes do número de exemplares dos que se dispónson:
-
                     <li>Terán prioridade no reparto aquelas familias que doasen libros ao banco</li>
                     <li>Rigurosa orde de recepción dos formularios on line</li>
-
-                    </li>
-                    <br>
-                    <li>O reparto realizarase o 7 de setembro.</li>
                 </ol>
 
                 <form action="" method="POST">
@@ -105,8 +98,7 @@
                             </div>
 
                             <div class="form-group">
-                                <button class="btn btn-custom" type="submit" style="background-color: #009688;
-    color: white;">ENVIAR</button>
+                                <button class="btn btn-custom" type="submit" style="background-color: #009688; color: white;">ENVIAR</button>
                             </div>
                         </div>
                 </form>
