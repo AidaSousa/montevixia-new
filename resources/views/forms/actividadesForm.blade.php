@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('title', 'Banco Libros')
+@section('title', 'actividades Form')
 
 @section('content')
 
@@ -19,9 +19,20 @@
                   <input class="form-control" type="email" placeholder="correo electronico">
                 </div>
                 <div class="form-group">
-                  <label class="control-label">Curso</label>
-                  <input class="form-control" type="text" placeholder="curso">
-                </div>
+                        <label for="curso" class="form-label" >Curso:</label>
+                        <select class="form-select" required>
+                            <option value="">Selecciona un curso</option>
+                            <option value="1 EP">1 EI</option>
+                            <option value="2 EP">2 EI</option>
+                            <option value="3 EP">3 EI</option>
+                            <option value="1 EP">1 EP</option>
+                            <option value="2 EP">2 EP</option>
+                            <option value="3 EP">3 EP</option>
+                            <option value="4 EP">4 EP</option>
+                            <option value="5 EP">5 EP</option>
+                            <option value="6 EP">6 EP</option>
+                        </select>
+</div>
             
                 <div class="form-group">
                   <div class="form-check">
