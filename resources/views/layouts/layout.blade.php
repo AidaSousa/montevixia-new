@@ -126,7 +126,7 @@
 			</div>
 
 			<!-- Icon header -->
-			<<div class="wrap-icon-header flex-w flex-r-m h-full m-r-15">
+			<div class="wrap-icon-header flex-w flex-r-m h-full m-r-15">
 				<!-- <div class="flex-c-m h-full p-r-10">
 				<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-modal-search">
 					<i class="zmdi zmdi-search"></i>

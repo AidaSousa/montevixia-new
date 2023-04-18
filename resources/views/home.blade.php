@@ -114,108 +114,61 @@
 				@include('components.calendar')
 			</div>
 
+			<div class="row grid mt-8 mb-8">
+    <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item ruta mx-auto" style="margin-top: 80px; margin-bottom: 80px">
+
+        <div class="block2">
+            <div class="block2-pic hov-img0">
+                <h2 class="text-center">PEQUE-RUTA</h2>
+                <img src="img/pequeruta-3.jpg" alt="IMG">
+                <a href="/pequeruta" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
+                    <button>INSCRIBETE</button>
+                </a>
+            </div>
+            <p class="mt-4">25€</p>
+            
+        </div>
+
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item ruta mx-auto" style="margin-top: 80px; margin-bottom: 80px;">
+    
+        <div class="block2">
+            <div class="block2-pic hov-img0">
+                <h2 class="text-center">CAMPAMENTO</h2>
+                <img src="img/onosopatio-2.jpg" alt="IMG">
+
+                <a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
+                    <button>INSCRIBETE</button>
+                </a>
+            </div>
+            <p class="mt-4">40€</p>
+            
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item ruta mx-auto" style="margin-top: 80px; margin-bottom: 80px;">
+    
+        <div class="block2">
+            <div class="block2-pic hov-img0">
+                <h2 class="text-center">SURF</h2>
+                <img src="img/onosopatio.jpg" alt="IMG">
+
+                <a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
+                    <button>INSCRIBETE</button>
+                </a>
+            </div>
+            <p class="mt-4">30€</p>
+            
+        </div>
+    </div>
+</div>
+
+
+
 			
 
-			<!-- Tab01 -->
-			<div class="tab01">
-				<!-- Tab panes -->
-				<div class="tab-content p-t-50">
-					<!-- - -->
-					<div class="tab-pane fade show active" id="best-seller" role="tabpanel">
-						<!-- Slide2 -->
-						<div class="wrap-slick2">
-							<div class="slick2">
-								<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-									<!-- Block2 -->
-									<div class="block2">
-										<div class="block2-pic hov-img0">
-											<img src="img/img-1.jpg" alt="IMG-PRODUCT">
 
-											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-												Inscribese
-											</a>
-										</div>
 
-										<div class="block2-txt flex-w flex-t p-t-14">
-											<div class="block2-txt-child1 flex-col-l ">
-												<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-													Campamento
-												</a>
-
-												<span class="stext-105 cl3">
-													40 €
-												</span>
-											</div>
-
-											<div class="block2-txt-child2 flex-r p-t-3">
-												<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-								
-									<!-- Block2 -->
-									<div class="block2">
-										<div class="block2-pic hov-img0">
-											<img src="img/img-1.jpg" alt="IMG-PRODUCT">
-
-											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-												Inscribese
-											</a>
-										</div>
-
-										<div class="block2-txt flex-w flex-t p-t-14">
-											<div class="block2-txt-child1 flex-col-l ">
-												<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-													Escalada
-												</a>
-
-												<span class="stext-105 cl3">
-													25 €
-												</span>
-											</div>
-
-											<div class="block2-txt-child2 flex-r p-t-3">
-												<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-									<!-- Block2 -->
-									<div class="block2">
-										<div class="block2-pic hov-img0">
-											<img src="img/img-1.jpg" alt="IMG-PRODUCT">
-
-											<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-												Inscríbese
-											</a>
-										</div>
-
-										<div class="block2-txt flex-w flex-t p-t-14">
-											<div class="block2-txt-child1 flex-col-l ">
-												<a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-													Surf
-												</a>
-
-												<span class="stext-105 cl3">
-													30 €
-												</span>
-											</div>
-
-											<div class="block2-txt-child2 flex-r p-t-3">
-												<a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-	</section>
 
 
 	<!-- Blog -->
