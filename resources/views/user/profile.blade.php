@@ -15,11 +15,11 @@
 								<div class="mt-3">
 									<h4>{{ auth()->user()->name }}</h4>
 									<p class="text-secondary mb-1">{{auth()->user()->surname }}</p>
-									<a class="btn btn-success btn-custom" href="{{ route('subscription.index') }}"  style="background-color: #009688">Hacerme socio</a>
+									<a class="btn btn-success btn-custom" href="{{ route('subscription.index') }}"  style="background-color: #009688">Hazte socio</a>
 								</div>
 							</div>
 							<hr class="my-4">
-							<h3>Agregar hijo</h3>
+							<h3>Engadir fillo</h3>
                             @include('children.create')
 						</div>
 					</div>
@@ -29,7 +29,7 @@
 						<div class="card-body">
 							<div class="row mb-3">
 								<div class="col-sm-3">
-									<h6 class="mb-0">Nombre</h6>
+									<h6 class="mb-0">Nome</h6>
 								</div>
 								<div class="col-sm-9 text-secondary">
 									<input type="text" class="form-control" name="name" id="name">
@@ -37,7 +37,7 @@
 							</div>
 							<div class="row mb-3">
 								<div class="col-sm-3">
-									<h6 class="mb-0">Apellidos</h6>
+									<h6 class="mb-0">Apelidos</h6>
 								</div>
 								<div class="col-sm-9 text-secondary">
 									<input type="text" class="form-control" name="surname" id="surname">

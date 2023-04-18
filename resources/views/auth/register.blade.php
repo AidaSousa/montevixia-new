@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/css/main.temp.css">
 
     
-    <title>Registro</title>
+    <title>Rexistro</title>
   </head>
 
   <body>
@@ -31,14 +31,14 @@
     <form method="POST" action="/register" class="form-horizontal mx-auto ">
   @csrf
   <div class="form-group ">
-    <label for="name" class="col-md-4 mt-3 control-label">Nombre</label>
+    <label for="name" class="col-md-4 mt-3 control-label">Nome</label>
     <div class="col-md-12 ">
       <input type="text" name="name" class="form-control" required>
     </div>
   </div>
 
   <div class="form-group">
-    <label for="surname" class="col-md-4 control-label">Apellido</label>
+    <label for="surname" class="col-md-4 control-label">Apelido</label>
     <div class="col-md-12">
       <input type="text" name="surname" class="form-control">
     </div>
@@ -52,14 +52,14 @@
   </div>
 
   <div class="form-group">
-    <label for="password" class="col-md-4 control-label">Contraseña</label>
+    <label for="password" class="col-md-4 control-label">Contrasinal</label>
     <div class="col-md-12">
       <input type="password" name="password" class="form-control" required>
     </div>
   </div>
 
   <div class="form-group">
-    <label for="password_confirmation" class="col-md-4 control-label">Confirmar contraseña</label>
+    <label for="password_confirmation" class="col-md-4 control-label">Confirmar contrasinal</label>
     <div class="col-md-12">
       <input type="password" name="password_confirmation" class="form-control" required>
     </div>
@@ -67,7 +67,7 @@
 
   <div class="form-group">
     <div class="col-md-8 col-md-offset-4">
-      <button type="submit" class="btn btn-primary">Registrarse</button>
+      <button type="submit" class="btn btn-primary">Rexistrarse</button>
     </div>
   </div>
 </form>
