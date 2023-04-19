@@ -36,6 +36,11 @@ Route::get('/pequeruta', function () {
     return view('forms.rutaPequeForm');
 });
 
+//Formulario Actividades varias
+Route::get('/actiForm', function () {
+    return view('forms.actividadesForm');
+});
+
 //vista excursion
 Route::get('/excursiones', function () {
     return view('events.excursiones');
