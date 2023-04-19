@@ -13,7 +13,6 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                             {{ csrf_field() }}
-
                             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                                 <label for="name" class="col-md-4 control-label">Categoría</label>
                                 <div class="col-xs-12 col-sm-12 col-md-12">
@@ -28,21 +27,18 @@
                                     <div class="col-md-6 col-md-offset-4">
                                         <button type="submit" class="btn btn-primary">
                                             Crear categoría
-
-                          
                                         </button>
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                     </div>
                                 </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>    
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>    
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
 </form>
 

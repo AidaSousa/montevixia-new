@@ -107,9 +107,6 @@ Route::get('/pagos', function () {
     return view('pagos.index');
 })->name('pagos.index');
 
-Route::get('/roles', function () {
-    return view('roles.index');
-})->name('roles.index');
 
 Route::get('/event', function () {
     return view('events.index');
