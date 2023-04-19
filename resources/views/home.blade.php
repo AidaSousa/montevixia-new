@@ -1,3 +1,4 @@
+
 @extends('layouts.layout')
 
 @section('title', 'Inicio')
@@ -103,7 +104,6 @@
 		</div>
 	</section>
 
-
 	<!-- Product -->
 	<section class="sec-product bg0 p-t-100 p-b-50">
 		<div class="container">
@@ -114,55 +114,44 @@
 
 				@include('components.calendar')
 			</div>
+			<section class="sec-blog bg0 p-t-60 p-b-90 mb-4">
 
-		<div class="row grid mt-8 mb-8">
-			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item ruta mx-auto" style="margin-top: 80px; margin-bottom: 80px">
+<div class="container">
+	<div class="p-b-66">
+		<h3 class="ltext-105 cl5 txt-center respon1">
+			ÚLTIMAS ACTIVIDADES
+		</h3>
+	</div>
 
-				<div class="block2">
-					<div class="block2-pic hov-img0">
-						<h2 class="text-center">PEQUE-RUTA</h2>
-						<img src="img/pequeruta-3.jpg" alt="IMG">
-						<a href="/pequeruta" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
-							<button>INSCRIBETE</button>
-						</a>
-					</div>
-					<p class="mt-4">25€</p>
+	<div class="row">
 
+		@foreach($latest_events as $event)
+
+		<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item ruta mx-auto">
+			<div class="block2">
+				<div class="block2-pic hov-img0 p-0">
+					<img src="img/pequeruta-3.jpg" alt="IMG">
+					<a href="{{ route ('events.show', $event->id) }}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
+						<button>INSCRIBETE</button>
+					</a>
 				</div>
-
-			</div>
-
-			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item ruta mx-auto" style="margin-top: 80px; margin-bottom: 80px;">
-
-				<div class="block2">
-					<div class="block2-pic hov-img0">
-						<h2 class="text-center">CAMPAMENTO</h2>
-						<img src="img/onosopatio-2.jpg" alt="IMG">
-
-						<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
-							<button>INSCRIBETE</button>
-						</a>
-					</div>
-					<p class="mt-4">40€</p>
-
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item ruta mx-auto" style="margin-top: 80px; margin-bottom: 80px;">
-
-				<div class="block2">
-					<div class="block2-pic hov-img0">
-						<h2 class="text-center">SURF</h2>
-						<img src="img/onosopatio.jpg" alt="IMG">
-
-						<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
-							<button>INSCRIBETE</button>
-						</a>
-					</div>
-					<p class="mt-4">30€</p>
-
-				</div>
+				<h4 class="mtext-101 cl2 hov-cl1 trans-04">
+					{{ $event->name }}
+				</h4>
+				<p class="stext-108 cl6">{{ $event->price_associated }}€ asociados / {{ $event->price_no_asociated }}€ no asociados</p>
 			</div>
 		</div>
+
+		@endforeach
+
+	</div>
+
+</div>
+
+</section>
+
+
+
 
 		<section class="sec-blog bg0 p-t-60 p-b-90">
 			<div class="container">
