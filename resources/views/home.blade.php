@@ -114,14 +114,8 @@
 
 				@include('components.calendar')
 			</div>
-			<section class="sec-blog bg0 p-t-60 p-b-90 mb-4">
 
-<div class="container">
-	<div class="p-b-66">
-		<h3 class="ltext-105 cl5 txt-center respon1">
-			ÚLTIMAS ACTIVIDADES
-		</h3>
-	</div>
+	<section class="sec-blog bg0 p-t-60 p-b-90 mb-4">
 
 	<div class="row">
 
