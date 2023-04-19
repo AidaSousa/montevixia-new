@@ -6,14 +6,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}" />
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/material-design-iconic-font.min.css') }}" /> -->
+	 
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/material-design-iconic-font.min.css') }}" /> 
 
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
 	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/icon-font.min.css') }}" />
@@ -22,29 +23,27 @@
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/hamburgers.min.css') }}" />
 
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/animsition.min.css') }}" />
+	 <link rel="stylesheet" type="text/css" href="{{ asset('css/animsition.min.css') }}" /> 
 
-	<!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/select2.min.css') }}" />  -->
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/select2.min.css') }}" />  
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/daterangepicker.css') }}" />
+	 <link rel="stylesheet" type="text/css" href="{{ asset('css/daterangepicker.css') }}" /> 
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/slick.css') }}" />
 
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/magnific-popup.css') }}" />
+	 <link rel="stylesheet" type="text/css" href="{{ asset('css/magnific-popup.css') }}"/>
 
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/perfect-scrollbar.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/perfect-scrollbar.css') }}"/> 
 
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/util.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/util.css') }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}"/>
 	<!--georgette iconos-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
 
-	   
 
-
-	<title>@yield('title') - Anpa Montevixia</title>
+<title>@yield('title') - Anpa Montevixia</title>
 
 </head>
 
@@ -292,26 +291,31 @@
 		</span>
 	</div>
 
-	<!-- <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script> -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+	
 
 	<script src="{{ asset('js/animsition.min.js') }}"></script>
 
-	<script src="{{ asset('js/popper.js') }}"></script>
-	<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+	 <script src="{{ asset('js/popper.js') }}"></script>
 
-	<!-- <script src="{{ asset('js/select2.min.js') }}"></script> -->
-	<!-- <script>
+	<script src="{{ asset('js/bootstrap.min.js') }}"></script> 
+
+	 <script src="{{ asset('js/select2.min.js') }}"></script>
+
+	 <script>
 		$(".js-select2").each(function(){
 			$(this).select2({
 				minimumResultsForSearch: 20,
 				dropdownParent: $(this).next('.dropDownSelect2')
 			});
 		})
-	</script> -->
+	</script> 
 
-	<script src="{{ asset('js/moment.min.js') }}"></script>
-	<script src="{{ asset('js/daterangepicker.js') }}"></script>
+    <script src="{{ asset('js/moment.min.js') }}"></script>
+
+	<script src="{{ asset('js/daterangepicker.js') }}"></script> 
 
 	<script src="{{ asset('js/slick.min.js') }}"></script>
 	<script src="{{ asset('js/slick-custom.js') }}"></script>
@@ -321,7 +325,7 @@
 		$('.parallax100').parallax100();
 	</script>
 
-	<script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+  <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
 	<script>
 		$('.gallery-lb').each(function() { // the containers for all your galleries
 			$(this).magnificPopup({
@@ -335,7 +339,7 @@
 		});
 	</script>
 
-	<script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
+	<script src="{{ asset('js/isotope.pkgd.min.js') }}"></script> 
 
 	<script src="{{ asset('js/sweetalert.min.js') }}"></script>
 	<script>
@@ -374,7 +378,8 @@
 		});
 	</script>
 
-	<script src="{{ asset('js/perfect-scrollbar.min.js') }}"></script>
+	<script src="{{ asset('js/perfect-scrollbar.min.js') }}"></script> 
+
 	<script>
 		$('.js-pscroll').each(function(){
 			$(this).css('position','relative');
@@ -392,7 +397,7 @@
 	</script>
 
 	
-	<!-- <script src="{{ asset('js/perfect-scrollbar.min.js') }}"></script>
+	<script src="{{ asset('js/perfect-scrollbar.min.js') }}"></script>
 	<script>
 		$('.js-pscroll').each(function() {
 			$(this).css('position', 'relative');

@@ -3385,4 +3385,9 @@ input.num-product::-webkit-inner-spin-button {
           box-shadow: 0 0 0 0 rgba(38, 166, 154, 0.5);
         }
 
+   @media (min-width: 768px) {
+          .btn-show-menu-mobile {
+              display: none;
+          }
+      }
 
