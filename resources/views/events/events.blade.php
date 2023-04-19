@@ -50,6 +50,18 @@
 			<div class="row">
 
             <h3>Aquí un buen foreach</h3>
+            @foreach($events as $event)
+    <div class="block2">
+        <div class="block2-pic hov-img0">
+            <h2 class="text-center">{{ $event->name }}</h2>
+            <img src="/" alt="{{ $event->name }}">
+            <a href="/" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
+                <button>INSCRIBETE</button>
+            </a>
+        </div>
+        <p class="mt-4">{{ $event->price_no_asociated }}€</p>
+    </div>
+@endforeach
 
 			</div>
 		</div>

@@ -134,19 +134,19 @@
 
 			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item ruta mx-auto" style="margin-top: 80px; margin-bottom: 80px;">
 
+			@foreach($latest_events as $events)
 				<div class="block2">
 					<div class="block2-pic hov-img0">
-						<h2 class="text-center">CAMPAMENTO</h2>
-						<img src="img/onosopatio-2.jpg" alt="IMG">
-
-						<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
+						<h2 class="text-center">{{ $events->name }}</h2>
+						<img src="/" alt="{{ $events->name }}">
+						<a href="/" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
 							<button>INSCRIBETE</button>
 						</a>
 					</div>
-					<p class="mt-4">40€</p>
+					<p class="mt-4">{{ $events->price_no_asociated }}€</p>
+        		</div>
+   			 @endforeach
 
-				</div>
-			</div>
 			<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item ruta mx-auto" style="margin-top: 80px; margin-bottom: 80px;">
 
 				<div class="block2">
