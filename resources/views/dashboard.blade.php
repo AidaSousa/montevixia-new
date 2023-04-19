@@ -59,27 +59,19 @@
             <li><a class="treeview-item" href="{{ route('user.index') }}"><i class="icon fa fa-circle-o"></i> Usuarios</a></li>
           </ul>
         </li>
+        <li><a class="app-menu__item" href="{{ route('events.index') }}"><i class="app-menu__icon fa fa-star"></i><span class="app-menu__label">Actividades</span></a>
+        </li>
         <li><a class="app-menu__item" href="{{ route('categories.index') }}"><i class="app-menu__icon fa fa-archive"></i><span class="app-menu__label">Categorias</span></a></li>
         </li>
         <li><a class="app-menu__item" href="{{ route('blog.create') }}"><i class="app-menu__icon fas fa-book"></i><span class="app-menu__label">Blog</span></a>
         <li><a class="app-menu__item" href="{{ route('pagos.index') }}"><i class="app-menu__icon fa fas fa-eur"></i><span class="app-menu__label">Pagos</span></a>
         </li>
-        <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-send"></i><span class="app-menu__label">E-mail</span></a>
-        </li>
+        
         <li><a class="app-menu__item" href="#"><i class="app-menu__icon fa fa-sign-out"></i><span class="app-menu__label">Logout</span></a>
         </li>
       </ul>
     </aside>
     <main class="app-content">
-      <!-- <div class="app-title">
-        <div>
-          <h1><i class="fa fa-dashboard"></i> Dashboard</h1>
-        </div>
-        <ul class="app-breadcrumb breadcrumb">
-          <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-          <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-        </ul>
-      </div> -->
       <div>
         @yield('content')
       </div>

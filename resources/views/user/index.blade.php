@@ -70,7 +70,5 @@
               </div>
             </div>
         </div>
-
-
-
+@include('user.create')
 @endsection
