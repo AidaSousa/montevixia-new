@@ -6,10 +6,13 @@ Proyecto para la Asociacion de Nais y Pais del colegio Montevixia.
 
  https://github.com/AidaSousa/montevixia-new.git
 ```
+
 2. Instalar dependencias
+
 ```
  composer install
 ```
+
 3. Abrir el servidor local
 ```
  php artisan serve
